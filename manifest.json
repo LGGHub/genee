@@ -1,0 +1,24 @@
+{
+  "name": "Genee",
+  "description": "Utilities to increase productivity for genetic diagnostic professionals",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "genee@lgghub.com",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  , "clipboardWrite"
+  , "scripting"
+  ],
+  "host_permissions": [
+    "*://*.deciphergenomics.org/*"
+  ],
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}

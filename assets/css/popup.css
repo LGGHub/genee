@@ -1,0 +1,7 @@
+body {
+  min-width: 300px;
+}
+
+p.sm-txt {
+  font-size: 13px;
+}
