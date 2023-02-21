@@ -2,23 +2,32 @@
   "name": "Genee",
   "description": "Utilities to increase productivity for genetic diagnostic professionals",
   "version": "1.0",
-  "manifest_version": 3,
+  "manifest_version": 2, // Use manifest_version 2 for cross-browser compatibility
   "author": "genee@lgghub.com",
-  "action": {
+  "browser_action": { // Use browser_action instead of action for cross-browser compatibility
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab"
-  , "clipboardWrite"
-  , "scripting"
+    "activeTab",
+    "clipboardWrite",
+    "scripting"
   ],
-  "host_permissions": [
-    "*://*.deciphergenomics.org/*"
+  "content_scripts": [ // Use content_scripts for cross-browser compatibility
+    {
+      "matches": ["*://*.deciphergenomics.org/*"],
+      "js": ["content.js"]
+    }
   ],
   "icons": {
     "16": "assets/icon16.png",
     "32": "assets/icon32.png",
     "48": "assets/icon48.png",
     "128": "assets/icon128.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "genee@lgghub.com", // Add the add-on ID for Firefox
+      "strict_min_version": "60.0" // Set the minimum Firefox version
+    }
   }
 }

@@ -1,7 +1,12 @@
 async function getCurrentTab() {
   let queryOptions = { active: true, lastFocusedWindow: true };
-  let [tab] = await chrome.tabs.query(queryOptions);
-  return tab;
+  if (typeof browser !== 'undefined') {
+    let [tab] = await browser.tabs.query(queryOptions);
+    return tab;
+  } else {
+    let [tab] = await chrome.tabs.query(queryOptions);
+    return tab;
+  }
 }
 
 async function DecipherPhenotypes() {
@@ -24,13 +29,18 @@ $('#copy').on('click', async e => {
  	  return;
 	}
 
-	let res = await chrome.scripting.executeScript({
-    target: {tabId: tab.id}
-  , func: DecipherPhenotypes
-  });
+	let res;
+	if (typeof browser !== 'undefined') {
+		res = await browser.tabs.executeScript(tab.id, { code: `(${DecipherPhenotypes.toString()})()` });
+	} else {
+		res = await chrome.scripting.executeScript({
+			target: {tabId: tab.id},
+			func: DecipherPhenotypes
+		});
+	}
 
   try {
-  	res = res[0].result;
+  	res = res[0];
  	  navigator.clipboard.writeText(res)
 
  	  $el.toggleClass('btn-success btn-primary').text('Copied!');
