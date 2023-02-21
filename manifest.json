@@ -2,7 +2,7 @@
   "name": "Genee",
   "description": "Utilities to increase productivity for genetic diagnostic professionals",
   "version": "1.0",
-  "manifest_version": 2, // Use manifest_version 2 for cross-browser compatibility
+  "manifest_version": 3,
   "author": "genee@lgghub.com",
   "browser_action": { // Use browser_action instead of action for cross-browser compatibility
     "default_popup": "popup.html"
