@@ -31,7 +31,10 @@ $('#copy').on('click', async e => {
 
 	let res;
 	if (typeof browser !== 'undefined') {
-		res = await browser.tabs.executeScript(tab.id, { code: `(${DecipherPhenotypes.toString()})()` });
+		res = await browser.scripting.executeScript({
+			target: {tabId: tab.id},
+			func: DecipherPhenotypes
+		});
 	} else {
 		res = await chrome.scripting.executeScript({
 			target: {tabId: tab.id},
@@ -41,6 +44,8 @@ $('#copy').on('click', async e => {
 
   try {
   	res = res[0];
+  	res = res.result;
+
  	  navigator.clipboard.writeText(res)
 
  	  $el.toggleClass('btn-success btn-primary').text('Copied!');
