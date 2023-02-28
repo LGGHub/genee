@@ -1,0 +1,15 @@
+//
+// Change breadcrumbs separator
+//
+
+.breadcrumb-item {
+  + .breadcrumb-item {
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: .65em;
+      content: "\f054";
+      align-self: center;
+    }
+  }
+}

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "2",
+    "link": "project"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid pb-7">
+      <div class="d-flex align-items-start mt-5">
+        <h2 class="mb-0">
+          Bootstrap 5 Theme
+        </h2>
+        <div class="dropdown text-end ms-auto z-index-2">
+          <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="svg-icon text-gray-500">
+              @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#!">Edit name, description, etc</a>
+            <a class="dropdown-item" href="#!">Change settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-danger" href="#!">Delete</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row align-items-start mt-4">
+        <div class="avatar-group">
+          <div class="avatar">
+            <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <div class="avatar-letters rounded-circle bg-purple text-white">EA</div>
+          </div>
+        </div>
+
+        <a href="#!" class="btn btn-primary hover-lift-light shadow-light-sm ms-md-auto mt-3 mt-md-0">
+          <span class="svg-icon svg-icon-sm text-white me-1">
+            @@include("assets/img/ionicons/add-outline.svg")
+          </span>
+          Invite someone
+        </a>
+      </div>
+
+      <ul class="nav nav-tabs nav-overflow mt-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="project.html">
+            Overview
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project-files.html">
+            Files
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project-activity.html">
+            Activity
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project-settings.html">
+            Settings
+          </a>
+        </li>
+      </ul>
+
+      <div class="row mt-4 mt-md-5">
+        <div class="col-md-6 col-xxl-3">
+          <div class="statcard border bg-white py-4">
+            <h3 class="statcard-value">
+              75%
+              <div class="progress w-100 ms-5" style="height: 5px;" >
+                <div class="progress-bar w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </h3>
+            <span class="statcard-label text-dark">Progress</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 mt-3 mt-md-0">
+          <div class="statcard border bg-white py-4">
+            <h3 class="statcard-value">
+              $14,500
+            </h3>
+            <span class="statcard-label text-dark">Budget</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 mt-3 mt-xxl-0">
+          <div class="statcard border bg-white py-4">
+            <h3 class="statcard-value">
+              89/142
+            </h3>
+            <span class="statcard-label text-dark">Tasks done</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 mt-3 mt-xxl-0">
+          <div class="statcard border bg-white py-4">
+            <h3 class="statcard-value">
+              85
+            </h3>
+            <span class="statcard-label text-dark">Total hours</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-xl-8">
+          <div class="card h-100">
+            <div class="card-header">
+              <div class="card-header-title">
+                Project categories
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-sm card-table table-nowrap">
+                <thead>
+                  <tr>
+                    <th>
+                      Title
+                    </th>
+                    <th>
+                      Status
+                    </th>
+                    <th>
+                      Progress
+                    </th>
+                    <th>
+                      Leader
+                    </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                  <tr>
+                    <td>
+                      Release latest version 2.5
+                    </td>
+                    <td>
+                      <span class="text-success">●</span>
+                      Finished
+                    </td>
+                    <td>
+                      100%
+                    </td>
+                    <td>
+                      <div class="avatar avatar-sm">
+                        <img src="assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                      <span class="ms-2">Veronica B.</span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit title</a>
+                          <a class="dropdown-item text-danger" href="#!">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Finish project revamp
+                    </td>
+                    <td>
+                      <span class="text-warning">●</span>
+                      In progress
+                    </td>
+                    <td>
+                      8%
+                    </td>
+                    <td>
+                      <div class="avatar avatar-sm">
+                        <img src="assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                      <span class="ms-2">Anna E.</span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit title</a>
+                          <a class="dropdown-item text-danger" href="#!">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Invite John to group
+                    </td>
+                    <td>
+                      <span class="text-warning">●</span>
+                      In progress
+                    </td>
+                    <td>
+                      57%
+                    </td>
+                    <td>
+                      <div class="avatar avatar-sm">
+                        <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                      <span class="ms-2">Mark R.</span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit title</a>
+                          <a class="dropdown-item text-danger" href="#!">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Finish the website redesign
+                    </td>
+                    <td>
+                      <span class="text-success">●</span>
+                      Finished
+                    </td>
+                    <td>
+                      83%
+                    </td>
+                    <td>
+                      <div class="avatar avatar-sm">
+                        <img src="assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                      <span class="ms-2">Alice L.</span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit title</a>
+                          <a class="dropdown-item text-danger" href="#!">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Release this theme
+                    </td>
+                    <td>
+                      <span class="text-warning">●</span>
+                      In progress
+                    </td>
+                    <td>
+                      53%
+                    </td>
+                    <td>
+                      <div class="avatar avatar-sm">
+                        <img src="assets/img/uifaces/1.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                      <span class="ms-2">William P.</span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit title</a>
+                          <a class="dropdown-item text-danger" href="#!">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Plan next month newsletter
+                    </td>
+                    <td>
+                      <span class="text-warning">●</span>
+                      In progress
+                    </td>
+                    <td>
+                      93%
+                    </td>
+                    <td>
+                      <div class="avatar avatar-sm">
+                        <img src="assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                      <span class="ms-2">John R.</span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit title</a>
+                          <a class="dropdown-item text-danger" href="#!">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 mt-4 mt-xl-0">
+          <div class="card h-100">
+            <div class="card-header">
+              <div class="card-header-title mb-1 mb-md-0">
+                Latest activity
+              </div>
+              <a class="small" href="#!">
+                View all
+                <i class="fas fa-chevron-right fa-xs ms-1"></i>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="list-group list-group-flush list-group-activity">
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="fs-sm m-0">
+                        Anna E. commented on <a href="#!">Web Redesign</a>
+                      </p>
+                      <small class="text-muted">
+                        3:24pm
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="fs-sm m-0">
+                        John A. added a new file called <a href="#!">awesome.jpg</a>
+                      </p>
+                      <small class="text-muted">
+                        2:25pm
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="fs-sm m-0">
+                        Jim R. commented on the <a href="#!">Theme board</a>.
+                      </p>
+                      <small class="text-muted">
+                        9:19am
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/6.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="fs-sm m-0">
+                        Mark B. released the <a href="#!">May 2021 newsletter</a>
+                      </p>
+                      <small class="text-muted">
+                        1d ago
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p class="fs-sm m-0">
+                        Alice L. added the new folder <a href="#!">house images</a>
+                      </p>
+                      <small class="text-muted">
+                        2d ago
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

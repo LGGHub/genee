@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Hover | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <span class="badge bg-pastel-success text-success text-uppercase">
+            Theme Exclusive
+          </span>
+          <h3 class="text-darkblue mt-3">
+            Hover lift
+          </h3>
+          <p class="mt-3 text-muted">
+            Add <code>.hover-lift</code>, or <code>.hover-lift-light</code> to any element to add a lift hovering effect with its respective shadow.
+          </p>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <a href="#" class="btn btn-pistachio hover-lift-light m-4">
+                Subscribe now
+                <i class="fas fa-chevron-right fa-xs ms-2"></i>
+              </a>
+              <a href="#" class="btn btn-purple hover-lift m-4">
+                Sign up for free
+                <i class="fas fa-chevron-right fa-xs ms-2"></i>
+              </a>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;a href="#" class="btn btn-pistachio hover-lift-light"><br>
+                  &nbsp;&nbsp;Subscribe now<br>
+                  &nbsp;&nbsp;&lt;i class="fas fa-chevron-right fa-xs ms-2">&lt;/i><br>
+                &lt;/a><br><br>
+                &lt;a href="#" class="btn btn-purple hover-lift"><br>
+                  &nbsp;&nbsp;Sign up for free<br>
+                  &nbsp;&nbsp;&lt;i class="fas fa-chevron-right fa-xs ms-2">&lt;/i><br>
+                &lt;/a>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

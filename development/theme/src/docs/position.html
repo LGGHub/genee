@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Position | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Position utilities
+          </h3>
+          <a href="https://getbootstrap.com/docs/5.0/utilities/position/" class="text-purple" target="_blank">See Bootstrap docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+
+          <h5 class="text-darkblue mt-5">
+            Responsive positioning
+          </h5>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <code>.position-{breakpoint}-{position}</code>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="position-static">&lt;/div><br>
+                &lt;div class="position-sm-relative">&lt;/div><br>
+                &lt;div class="position-md-absolute">&lt;/div><br>
+                &lt;div class="position-lg-fixed">&lt;/div><br>
+                &lt;div class="position-xl-sticky">&lt;/div>
+              </code>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h5 class="text-darkblue pt-7 mt-n5">
+            Relative top
+          </h5>
+          <p class="text-muted mb-1">
+            For those cases when you need to make tiny changes up and down from 1 to 10 pixels. It sets <code>position</code> to relative and <code>top</code> in px.
+          </p>
+          <p class="text-muted">
+            <code>.relative-top-(1-10)</code> and <code>.relative-top--(1-10)</code> for negative values.
+          </p>
+          <div class="card mt-4 mb-6">
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="relative-top-1">&lt;/div><br>
+                &lt;div class="relative-top-2">&lt;/div><br>
+                &lt;div class="relative-top-3">&lt;/div><br>
+                &lt;div class="relative-top-4">&lt;/div><br>
+                &lt;div class="relative-top-5">&lt;/div><br>
+                &lt;div class="relative-top-6">&lt;/div><br>
+                &lt;div class="relative-top-7">&lt;/div><br>
+                &lt;div class="relative-top-8">&lt;/div><br>
+                &lt;div class="relative-top-9">&lt;/div><br>
+                &lt;div class="relative-top-10">&lt;/div><br><br>
+
+                &lt;div class="relative-top--1">&lt;/div><br>
+                &lt;div class="relative-top--2">&lt;/div><br>
+                &lt;div class="relative-top--3">&lt;/div><br>
+                &lt;div class="relative-top--4">&lt;/div><br>
+                &lt;div class="relative-top--5">&lt;/div><br>
+                &lt;div class="relative-top--6">&lt;/div><br>
+                &lt;div class="relative-top--7">&lt;/div><br>
+                &lt;div class="relative-top--8">&lt;/div><br>
+                &lt;div class="relative-top--9">&lt;/div><br>
+                &lt;div class="relative-top--10">&lt;/div>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "1",
+    "link": "index"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "1",
+  })
+
+  <div class="main-content">
+    <%= content %>
+  </div>
+
+  @@include('./partials/scripts.html')
+
+  <% scripts.forEach(s => { %>
+    <script src="<%= s %>"></script>
+  <% }) %>
+</body>
+</html>

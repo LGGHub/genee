@@ -1,0 +1,115 @@
+.svg-icon,
+.icon-circle {
+  &[class*=text-] {
+    svg:not([fill=none]),
+    [fill]:not([fill=none]) {
+      fill: currentColor!important;
+    }
+    svg [style*=stroke],
+    svg [stroke]:not([stroke=none]) {
+      stroke: currentColor!important;
+    }
+  }
+}
+
+
+// 
+// SVG icon different sizes
+// 
+
+.svg-icon > svg {
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
+.svg-icon-xxl > svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.svg-icon-xl > svg {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.svg-icon-lg > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.svg-icon-sm > svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.svg-icon-xs > svg {
+  width: .85rem;
+  height: .85rem;
+}
+
+
+// 
+// Icon inside a circle component
+// 
+
+.icon-circle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+
+  @at-root a#{&} {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  > svg {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+}
+
+.icon-circle-xl {
+  width: 5rem;
+  height: 5rem;
+
+  > svg {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+.icon-circle-lg {
+  width: 4rem;
+  height: 4rem;
+
+  > svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.icon-circle-sm {
+  width: 2.2rem;
+  height: 2.2rem;
+
+  > svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.icon-circle-xs {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  > svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}

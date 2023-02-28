@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "2",
+    "link": "payments"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "2",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid mt-4 pt-2 mb-6">
+      <!-- header -->
+      <div class="d-md-flex align-items-center">
+        <h3 class="mb-3 mb-md-0">
+          Payments
+        </h3>
+        <a href="#!" class="btn btn-white hover-lift-light ms-auto me-3">
+          <span class="svg-icon svg-icon-xs text-dark me-1">
+            @@include("assets/img/ionicons/arrow-down-outline.svg")
+          </span>
+          Export
+        </a>
+        <a href="#!" class="btn btn-purple hover-lift-light shadow-light-sm">
+          <span class="svg-icon svg-icon-sm text-white me-1">
+            @@include("assets/img/ionicons/add-outline.svg")
+          </span>
+          Create payment
+        </a>
+      </div>
+
+      <!-- filters -->
+      <ul class="nav nav-tabs nav-overflow mt-3 mt-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#!">
+            All
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#!">
+            Succeeded
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">
+            Refunded
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">
+            Archived
+          </a>
+        </li>
+      </ul>
+
+      <!-- report -->
+      <div id="payments" class="card mt-4">
+        <div class="card-header">
+          <form class="flex-grow-1 pe-3">
+            <div class="input-group input-group-flush pt-2">
+              <div class="input-group-text ps-0">
+                <i class="fas fa-search relative-top--2"></i>
+              </div>
+              <input type="search" class="search form-control" placeholder="Search...">
+            </div>
+          </form>
+
+          <div class="ms-auto mt-2 mt-md-0">
+            <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="svg-icon svg-icon-sm me-1">
+                @@include("assets/img/ionicons/funnel-outline.svg")
+              </i>
+
+              Filter
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-card shadow-light">
+              <div class="card-header">
+                <div class="card-header-title">
+                  Filters
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center justify-content-between px-4">
+                    <span>
+                      Payment method
+                    </span>
+                    <select class="form-select form-select-sm w-auto">
+                      <option>Card</option>
+                      <option>PayPal</option>
+                    </select>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center justify-content-between px-4">
+                    <span>
+                      Status
+                    </span>
+                    <select class="form-select form-select-sm w-auto">
+                      <option>Active</option>
+                      <option>In progress</option>
+                      <option>Refunded</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <a href="#!" class="card-footer-btn btn btn-purple justify-content-center">
+                Apply filter
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-sm card-table table-nowrap">
+            <thead>
+              <tr>
+                <th>
+                  <div class="form-check m-0">
+                    <input class="form-check-input list-checkbox-all" type="checkbox">
+                  </div>
+                </th>
+                <th>
+                  <a class="sort text-dark" data-sort="item-amount" href="#!">Amount</a>
+                </th>
+                <th>
+                  <a class="sort text-dark" data-sort="item-status" href="#!">Status</a>
+                </th>
+                <th>
+                  <span class="text-dark">Description</span>
+                </th>
+                <th>
+                  <a class="sort text-dark" data-sort="item-customer" href="#!">Customer</a>
+                </th>
+                <th>
+                  <span class="text-dark">Date</span>
+                </th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody class="list">
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $89.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0001-56
+                </td>
+                <td class="item-customer">
+                  john@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jun 16, 3:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $499.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-purple text-purple text-uppercase-xs">
+                    OVERDUE
+
+                    <span class="svg-icon svg-icon-sm text-purple ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/repeat-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Suscription for 50 days
+                </td>
+                <td class="item-customer">
+                  rita@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jul 23, 9:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $199.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0001-36
+                </td>
+                <td class="item-customer">
+                  laura@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Apr 14, 5:07 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $49.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Suscription for 30 days
+                </td>
+                <td class="item-customer">
+                  elle@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jul 23, 9:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $89.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0005-23
+                </td>
+                <td class="item-customer">
+                  jessica@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jul 12, 4:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $499.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-purple text-purple text-uppercase-xs">
+                    OVERDUE
+
+                    <span class="svg-icon svg-icon-sm text-purple ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/repeat-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0001-56
+                </td>
+                <td class="item-customer">
+                  john@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Sep 03, 5:22 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $399.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0123-46
+                </td>
+                <td class="item-customer">
+                  matt@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Apr 10, 3:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $399.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Suscription for 30 days
+                </td>
+                <td class="item-customer">
+                  martha@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Aug 30, 10:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $399.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0001-56
+                </td>
+                <td class="item-customer">
+                  kate@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  May 10, 2:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $399.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 1231-33
+                </td>
+                <td class="item-customer">
+                  eric@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jul 23, 9:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $599.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Suscription for 90 days
+                </td>
+                <td class="item-customer">
+                  karen@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jul 23, 9:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $699.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0001-56
+                </td>
+                <td class="item-customer">
+                  jim@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jul 23, 9:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $149.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0001-56
+                </td>
+                <td class="item-customer">
+                  tatiana@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jul 23, 9:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td class="item-amount">
+                  $399.99
+                  <span class="text-muted fs-sm ms-1">USD</span>
+                </td>
+                <td class="item-status">
+                  <div class="badge bg-pastel-success text-success text-uppercase-xs">
+                    Succeeded
+                    <span class="svg-icon svg-icon-sm text-success ms-1 relative-top--2">
+                      @@include("assets/img/ionicons/checkmark-outline.svg")
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  Invoice 0001-56
+                </td>
+                <td class="item-customer">
+                  sofia@email.com
+                </td>
+                <td class="fs-sm text-muted">
+                  Jul 23, 9:02 PM
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Refund payment</a>
+                      <a class="dropdown-item" href="#!">Send receipt</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-footer d-flex justify-content-center p-0">
+          <ul class="nav-pagination">
+            <li>
+              <a class="page" href="#!">1</a>
+            </li>
+            <li>
+              <a class="page" href="#!">2</a>
+            </li>
+            <li>
+              <a class="page" href="#!">3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-alert alert alert-dark w-300 w-md-400 border-0 shadow-light-lg fade fixed-bottom start-50 translate-middle-x mb-4" role="alert" style="z-index: -1;">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="form-check">
+            <input class="form-check-input" id="listAlertCheckbox" type="checkbox" checked onclick="return false;">
+            <label class="form-check-label text-white relative-top-2 ms-1" for="listAlertCheckbox">
+              <span class="list-alert-count">0</span> payments(s)
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-sm-auto ms-3 mt-3 mt-md-0">
+          <button class="btn btn-sm btn-pastel-purple">
+            Send refund
+          </button>
+          <button class="btn btn-link list-alert-close btn-sm text-white">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+
+  <script type="text/javascript">
+    $(function () {
+      var options = {
+        valueNames: [ 'item-amount', 'item-status', 'item-customer' ],
+        page: 10,
+        pagination: {
+          paginationClass: 'nav-pagination'
+        }
+      };
+
+      var paymentsList = new List('payments', options);
+    })
+  </script>
+</body>
+</html>

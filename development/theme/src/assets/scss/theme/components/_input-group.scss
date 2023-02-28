@@ -1,0 +1,11 @@
+.input-group-flush {
+  .input-group-text,
+  .form-control {
+    border-width: 0;
+  }
+
+  .input-group-text {
+    color: $dark;
+    padding-right: 0;
+  }
+}

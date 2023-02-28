@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Archer | Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap5-tags@1.5.4/tags-standalone.min.css">
+
+  <!-- Theme styles -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/theme.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <!-- Vendor -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/vendor.min.css">
+
+  <style>
+    body {
+      --keyboard-zindex: 3000;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-vertical navbar-expand-lg navbar-light bg-white" role="navigation" style="">
+    <div class="container-fluid">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="./index.html">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg
+           width="112.88884"
+           height="18.676363"
+           viewBox="0 0 112.88884 18.676363"
+           version="1.1"
+           id="svg4854"
+           sodipodi:docname="logo.svg"
+           inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
+           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:svg="http://www.w3.org/2000/svg">
+          <defs
+             id="defs4858" />
+          <sodipodi:namedview
+             id="namedview4856"
+             pagecolor="#ffffff"
+             bordercolor="#000000"
+             borderopacity="0.25"
+             inkscape:showpageshadow="2"
+             inkscape:pageopacity="0.0"
+             inkscape:pagecheckerboard="0"
+             inkscape:deskcolor="#d1d1d1"
+             showgrid="false"
+             inkscape:zoom="4.6689655"
+             inkscape:cx="70.251108"
+             inkscape:cy="1.6063516"
+             inkscape:window-width="1606"
+             inkscape:window-height="986"
+             inkscape:window-x="74"
+             inkscape:window-y="27"
+             inkscape:window-maximized="1"
+             inkscape:current-layer="svg4854" />
+          <g
+             id="g8777"
+             transform="matrix(0.00183071,0,0,-0.00183071,-25.259221,54.966696)">
+            <path
+               d="m 22176.7,28013.7 c -882.7,955.7 -2145.8,1554 -3549.2,1554 -2667.5,0 -4830,-2162.6 -4830,-4830.1 0,-2667.5 2162.5,-4830.1 4830,-4830.1 2667.5,0 4830.1,2162.6 4830.1,4830.1 0,1264.2 -486,2415.3 -1280.9,3276.1"
+               style="fill:#fdc724;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1750" />
+            <path
+               d="m 20520.3,26484.7 c 424,-459.1 683.3,-1072.9 683.3,-1747.1 0,-1422.6 -1153.5,-2576 -2576.1,-2576 -1422.6,0 -2576,1153.4 -2576,2576 0,1422.7 1153.4,2576 2576,2576 748.3,0 1422.4,-319.1 1892.8,-828.9"
+               style="fill:#2083fe;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1752" />
+            <path
+               d="m 23726.693,28277.541 -2254,-1932.1 h -1288 v 1288 l 1932,2254.1 v -1610 h 1610"
+               style="fill:#bd4242;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1754" />
+            <path
+               d="m 19337.3,25392.6 c 158.9,-172.3 256.3,-402.2 256.3,-655 0,-533.6 -432.6,-966 -966.1,-966 -533.6,0 -966,432.4 -966,966 0,533.5 432.4,966.1 966,966.1 280.8,0 533.5,-119.9 709.8,-311.1"
+               style="fill:#f7c010;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1756" />
+            <path
+               d="m 18649.83,24620.057 c -38.818,0 -77.546,17.262 -105.932,51.143 -53.995,64.459 -50.324,164.968 8.194,224.397 l 1874.174,1905.699 c 58.518,59.478 149.764,55.434 203.715,-9.025 53.996,-64.409 50.369,-164.919 -8.149,-224.348 l -1874.219,-1905.699 c -27.714,-28.21 -62.771,-42.167 -97.783,-42.167"
+               style="fill:#bd4242;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.469903"
+               id="path1758" />
+          </g>
+          <g
+             aria-label="ARCHER"
+             id="text9263"
+             style="font-weight:bold;font-size:21.3333px;font-family:'Spartan MB';-inkscape-font-specification:'Spartan MB, Bold'"
+             transform="translate(-0.48513523,-0.17948501)">
+            <path
+               d="M 19.948676,18.506758 27.181403,0.50675774 h 3.098182 L 37.512312,18.506758 h -3.621818 l -1.592727,-4.243637 h -7.134546 l -1.592727,4.243637 z m 11.192727,-7.2 -2.410909,-6.2618184 -2.410909,6.2618184 z"
+               style="font-size:24px"
+               id="path9265" />
+            <path
+               d="m 44.581387,0.50675774 q 1.330909,0 2.432727,0.36 1.101819,0.35999996 1.898182,1.05818186 0.807273,0.6981818 1.243637,1.7127272 0.447272,1.0145455 0.447272,2.3236364 0,1.0581818 -0.294545,1.9309091 -0.294546,0.8618182 -0.84,1.5272727 -0.534546,0.665455 -1.309091,1.112727 -0.774546,0.436364 -1.723636,0.654546 l 5.967272,7.32 h -4.265454 l -5.247273,-6.850909 h -0.949091 v 6.850909 h -3.36 V 0.50675774 Z m -2.64,8.23636366 h 1.614546 q 0.752727,0 1.396363,-0.1636364 0.643637,-0.1636364 1.112727,-0.5018182 0.48,-0.3381818 0.741819,-0.8618182 0.272727,-0.5236363 0.272727,-1.2545454 0,-0.7309091 -0.272727,-1.2545455 Q 46.545023,4.1831214 46.065023,3.8449396 45.595933,3.5067577 44.952296,3.3540305 44.30866,3.1903941 43.555933,3.1903941 h -1.614546 z"
+               style="font-size:24px"
+               id="path9267" />
+            <path
+               d="m 62.43954,0.17948501 q 0.829091,0 1.625455,0.13090909 0.796364,0.12 1.527273,0.34909091 0.741818,0.21818182 1.385454,0.53454549 0.654546,0.3163636 1.189091,0.6981818 L 66.541359,4.6413032 Q 65.788631,4.0849396 64.774086,3.7903941 63.75954,3.4849396 62.657722,3.4849396 q -1.418182,0 -2.563636,0.4690909 -1.145455,0.4581818 -1.952727,1.2654545 -0.807273,0.8072727 -1.243637,1.92 -0.425454,1.1018182 -0.425454,2.3781818 0,1.2763632 0.425454,2.3890912 0.436364,1.101818 1.243637,1.909091 0.807272,0.807272 1.952727,1.276363 1.145454,0.458182 2.563636,0.458182 1.101818,0 2.116364,-0.294545 1.014545,-0.305455 1.767273,-0.861819 l 1.625454,2.749091 q -0.534545,0.381819 -1.189091,0.698182 -0.643636,0.316364 -1.385454,0.545455 -0.730909,0.218182 -1.527273,0.338182 -0.796364,0.130909 -1.625455,0.130909 -1.385454,0 -2.64,-0.327273 -1.254545,-0.327273 -2.323636,-0.927273 -1.069091,-0.610909 -1.930909,-1.461818 -0.850909,-0.850909 -1.461818,-1.887273 -0.6,-1.036363 -0.927273,-2.236363 -0.327273,-1.2 -0.327273,-2.4981822 0,-1.3090909 0.327273,-2.4981818 0.327273,-1.2 0.927273,-2.2363636 0.610909,-1.0363637 1.461818,-1.8872728 0.861818,-0.850909 1.930909,-1.450909 1.069091,-0.61090914 2.323636,-0.93818186 1.254546,-0.32727273 2.64,-0.32727273 z"
+               style="font-size:24px"
+               id="path9269" />
+            <path
+               d="M 73.544979,0.49584865 V 8.0013032 h 7.003636 V 0.49584865 h 3.36 V 18.506758 h -3.36 v -7.549091 h -7.003636 v 7.549091 h -3.36 V 0.49584865 Z"
+               style="font-size:24px"
+               id="path9271" />
+            <path
+               d="M 96.955849,0.50675774 V 3.4631214 h -6.567273 v 4.5381818 h 6.305455 v 2.9563638 h -6.305455 v 4.592727 h 6.567273 v 2.956364 H 87.028576 V 0.50675774 Z"
+               style="font-size:24px"
+               id="path9273" />
+            <path
+               d="m 105.55217,0.50675774 q 1.33091,0 2.43272,0.36 1.10182,0.35999996 1.89819,1.05818186 0.80727,0.6981818 1.24363,1.7127272 0.44727,1.0145455 0.44727,2.3236364 0,1.0581818 -0.29454,1.9309091 -0.29455,0.8618182 -0.84,1.5272727 -0.53455,0.665455 -1.30909,1.112727 -0.77455,0.436364 -1.72364,0.654546 l 5.96727,7.32 h -4.26545 l -5.24727,-6.850909 h -0.94909 v 6.850909 H 99.552167 V 0.50675774 Z m -2.64,8.23636366 h 1.61454 q 0.75273,0 1.39637,-0.1636364 0.64363,-0.1636364 1.11272,-0.5018182 0.48,-0.3381818 0.74182,-0.8618182 0.27273,-0.5236363 0.27273,-1.2545454 0,-0.7309091 -0.27273,-1.2545455 -0.26182,-0.5236363 -0.74182,-0.8618181 -0.46909,-0.3381819 -1.11272,-0.4909091 -0.64364,-0.1636364 -1.39637,-0.1636364 h -1.61454 z"
+               style="font-size:24px"
+               id="path9275" />
+          </g>
+        </svg>
+
+      </a>
+
+      <div class="dropdown d-flex d-lg-none">
+        <a href="#" data-bs-toggle="dropdown">
+          <span class="avatar">
+            <img src="assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+          </span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end">
+          <a class="dropdown-item" href="./profile.html">My profile</a>
+          <a class="dropdown-item" href="./account.html">Account settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="./sign-in.html">Log out</a>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse mt-md-2" id="navbar-collapse">
+        <ul class="navbar-nav" id="sidebar-nav">
+          <li class="nav-item">
+            <a href="#sidebar-blogs" class="nav-link" data-bs-toggle="collapse" aria-expanded="" aria-controls="sidebar-blogs">
+              <span class="svg-icon text-primary me-2 relative-top--2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-n</title><path d="M384,224V408a40,40,0,0,1-40,40H104a40,40,0,0,1-40-40V168a40,40,0,0,1,40-40H271.48" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M459.94,53.25a16.06,16.06,0,0,0-23.22-.56L424.35,65a8,8,0,0,0,0,11.31l11.34,11.32a8,8,0,0,0,11.34,0l12.06-12C465.19,69.54,465.76,59.62,459.94,53.25Z"/><path d="M399.34,90,218.82,270.2a9,9,0,0,0-2.31,3.93L208.16,299a3.91,3.91,0,0,0,4.86,4.86l24.85-8.35a9,9,0,0,0,3.93-2.31L422,112.66A9,9,0,0,0,422,100L412.05,90A9,9,0,0,0,399.34,90Z"/></svg>
+              </span>
+              Questions
+              <i class="fas fa-chevron-down fa-xs collapse-icon ms-auto"></i>
+            </a>
+
+            <div class="collapse " id="sidebar-blogs" data-bs-parent="#sidebar-nav">
+              <ul class="nav nav-sm flex-column pb-2">
+                <li class="nav-item">
+                   <a href="./index.html" class="nav-link ">
+                    Create New
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="collapse " id="sidebar-blogs" data-bs-parent="#sidebar-nav">
+              <ul class="nav nav-sm flex-column pb-2">
+                <li class="nav-item">
+                   <a href="./index.html" class="nav-link ">
+                    Manage Saved
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#sidebar-subs" class="nav-link" data-bs-toggle="collapse" aria-expanded="" aria-controls="sidebar-subs">
+              <span class="svg-icon text-primary me-2 relative-top--2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-i</title><path d="M384,80H128c-26,0-43,14-48,40L48,272V384a48.14,48.14,0,0,0,48,48H416a48.14,48.14,0,0,0,48-48V272L432,120C427,93,409,80,384,80Z" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"/><line x1="48" y1="272" x2="192" y2="272" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="320" y1="272" x2="464" y2="272" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M192,272a64,64,0,0,0,128,0" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="144" y1="144" x2="368" y2="144" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="128" y1="208" x2="384" y2="208" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+              </span>
+              Assessments
+              <i class="fas fa-chevron-down fa-xs collapse-icon ms-auto"></i>
+            </a>
+
+            <div class="collapse " id="sidebar-subs" data-bs-parent="#sidebar-nav">
+              <ul class="nav nav-sm flex-column pb-2">
+                <li class="nav-item">
+                  <a class="nav-link " href="./companies.html">
+                    Create New
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./customers.html">
+                    Manage Saved
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <!-- <hr class="navbar-divider mt-auto mb-4"> -->
+
+        <a href="#!" class="btn btn-light btn-sm mt-auto d-none d-lg-block" style="transform: rotateY(180deg);" data-toggle="sidebar"  data-sidebar="lg">
+          <span class="svg-icon text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-j</title><path d="M176,176V136a40,40,0,0,1,40-40H424a40,40,0,0,1,40,40V376a40,40,0,0,1-40,40H216a40,40,0,0,1-40-40V336" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><polyline points="272 336 352 256 272 176" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="48" y1="256" x2="336" y2="256" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white" role="navigation" style="display: none">
+    <div class="container-fluid">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="./index.html">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg
+           width="18.177471"
+           height="18.270561"
+           viewBox="0 0 18.177471 18.270561"
+           version="1.1"
+           id="svg10261"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:svg="http://www.w3.org/2000/svg">
+          <defs
+             id="defs10265" />
+          <g
+             id="g8777"
+             transform="matrix(0.00183071,0,0,-0.00183071,-25.259221,54.71542)">
+            <path
+               d="m 22176.7,28013.7 c -882.7,955.7 -2145.8,1554 -3549.2,1554 -2667.5,0 -4830,-2162.6 -4830,-4830.1 0,-2667.5 2162.5,-4830.1 4830,-4830.1 2667.5,0 4830.1,2162.6 4830.1,4830.1 0,1264.2 -486,2415.3 -1280.9,3276.1"
+               style="fill:#fdc724;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1750" />
+            <path
+               d="m 20520.3,26484.7 c 424,-459.1 683.3,-1072.9 683.3,-1747.1 0,-1422.6 -1153.5,-2576 -2576.1,-2576 -1422.6,0 -2576,1153.4 -2576,2576 0,1422.7 1153.4,2576 2576,2576 748.3,0 1422.4,-319.1 1892.8,-828.9"
+               style="fill:#2083fe;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1752" />
+            <path
+               d="m 23726.693,28277.541 -2254,-1932.1 h -1288 v 1288 l 1932,2254.1 v -1610 h 1610"
+               style="fill:#bd4242;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1754" />
+            <path
+               d="m 19337.3,25392.6 c 158.9,-172.3 256.3,-402.2 256.3,-655 0,-533.6 -432.6,-966 -966.1,-966 -533.6,0 -966,432.4 -966,966 0,533.5 432.4,966.1 966,966.1 280.8,0 533.5,-119.9 709.8,-311.1"
+               style="fill:#f7c010;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path1756" />
+            <path
+               d="m 18649.83,24620.057 c -38.818,0 -77.546,17.262 -105.932,51.143 -53.995,64.459 -50.324,164.968 8.194,224.397 l 1874.174,1905.699 c 58.518,59.478 149.764,55.434 203.715,-9.025 53.996,-64.409 50.369,-164.919 -8.149,-224.348 l -1874.219,-1905.699 c -27.714,-28.21 -62.771,-42.167 -97.783,-42.167"
+               style="fill:#bd4242;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.469903"
+               id="path1758" />
+          </g>
+        </svg>
+
+      </a>
+
+      <div class="dropdown d-flex d-lg-none">
+        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="avatar">
+            <img src="assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+          </span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end">
+          <a class="dropdown-item" href="./profile.html">My profile</a>
+          <a class="dropdown-item" href="./account.html">Account settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="./sign-in.html">Log out</a>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse mt-md-3" id="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown dropend">
+            <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="svg-icon text-primary me-2 me-md-0 relative-top--2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-n</title><path d="M384,224V408a40,40,0,0,1-40,40H104a40,40,0,0,1-40-40V168a40,40,0,0,1,40-40H271.48" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M459.94,53.25a16.06,16.06,0,0,0-23.22-.56L424.35,65a8,8,0,0,0,0,11.31l11.34,11.32a8,8,0,0,0,11.34,0l12.06-12C465.19,69.54,465.76,59.62,459.94,53.25Z"/><path d="M399.34,90,218.82,270.2a9,9,0,0,0-2.31,3.93L208.16,299a3.91,3.91,0,0,0,4.86,4.86l24.85-8.35a9,9,0,0,0,3.93-2.31L422,112.66A9,9,0,0,0,422,100L412.05,90A9,9,0,0,0,399.34,90Z"/></svg>
+              </span>
+              <span class="d-md-none">Questions</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header d-none d-md-block">
+                <span class="text-uppercase-xs fw-bolder">Questions</span>
+              </li>
+              <li>
+                <a href="./index.html" class="dropdown-item">
+                  Create New
+                </a>
+              </li>
+              <li>
+                <a href="./index-ecommerce.html" class="dropdown-item">
+                  Manage Saved
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown dropend">
+            <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="svg-icon text-primary me-2 me-md-0 relative-top--2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-i</title><path d="M384,80H128c-26,0-43,14-48,40L48,272V384a48.14,48.14,0,0,0,48,48H416a48.14,48.14,0,0,0,48-48V272L432,120C427,93,409,80,384,80Z" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"/><line x1="48" y1="272" x2="192" y2="272" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="320" y1="272" x2="464" y2="272" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M192,272a64,64,0,0,0,128,0" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="144" y1="144" x2="368" y2="144" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="128" y1="208" x2="384" y2="208" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+              </span>
+              <span class="d-md-none">Assessments</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header d-none d-md-block">
+                <span class="text-uppercase-xs fw-bolder">Assessments</span>
+              </li>
+              <li>
+                <a href="./companies.html" class="dropdown-item">
+                  Create New
+                </a>
+              </li>
+              <li>
+                <a href="./customers.html" class="dropdown-item">
+                  Manage Saved
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- <hr class="navbar-divider my-3"> -->
+
+        <a href="#!" class="btn btn-light btn-sm mt-auto d-none d-lg-block" data-toggle="sidebar" data-sidebar="sm">
+          <span class="svg-icon text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-j</title><path d="M176,176V136a40,40,0,0,1,40-40H424a40,40,0,0,1,40,40V376a40,40,0,0,1-40,40H216a40,40,0,0,1-40-40V336" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><polyline points="272 336 352 256 272 176" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="48" y1="256" x2="336" y2="256" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex">
+      <div class="container-fluid">
+        <!-- Form -->
+        <form>
+          <div class="input-group input-group-flush">
+            <div class="input-group-text">
+              <i class="fas fa-search relative-top--2"></i>
+            </div>
+
+            <input type="text" class="form-control dropdown-toggle" data-bs-toggle="dropdown" placeholder="Search..." aria-label="Search" aria-expanded="false">
+
+            <div class="dropdown-menu dropdown-menu-card shadow-light-sm">
+              <div class="card-body">
+                <h6 class="text-uppercase-xs text-gray-500 mb-3">
+                  Recent searches
+                </h6>
+                <div class="d-flex justify-content-between">
+                  <a href="#!" class="fs-sm text-primary">Order #3</a>
+                  <a href="#!" class="fs-sm text-primary">User notifications</a>
+                  <a href="#!" class="fs-sm text-primary">Slow queries</a>
+                </div>
+
+                <hr>
+
+                <h6 class="text-uppercase-xs text-gray-500 mb-3">
+                  Customers
+                </h6>
+                <div class="mb-3">
+                  <span class="avatar avatar-sm me-2">
+                    <img src="./assets/img/uifaces/10.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="link-darkblue">Ernest Hemingway</a>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <span class="avatar avatar-sm me-2">
+                    <img src="./assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="link-darkblue">Maria Popova</a>
+                  <span class="badge bg-pastel-purple text-darkblue text-uppercase-xs ms-auto">
+                    NEW
+                  </span>
+                </div>
+                <div class="mb-3">
+                  <span class="avatar avatar-sm me-2">
+                    <img src="./assets/img/uifaces/6.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="link-darkblue">Mark Twain</a>
+                </div>
+                <div class="mb-3">
+                  <span class="avatar avatar-sm me-2">
+                    <img src="./assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="link-darkblue">Joan Didion</a>
+                </div>
+                <div class="mb-3">
+                  <span class="avatar avatar-sm me-2">
+                    <img src="./assets/img/uifaces/3.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="link-darkblue">F. Scott Fitzgerald</a>
+                </div>
+                <div class="mb-3">
+                  <span class="avatar avatar-sm me-2">
+                    <img src="./assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="link-darkblue">Virgina Woolf</a>
+                </div>
+                <div>
+                  <span class="avatar avatar-sm me-2">
+                    <img src="./assets/img/uifaces/1.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="link-darkblue">J.R.R. Tolkien</a>
+                </div>
+              </div>
+              <a href="#!" class="card-footer-btn btn btn-purple justify-content-center">
+                See all results <i class="fas fa-chevron-right fa-xs ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </form>
+
+        <!-- User -->
+        <div class="d-flex align-items-center">
+          <div class="dropdown d-none d-md-flex">
+            <a href="#" class="svg-icon svg-icon-sm" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-j</title><path d="M427.68,351.43C402,320,383.87,304,383.87,217.35,383.87,138,343.35,109.73,310,96c-4.43-1.82-8.6-6-9.95-10.55C294.2,65.54,277.8,48,256,48S217.79,65.55,212,85.47c-1.35,4.6-5.52,8.71-9.95,10.53-33.39,13.75-73.87,41.92-73.87,121.35C128.13,304,110,320,84.32,351.43,73.68,364.45,83,384,101.61,384H410.49C429,384,438.26,364.39,427.68,351.43Z" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M320,384v16a64,64,0,0,1-128,0V384" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+              <div class="rounded-circle bg-primary position-absolute top-0 start-100 translate-middle p-1"></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-card shadow-light-sm me-n3">
+              <div class="card-header">
+                <h6 class="card-header-title">
+                  Notifications (2)
+                </h6>
+                <a href="#!" class="small">
+                  View all
+
+                  <i class="fas fa-chevron-right fa-xs ms-1"></i>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#!" class="row text-reset text-decoration-none bg-light rounded py-2 gx-3">
+                  <div class="col-auto">
+                    <div class="avatar">
+                      <img src="./assets/img/uifaces/10.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="fs-sm">
+                      <strong>John Smith</strong> mentioned you in a comment.
+                    </div>
+                    <div class="fs-xs fw-bold text-gray-500 mt-2">
+                      3m ago
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="row text-reset text-decoration-none bg-light rounded py-2 gx-3 mt-3">
+                  <div class="col-auto">
+                    <div class="avatar">
+                      <img src="./assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="fs-sm">
+                      <strong>Mark Twain</strong> added a new project Website.
+                    </div>
+                    <div class="fs-xs fw-bold text-gray-500 mt-2">
+                      1d ago
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="row text-reset text-decoration-none py-2 gx-3 mt-3">
+                  <div class="col-auto">
+                    <div class="avatar">
+                      <img src="./assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="fs-sm">
+                      <strong>Maria Popova</strong> archived the to-do list April Tasks 📂.
+                    </div>
+                    <div class="fs-xs fw-bold text-gray-500 mt-2">
+                      3d ago
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="row text-reset text-decoration-none py-2 gx-3 mt-3">
+                  <div class="col-auto">
+                    <div class="avatar">
+                      <img src="./assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="fs-sm">
+                      <strong>Joan Didion</strong> commented on a project you're assigned in.
+                    </div>
+                    <div class="fs-xs fw-bold text-gray-500 mt-2">
+                      1 week ago
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="row text-reset text-decoration-none py-2 gx-3 mt-3">
+                  <div class="col-auto">
+                    <div class="avatar">
+                      <img src="./assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="fs-sm">
+                      <strong>Ernest Hemingway</strong> mentioned you in a comment.
+                    </div>
+                    <div class="fs-xs fw-bold text-gray-500 mt-2">
+                      1 month ago
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown mx-4">
+            <a href="#" class="svg-icon" data-bs-toggle="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-g</title><line x1="192" y1="448" x2="320" y2="448" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M384,208v32c0,70.4-57.6,128-128,128h0c-70.4,0-128-57.6-128-128V208" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="256" y1="368" x2="256" y2="448" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M256,64a63.68,63.68,0,0,0-64,64V239c0,35.2,29,65,64,65s64-29,64-65V128C320,92,292,64,256,64Z" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end me-n3">
+              <a class="dropdown-item" href="#!">
+                New podcast
+              </a>
+              <a class="dropdown-item" href="#!">
+                New video
+              </a>
+              <a class="dropdown-item" href="#!">
+                Go live
+              </a>
+            </div>
+          </div>
+
+          <div class="dropdown ms-2">
+            <a href="#" class="d-flex align-items-center" data-bs-toggle="dropdown">
+              <span class="avatar">
+                <img src="./assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+              </span>
+              <span class="text-dark ms-2">Adrian, G.</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="./profile.html">My profile</a>
+              <a class="dropdown-item" href="./account.html">Account settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./sign-in.html">Log out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid text-center mt-6">
+      <h1 class="text-darkblue">Choose your plan</h1>
+      <p class="text-darkblue mt-2">
+        Pick the plan that fits your needs. Your <strong>first 15 days</strong> are on us.
+      </p>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!-- Beginner plan -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center fw-normal">
+                Beginner
+              </h5>
+
+              <div class="d-flex justify-content-center">
+                <span class="h3 align-self-center mb-0">$</span>
+                <span class="display-4">29</span>
+                <span class="h4 align-self-end mb-3">/mo</span>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>3</strong> Collaborators
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>10</strong> Projects
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>1GB</strong> data storage
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>3%</strong> Transaction fee
+                </span>
+              </div>
+
+              <a href="#!" class="btn btn-pastel-primary btn-lg d-block hover-lift-light mt-5">
+                Choose this plan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional plan -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center fw-normal">
+                Professional
+              </h5>
+
+              <div class="d-flex justify-content-center">
+                <span class="h3 align-self-center mb-0">$</span>
+                <span class="display-4">79</span>
+                <span class="h4 align-self-end mb-3">/mo</span>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>10</strong> Collaborators
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>30</strong> Projects
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>5GB</strong> data storage
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  Exclusive Support
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>1.5%</strong> Transaction fee
+                </span>
+              </div>
+
+              <a href="#!" class="btn btn-primary btn-lg d-block hover-lift-light mt-5">
+                Choose this plan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise plan -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center fw-normal">
+                Enterprise
+              </h5>
+
+              <div class="d-flex justify-content-center">
+                <span class="h3 align-self-center mb-0">$</span>
+                <span class="display-4">109</span>
+                <span class="h4 align-self-end mb-3">/mo</span>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>Unlimited</strong> collaborators
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>Unlimited</strong> projects
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>50GB</strong> data storage
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>VIP</strong> Support
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  No license needed
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  No transaction fee
+                </span>
+              </div>
+
+              <a href="#!" class="btn btn-pastel-primary btn-lg d-block hover-lift-light mt-5">
+                Choose this plan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center py-7">
+      <p class="badge bg-pastel-primary text-primary rounded-pill text-uppercase letter-spacing-lg fw-bolder">
+        Have any questions?
+      </p>
+
+      <div class="row mt-4 gx-5">
+        <div class="col-md-4">
+          <div class="rounded border py-4">
+            <div class="svg-icon svg-icon-lg text-primary mb-3">
+              <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <rect x="0" y="0" width="24" height="24"></rect>
+                      <path d="M6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,12 C19,12.5522847 18.5522847,13 18,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,3 C5,2.44771525 5.44771525,2 6,2 Z M7.5,5 C7.22385763,5 7,5.22385763 7,5.5 C7,5.77614237 7.22385763,6 7.5,6 L13.5,6 C13.7761424,6 14,5.77614237 14,5.5 C14,5.22385763 13.7761424,5 13.5,5 L7.5,5 Z M7.5,7 C7.22385763,7 7,7.22385763 7,7.5 C7,7.77614237 7.22385763,8 7.5,8 L10.5,8 C10.7761424,8 11,7.77614237 11,7.5 C11,7.22385763 10.7761424,7 10.5,7 L7.5,7 Z" fill="#000000" opacity="0.3"></path>
+                      <path d="M3.79274528,6.57253826 L12,12.5 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 Z" fill="#000000"></path>
+                  </g>
+              </svg>
+            </div>
+            <h5 class="text-dark">
+              Send us an email
+            </h5>
+            <a href="#!" class="text-primary d-block mt-3">
+              info@foresight.com
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-5 mt-md-0">
+          <div class="rounded border py-4">
+            <div class="svg-icon svg-icon-lg text-primary mb-3">
+              <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <rect x="0" y="0" width="24" height="24"></rect>
+                      <path d="M9.8604543,6.01162174 C9.94073619,5.93133984 10.0459506,5.88077119 10.1587919,5.86823326 C10.4332453,5.83773844 10.6804547,6.03550595 10.7109496,6.30995936 L11.2341533,11.0187935 C11.2382309,11.0554911 11.2382309,11.0925274 11.2341533,11.129225 C11.2036585,11.4036784 10.9564491,11.6014459 10.6819957,11.5709511 L5.97316161,11.0477473 C5.86032028,11.0352094 5.75510588,10.9846407 5.67482399,10.9043588 C5.47956184,10.7090967 5.47956184,10.3925142 5.67482399,10.197252 L7.06053236,8.81154367 L5.55907018,7.31008149 C5.36380803,7.11481935 5.36380803,6.79823686 5.55907018,6.60297471 L6.26617696,5.89586793 C6.46143911,5.70060578 6.7780216,5.70060578 6.97328374,5.89586793 L8.47474592,7.39733011 L9.8604543,6.01162174 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                      <path d="M12.0799676,14.7839934 L14.2839934,12.5799676 C14.8927139,11.9712471 15.0436229,11.0413042 14.6586342,10.2713269 L14.5337539,10.0215663 C14.1487653,9.25158901 14.2996742,8.3216461 14.9083948,7.71292558 L17.6411989,4.98012149 C17.836461,4.78485934 18.1530435,4.78485934 18.3483056,4.98012149 C18.3863063,5.01812215 18.4179321,5.06200062 18.4419658,5.11006808 L19.5459415,7.31801948 C20.3904962,9.0071287 20.0594452,11.0471565 18.7240871,12.3825146 L12.7252616,18.3813401 C11.2717221,19.8348796 9.12170075,20.3424308 7.17157288,19.6923882 L4.75709327,18.8875616 C4.49512161,18.8002377 4.35354162,18.5170777 4.4408655,18.2551061 C4.46541191,18.1814669 4.50676633,18.114554 4.56165376,18.0596666 L7.21292558,15.4083948 C7.8216461,14.7996742 8.75158901,14.6487653 9.52156634,15.0337539 L9.77132688,15.1586342 C10.5413042,15.5436229 11.4712471,15.3927139 12.0799676,14.7839934 Z" fill="#000000"></path>
+                  </g>
+              </svg>
+            </div>
+            <h5 class="text-dark">
+              Give us a call
+            </h5>
+            <a href="#!" class="text-primary d-block mt-3">
+              01-800-555-3421
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-5 mt-md-0">
+          <div class="rounded border py-4">
+            <div class="svg-icon svg-icon-lg text-primary mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5_logos</title><path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"/></svg>
+            </div>
+            <h5 class="text-dark">
+              Reach on Twitter
+            </h5>
+            <a href="#!" class="text-primary d-block mt-3">
+              @foresightsupport
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT
+  ============================================-->
+
+  <!-- <script defer src="//unpkg.com/mathlive"></script>
+  <script src="//unpkg.com/@cortex-js/compute-engine"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/mathlive@0.89.1/dist/mathlive.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@cortex-js/compute-engine@0.12.2/dist/compute-engine.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/vanilla-caret-js@1.0.1/dist/VanillaCaret.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+  <script type="module" src="//cdn.jsdelivr.net/npm/bootstrap5-tags@1.5.4/tags.min.js"></script>
+
+  <!-- Vendor -->
+  <script src="/assets/js/vendor.min.js"></script>
+
+  <!-- Main Theme file -->
+  <script src="/assets/js/theme.min.js"></script>
+
+  <script type="module">
+    import Tags from "https://cdn.jsdelivr.net/npm/bootstrap5-tags@1.5.4/tags.min.js";
+    Tags.init();
+  </script>
+</body>
+</html>

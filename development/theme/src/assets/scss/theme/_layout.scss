@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'SpartanMB';
+  src: url('../fonts/SpartanMB-Medium.eot');
+  src: url('../fonts/SpartanMB-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SpartanMB-Medium.svg#SpartanMB-Medium') format('svg'),
+       url('../fonts/SpartanMB-Medium.ttf') format('truetype'),
+       url('../fonts/SpartanMB-Medium.woff') format('woff'),
+       url('../fonts/SpartanMB-Medium.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpartanMB';
+  src: url('../fonts/SpartanMB-SemiBold.eot');
+  src: url('../fonts/SpartanMB-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SpartanMB-SemiBold.svg#SpartanMB-SemiBold') format('svg'),
+       url('../fonts/SpartanMB-SemiBold.ttf') format('truetype'),
+       url('../fonts/SpartanMB-SemiBold.woff') format('woff'),
+       url('../fonts/SpartanMB-SemiBold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpartanMB';
+  src: url('../fonts/SpartanMB-Bold.eot');
+  src: url('../fonts/SpartanMB-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SpartanMB-Bold.svg#SpartanMB-Bold') format('svg'),
+       url('../fonts/SpartanMB-Bold.ttf') format('truetype'),
+       url('../fonts/SpartanMB-Bold.woff') format('woff'),
+       url('../fonts/SpartanMB-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+
+  &.rtl {
+    direction: rtl;
+  }
+}

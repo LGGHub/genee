@@ -1,0 +1,42 @@
+// 
+// Pastel buttons
+//
+
+@each $color, $value in $theme-colors {
+  $background: tint-color($value, 90%);
+  $hover-background: tint-color($value, 83%);
+  $active-background: tint-color($value, 70%);
+
+  .btn-pastel-#{$color} {
+    @include button-variant(
+      $background,
+      $background,
+      $value,
+      $hover-background,
+      $hover-background,
+      $value,
+      $active-background,
+      $active-background,
+      $value
+    );
+  }
+}
+
+
+//
+// White Button
+// 
+
+.btn-white {
+  @include button-variant(
+    $white,
+    $gray-200,
+    $darkblue,
+    #fdfdfd,
+    $gray-200,
+    $darkblue,
+    $gray-200,
+    $gray-200,
+    $darkblue
+  );
+}

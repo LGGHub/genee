@@ -1,0 +1,15 @@
+// Enable background cover 
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+// Pastel theme colors
+
+@each $color, $value in $theme-colors {
+  .bg-pastel-#{$color} {
+    background-color: tint-color($value, 90%) !important;
+  }
+}

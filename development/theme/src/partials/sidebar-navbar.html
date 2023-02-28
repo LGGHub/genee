@@ -1,0 +1,92 @@
+<nav class="@@classList" role="navigation" style="@@styleList">
+  <div class="container-fluid">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="@@webRoot/index.html">
+      @@include("../assets/img/svg/logo.svg")
+    </a>
+
+    <div class="dropdown d-flex d-lg-none">
+      <a href="#" data-bs-toggle="dropdown">
+        <span class="avatar">
+          <img src="assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+        </span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end">
+        <a class="dropdown-item" href="@@webRoot/profile.html">My profile</a>
+        <a class="dropdown-item" href="@@webRoot/account.html">Account settings</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="@@webRoot/sign-in.html">Log out</a>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse mt-md-2" id="navbar-collapse">
+      <ul class="navbar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a href="#sidebar-blogs" class="nav-link" data-bs-toggle="collapse" aria-expanded="@@if(context.section == '1'){true}" aria-controls="sidebar-blogs">
+            <span class="svg-icon text-primary me-2 relative-top--2">
+              @@include("../assets/img/ionicons/create-outline.svg")
+            </span>
+            Questions
+            <i class="fas fa-chevron-down fa-xs collapse-icon ms-auto"></i>
+          </a>
+
+          <div class="collapse @@if(context.section == '1'){show}" id="sidebar-blogs" data-bs-parent="#sidebar-nav">
+            <ul class="nav nav-sm flex-column pb-2">
+              <li class="nav-item">
+                 <a href="@@webRoot/index.html" class="nav-link @@if(context.link == 'index'){active}">
+                  Create New
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="collapse @@if(context.section == '1'){show}" id="sidebar-blogs" data-bs-parent="#sidebar-nav">
+            <ul class="nav nav-sm flex-column pb-2">
+              <li class="nav-item">
+                 <a href="@@webRoot/index.html" class="nav-link @@if(context.link == 'index'){active}">
+                  Manage Saved
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#sidebar-subs" class="nav-link" data-bs-toggle="collapse" aria-expanded="@@if(context.section == '2'){true}" aria-controls="sidebar-subs">
+            <span class="svg-icon text-primary me-2 relative-top--2">
+              @@include("../assets/img/ionicons/file-tray-full-outline.svg")
+            </span>
+            Assessments
+            <i class="fas fa-chevron-down fa-xs collapse-icon ms-auto"></i>
+          </a>
+
+          <div class="collapse @@if(context.section == '2'){show}" id="sidebar-subs" data-bs-parent="#sidebar-nav">
+            <ul class="nav nav-sm flex-column pb-2">
+              <li class="nav-item">
+                <a class="nav-link @@if(context.link == 'companies'){active}" href="@@webRoot/companies.html">
+                  Create New
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link @@if(context.link == 'customers'){active}" href="@@webRoot/customers.html">
+                  Manage Saved
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <!-- <hr class="navbar-divider mt-auto mb-4"> -->
+
+      <a href="#!" class="btn btn-light btn-sm mt-auto d-none d-lg-block" style="transform: rotateY(180deg);" data-toggle="sidebar"  data-sidebar="lg">
+        <span class="svg-icon text-primary">
+          @@include("../assets/img/ionicons/enter-outline.svg")
+        </span>
+      </a>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "1",
+    "link": "profile"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="w-100 h-150 h-md-250 bg-cover" style="background-image: url('assets/img/unsplash/2.png');">
+    </div>
+
+    <div class="container-fluid">
+      <div class="d-md-flex align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="avatar avatar-xxl mt-n4 relative-top--5">
+            <img src="assets/img/uifaces/13.jpg" class="avatar-image rounded-circle border border-white border-2" alt="">
+          </div>
+          <div class="flex-1 ms-4 mt-4">
+            <h3 class="mb-0">
+              Steven Gerrard
+            </h3>
+            <p class="text-gray-600">
+              @steven
+            </p>
+          </div>
+        </div>
+        <a href="#!" class="btn btn-primary hover-lift-light shadow-light-sm ms-auto">
+          <span class="svg-icon svg-icon-sm text-white me-1">
+            @@include("assets/img/ionicons/add-outline.svg")
+          </span>
+          Follow
+        </a>
+      </div>
+
+      <ul class="nav nav-tabs nav-overflow mt-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="profile.html">
+            Feed
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile-projects.html">
+            Projects <span class="badge rounded-pill bg-primary ms-1">7</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile-files.html">
+            Files
+          </a>
+        </li>
+      </ul>
+
+      <div class="row mt-4 mt-md-5 mb-7">
+        <div class="col-md-8">
+          <!-- post -->
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex flex-wrap align-items-start">
+                <div class="avatar me-3">
+                  <img src="assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="flex-1">
+                  <div class="fw-bold">
+                    Joan Didion
+                  </div>
+                  <span class="text-muted fs-sm">
+                    3h ago
+                  </span>
+                </div>
+
+                <div class="dropdown ms-auto">
+                  <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="svg-icon text-gray-500">
+                      @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                    </span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#!">Edit</a>
+                    <a class="dropdown-item" href="#!">Remove</a>
+                  </div>
+                </div>
+              </div>
+
+              <p class="mt-3">
+                Most human beings complain about the meanness of nature, because we are born for a brief span of life, and because this spell of time that has been given to us rushes by so swiftly and rapidly that with very few exceptions life ceases for the rest of us just when we are getting ready for it.
+              </p>
+
+              <img class="img-fluid rounded" src="assets/img/unsplash/1.jpeg"></img>
+
+              <!-- react -->
+              <div class="d-flex align-items-center border-bottom border-gray-200 mt-4 pb-4">
+                <a href="#!" class="btn btn-white btn-sm text-primary me-1">
+                  👍 <span class="ms-1">32</span>
+                </a>
+                <a href="#!" class="btn btn-white btn-sm text-primary me-1">
+                  🙌 <span class="ms-1">12</span>
+                </a>
+                <a href="#!" class="btn btn-white btn-sm text-primary me-1">
+                  ❤️ <span class="ms-1">5</span>
+                </a>
+
+                <div class="dropdown">
+                  <a href="#" class="btn btn-white text-primary btn-sm" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fs-base fa-smile text-primary"></i> +
+                  </a>
+                  <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                    <div class="row row-cols-3 justify-content-between text-center fs-lg w-100 g-0">
+                      <div class="col mb-3"><a href="#!" class="text-decoration-none">👍</a></div>
+                      <div class="col mb-3"><a href="#!" class="text-decoration-none">🙌</a></div>
+                      <div class="col mb-3"><a href="#!" class="text-decoration-none">❤️</a></div>
+                      <div class="col"><a href="#!" class="text-decoration-none">🎉</a></div>
+                      <div class="col"><a href="#!" class="text-decoration-none">😮</a></div>
+                      <div class="col"><a href="#!" class="text-decoration-none">👀</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- comments -->
+              <div class="d-flex mt-3">
+                <div class="avatar me-3">
+                  <img src="assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="flex-1 bg-light rounded-3 py-3 px-4">
+                  <div class="d-flex align-items-center">
+                    <p class="fs-sm fw-bold">
+                      Kate Winslet
+                    </p>
+                    <p class="fs-xs text-muted ms-auto">
+                      3h ago
+                    </p>
+                  </div>
+                  <p class="fs-sm p-0">
+                    Most human beings complain about the meanness of nature, because we are born for a brief span of life.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex mt-3">
+                <div class="avatar me-3">
+                  <img src="assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="flex-1 bg-light rounded-3 py-3 px-4">
+                  <div class="d-flex align-items-center">
+                    <p class="fs-sm fw-bold">
+                      Robin Williams
+                    </p>
+                    <p class="fs-xs text-muted ms-auto">
+                      5h ago
+                    </p>
+                  </div>
+                  <p class="fs-sm p-0">
+                    Most human beings complain about the meanness of nature?
+                  </p>
+                </div>
+              </div>
+
+              <!-- comment -->
+              <div class="d-flex align-items-start border-top border-gray-200 mt-4 py-4">
+                <div class="avatar me-3">
+                  <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+
+                <form class="d-flex flex-grow-1 pt-2">
+                  <textarea class="form-control form-control-flush" placeholder="Add a new comment" rows="1" data-toggle="autosize"></textarea>
+
+                  <div class="d-flex align-items-center ms-3">
+                    <a href="#!" class="svg-icon svg-icon-sm text-muted" data-bs-toggle="tooltip" title="Attach a file">
+                      @@include("assets/img/ionicons/attach-outline.svg")
+                    </a>
+                    <a href="#!" class="svg-icon svg-icon-sm text-muted ms-3" data-bs-toggle="tooltip" title="Take a picture">
+                      @@include("assets/img/ionicons/camera-outline.svg")
+                    </a>
+                    <a href="#!" class="svg-icon svg-icon-sm text-muted ms-3" data-bs-toggle="tooltip" title="Record an audio">
+                      @@include("assets/img/ionicons/mic-outline.svg")
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- post -->
+          <div class="card mt-5">
+            <div class="card-body">
+              <div class="d-flex flex-wrap align-items-start">
+                <div class="avatar me-3">
+                  <img src="assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="flex-1">
+                  <div class="fw-bold">
+                    Kate Winslet
+                  </div>
+                  <span class="text-muted fs-sm">
+                    2d ago
+                  </span>
+                </div>
+
+                <div class="dropdown ms-auto">
+                  <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="svg-icon text-gray-500">
+                      @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                    </span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#!">Edit</a>
+                    <a class="dropdown-item" href="#!">Remove</a>
+                  </div>
+                </div>
+              </div>
+
+              <p class="mt-3">
+                Most human beings complain about the meanness of nature, because we are born for a brief span of life, and because this spell of time that has been given to us rushes by so swiftly and rapidly that with very few exceptions life ceases for the rest of us just when we are getting ready for it.
+              </p>
+
+              <!-- react -->
+              <div class="d-flex align-items-center border-bottom border-gray-200 mt-4 pb-4">
+                <a href="#!" class="btn btn-white btn-sm text-primary me-1">
+                  👍 <span class="ms-1">14</span>
+                </a>
+                <a href="#!" class="btn btn-white btn-sm text-primary me-1">
+                  🎉 <span class="ms-1">8</span>
+                </a>
+                <a href="#!" class="btn btn-white btn-sm text-primary me-1">
+                  😮 <span class="ms-1">5</span>
+                </a>
+
+                <div class="dropdown">
+                  <a href="#" class="btn btn-white text-primary btn-sm" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fs-base fa-smile text-primary"></i> +
+                  </a>
+                  <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                    <div class="row row-cols-3 justify-content-between text-center fs-lg w-100 g-0">
+                      <div class="col mb-3"><a href="#!" class="text-decoration-none">👍</a></div>
+                      <div class="col mb-3"><a href="#!" class="text-decoration-none">🙌</a></div>
+                      <div class="col mb-3"><a href="#!" class="text-decoration-none">❤️</a></div>
+                      <div class="col"><a href="#!" class="text-decoration-none">🎉</a></div>
+                      <div class="col"><a href="#!" class="text-decoration-none">😮</a></div>
+                      <div class="col"><a href="#!" class="text-decoration-none">👀</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- comments -->
+              <div class="d-flex mt-3">
+                <div class="avatar me-3">
+                  <img src="assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="flex-1 bg-light rounded-3 py-3 px-4">
+                  <div class="d-flex align-items-center">
+                    <p class="fs-sm fw-bold">
+                      Kate Winslet
+                    </p>
+                    <p class="fs-xs text-muted ms-auto">
+                      3h ago
+                    </p>
+                  </div>
+                  <p class="fs-sm m-0">
+                    Not what we have but what we enjoy, constitutes our abundance.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex mt-3">
+                <div class="avatar me-3">
+                  <img src="assets/img/uifaces/13.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="flex-1 bg-light rounded-3 py-3 px-4">
+                  <div class="d-flex align-items-center">
+                    <p class="fs-sm fw-bold">
+                      Matt Damon
+                    </p>
+                    <p class="fs-xs text-muted ms-auto">
+                      5h ago
+                    </p>
+                  </div>
+                  <p class="fs-sm m-0">
+                    The happiness of your life depends upon the quality of your thoughts.
+                  </p>
+                </div>
+              </div>
+
+              <!-- comment -->
+              <div class="d-flex align-items-start border-top border-gray-200 mt-4 py-4">
+                <div class="avatar me-3">
+                  <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+
+                <form class="d-flex flex-grow-1 pt-2">
+                  <textarea class="form-control form-control-flush" placeholder="Add a new comment" rows="1" data-toggle="autosize"></textarea>
+
+                  <div class="d-flex align-items-center ms-3">
+                    <a href="#!" class="svg-icon svg-icon-sm text-muted" data-bs-toggle="tooltip" title="Attach a file">
+                      @@include("assets/img/ionicons/attach-outline.svg")
+                    </a>
+                    <a href="#!" class="svg-icon svg-icon-sm text-muted ms-3" data-bs-toggle="tooltip" title="Take a picture">
+                      @@include("assets/img/ionicons/camera-outline.svg")
+                    </a>
+                    <a href="#!" class="svg-icon svg-icon-sm text-muted ms-3" data-bs-toggle="tooltip" title="Record an audio">
+                      @@include("assets/img/ionicons/mic-outline.svg")
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4 mt-md-0">
+          <div class="card mb-4 mb-md-5">
+            <div class="card-header d-flex">
+              <div class="card-header-title fw-normal">
+                Contact
+              </div>
+              <div class="dropdown ms-auto">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Edit information</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body py-1">
+              <ul class="list-group list-group-flush d-flex">
+                <li href="#!" class="list-group-item d-md-flex align-items-center">
+                  <span>Phone</span>
+                  <span class="ms-auto">(555) 123-456</span>
+                </li>
+                <li href="#!" class="list-group-item d-md-flex align-items-center">
+                  <span>Email</span>
+                  <span class="ms-auto">steven@email.com</span>
+                </li>
+                <li href="#!" class="list-group-item d-md-flex align-items-center">
+                  <span>Role</span>
+                  <span class="ms-auto">Director of Design</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header d-flex">
+              <div class="card-header-title fw-normal">
+                Shortcuts
+              </div>
+              <div class="dropdown ms-auto">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Edit shortcuts</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <a href="#!" class="list-group-item text-decoration-none d-flex align-items-center">
+                  <div class="avatar me-3">
+                    <img src="assets/img/unsplash/3.jpeg" class="avatar-image rounded" alt="">
+                  </div>
+                  <div class="fs-sm">
+                    Architecture Project 2023
+                  </div>
+                </a>
+                <a href="#!" class="list-group-item text-decoration-none d-flex align-items-center">
+                  <div class="avatar me-3">
+                    <img src="assets/img/unsplash/5.jpeg" class="avatar-image rounded" alt="">
+                  </div>
+                  <div class="fs-sm">
+                    Organic Farming
+                  </div>
+                </a>
+                <a href="#!" class="list-group-item text-decoration-none d-flex align-items-center">
+                  <div class="avatar me-3">
+                    <img src="assets/img/unsplash/4.jpeg" class="avatar-image rounded" alt="">
+                  </div>
+                  <div class="fs-sm">
+                    Photography Course II
+                  </div>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

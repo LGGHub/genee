@@ -1,0 +1,17 @@
+.popover {
+  &:hover {
+    visibility: visible !important;
+  }
+}
+
+.popover-body-color {
+  border-radius: 50%;
+  display: inline-block;
+  height: .5rem;
+  margin-right: .25rem;
+  width: .5rem;
+}
+
+.popover-body + .popover-body {
+  padding-top: 0;
+}

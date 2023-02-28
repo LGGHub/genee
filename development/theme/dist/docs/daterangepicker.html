@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Archer | Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap5-tags@1.5.4/tags-standalone.min.css">
+
+  <!-- Theme styles -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/theme.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <!-- Vendor -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/vendor.min.css">
+
+  <style>
+    body {
+      --keyboard-zindex: 3000;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" role="navigation">
+    
+    
+    <div class="container-fluid">
+    
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="../index.html">
+        
+          <svg width="212px" height="19px" viewBox="0 0 212 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M154.785,17 L154.785,2.321 C164.487,0.851 166.776,6.206 166.776,9.65 C166.776,12.968 164.34,18.323 154.785,17 Z M157.011,4.19 L157.011,15.089 C160.728,15.488 164.403,13.724 164.403,9.629 C164.403,6.206 161.82,3.602 157.011,4.19 Z M168.54,9.65 C168.54,5.366 171.795,1.964 176.268,1.964 C180.741,1.964 184.017,5.366 184.017,9.65 C184.017,13.913 180.741,17.294 176.268,17.294 C171.795,17.294 168.54,13.913 168.54,9.65 Z M170.913,9.65 C170.913,13.052 173.37,15.32 176.268,15.32 C179.145,15.32 181.644,13.052 181.644,9.65 C181.644,6.248 179.145,3.917 176.268,3.917 C173.37,3.917 170.913,6.248 170.913,9.65 Z M197.94,13.577 L199.284,15.026 C198.276,16.013 196.638,17.294 193.467,17.294 C189.12,17.294 185.802,13.955 185.802,9.608 C185.802,4.988 189.477,1.964 193.572,1.964 C196.491,1.964 198.192,3.245 199.179,4.127 L197.856,5.702 C197.016,4.925 195.525,3.917 193.614,3.917 C190.569,3.917 188.196,6.416 188.196,9.608 C188.196,12.695 190.401,15.32 193.635,15.32 C195.378,15.32 197.058,14.438 197.94,13.577 Z M210.498,3.098 L209.784,4.946 C208.902,4.463 207.537,3.938 206.424,3.938 C204.744,3.938 203.673,4.799 203.673,5.954 C203.673,7.235 205.017,7.949 206.76,8.6 C209.952,9.839 211.107,11.33 211.065,13.262 C211.002,15.845 208.692,17.315 205.962,17.294 C203.82,17.273 202.14,16.475 201.216,15.719 L202.098,14.018 C202.917,14.627 204.303,15.362 205.836,15.362 C207.453,15.362 208.86,14.543 208.86,13.304 C208.86,11.855 207.327,11.246 205.311,10.364 C202.917,9.314 201.447,8.117 201.447,5.954 C201.447,4.022 203.022,1.964 206.235,1.964 C207.789,1.964 209.637,2.636 210.498,3.098 Z" fill="#576ADA"></path>
+            <path d="M3.375,18 L0,18 L0,0.45 L10.75,0.45 L10.75,3.3 L3.375,3.3 L3.375,7.675 L9.2,7.675 L9.2,10.525 L3.375,10.525 L3.375,18 Z M13.375,9.225 C13.375,4.2 17.225,0.1 22.675,0.1 C28.1,0.1 32,4.2 32,9.225 C32,14.25 28.1,18.35 22.675,18.35 C17.225,18.35 13.375,14.25 13.375,9.225 Z M17,9.225 C17,12.95 19.675,15.275 22.675,15.275 C25.65,15.275 28.375,12.95 28.375,9.225 C28.375,5.5 25.65,3.125 22.675,3.125 C19.675,3.125 17,5.5 17,9.225 Z M48.15,6.05 C48.15,8.35 46.7,10.175 45.05,11 L49.55,18 L45.45,18 L41.75,11.95 C41,12.025 40.25,12.05 39.4,11.975 L39.4,18 L36.025,18 L36.025,0.6 C44.325,-0.825 48.15,1.725 48.15,6.05 Z M39.4,3.4 L39.4,9.05 C43.075,9.425 44.675,8.05 44.675,6 C44.675,4.125 42.975,2.85 39.4,3.4 Z M56.35,15.15 L64.175,15.15 L64.175,18 L52.975,18 L52.975,0.45 L63.925,0.45 L63.925,3.3 L56.35,3.3 L56.35,7.675 L62.6,7.675 L62.6,10.525 L56.35,10.525 L56.35,15.15 Z M79.35,1.525 L78.275,4.35 C77.225,3.775 75.575,3.15 74.325,3.15 C72.65,3.15 71.425,3.9 71.425,5.075 C71.425,6.3 72.85,7.025 74.775,7.75 C78.85,9.35 80.025,11.225 79.95,13.4 C79.875,16.55 77.05,18.375 73.6,18.35 C71.05,18.325 68.85,17.25 67.725,16.35 L69,13.75 C69.975,14.475 71.675,15.35 73.375,15.35 C74.925,15.35 76.575,14.75 76.575,13.45 C76.575,12 74.575,11.35 72.475,10.425 C69.75,9.175 68.025,7.65 68.025,5.075 C68.025,2.575 70.15,0.1 74.025,0.1 C76.075,0.1 78.425,1.05 79.35,1.525 Z M84.475,18 L84.475,0.45 L87.85,0.45 L87.85,18 L84.475,18 Z M102.825,11.45 L102.825,8.625 L109.1,8.625 L109.1,15.325 C106.825,17.675 104.4,18.35 101.625,18.35 C96.075,18.35 92.125,14.3 92.125,9.175 C92.125,3.8 96.525,0.1 101.375,0.1 C104.925,0.1 106.925,1.525 108.225,2.75 L106.125,5.175 C105.3,4.35 103.875,3.125 101.5,3.125 C98.275,3.125 95.775,5.775 95.775,9.1 C95.775,12.825 98.225,15.325 101.825,15.325 C103.25,15.325 105.05,14.775 105.825,14.025 L105.825,11.45 L102.825,11.45 Z M123.925,18 L123.925,10.525 L116.75,10.525 L116.75,18 L113.375,18 L113.375,0.45 L116.75,0.45 L116.75,7.675 L123.925,7.675 L123.925,0.45 L127.3,0.45 L127.3,18 L123.925,18 Z M144.175,0.45 L144.175,3.3 L139.25,3.3 L139.25,18 L135.875,18 L135.875,3.3 L130.975,3.3 L130.975,0.45 L144.175,0.45 Z" fill="#000000"></path>
+          </svg>
+        
+        
+      </a>
+
+      <div class="dropdown d-flex d-lg-none">
+        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="avatar">
+            <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+          </span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end">
+          <a class="dropdown-item" href="../profile.html">My profile</a>
+          <a class="dropdown-item" href="../account.html">Account settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="../sign-in.html">Log out</a>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse mt-3 mt-md-0" id="navbar-collapse">
+        <ul class="navbar-nav align-items-lg-center justify-content-end w-100">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dashboard
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../index.html" class="dropdown-item">
+                  Default
+                </a>
+              </li>
+              <li>
+                <a href="../index-ecommerce.html" class="dropdown-item">
+                  Ecommerce
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Reports
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../companies.html" class="dropdown-item">
+                  Companies
+                </a>
+              </li>
+              <li>
+                <a href="../customers.html" class="dropdown-item">
+                  Customers
+                </a>
+              </li>
+              <li>
+                <a href="../projects.html" class="dropdown-item">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="../payments.html" class="dropdown-item">
+                  Payments
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown dropend">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Profile
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../profile.html">Feed</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../profile-projects.html">Projects</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../profile-files.html">Files</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown dropend">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Project
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../project.html">Overview</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../project-files.html">Files</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../project-activity.html">Activity</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../project-settings.html">Settings</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown dropend">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../account.html">General</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../account-notifications.html">Notifications</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../account-billing.html">Billing & Payments</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../account-teammates.html">Teammates</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../pricing.html" class="dropdown-item">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="../invoice.html" class="dropdown-item">
+                  Invoice
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+              Authentication
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown dropend">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sign up
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../sign-up.html">Basic</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../sign-up-quote.html">Side quote</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../sign-up-cover.html">Side cover</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown dropend">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sign in
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../sign-in.html">Basic</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../sign-in-quote.html">Side quote</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../sign-in-cover.html">Side cover</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown dropend">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Recover password
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../recover-password.html">Basic</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../recover-password-cover.html">Side cover</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../email-verification.html" class="dropdown-item">
+                  Email verification
+                </a>
+              </li>
+              <li>
+                <a href="../two-step-verification.html" class="dropdown-item">
+                  2-step verification
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+              Landing
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../landing.html" class="dropdown-item">
+                  Home page
+                </a>
+              </li>
+              <li>
+                <a href="../landing-about.html" class="dropdown-item">
+                  About us
+                </a>
+              </li>
+              <li>
+                <a href="../landing-contact.html" class="dropdown-item">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="../landing-pricing.html" class="dropdown-item">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Theme docs
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="../docs/index.html" class="dropdown-item">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="../docs/changelog.html" class="dropdown-item">
+                  Changelog
+                </a>
+              </li>
+              <li>
+                <a href="mailto:e.adrian90@gmail.com" class="dropdown-item">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ms-lg-4">
+            <a href="#!" class="btn btn-primary btn-sm">
+              Buy now
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-3 col-xl-2 border-end py-lg-5 ps-lg-4 docs-sidebar docs-sidebar-left bg-white">
+          <div class="row d-lg-none py-2 bg-dark">
+            <div class="col-auto">
+              <div class="navbar-dark">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#sidebar-collapse">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="collapse d-lg-block pt-4 pt-lg-0 mb-6 mb-lg-0" id="sidebar-collapse">
+            <div class="text-darkblue text-uppercase fs-sm fw-bolder mb-2">
+              <span class="svg-icon text-purple me-1 relative-top--1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-i</title><path d="M80,212V448a16,16,0,0,0,16,16h96V328a24,24,0,0,1,24-24h80a24,24,0,0,1,24,24V464h96a16,16,0,0,0,16-16V212" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M480,256,266.89,52c-5-5.28-16.69-5.34-21.78,0L32,256" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><polyline points="400 179 400 64 352 64 352 133" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+              </span>
+              Introduction
+            </div>
+            <ul class="list-unstyled mt-3">
+              <li><a href="index.html" class="text-darkblue fs-sm d-block mb-2">Getting started</a></li>
+              <li><a href="changelog.html" class="text-darkblue fs-sm d-block mb-2">Changelog</a></li>
+            </ul>
+            <div class="text-darkblue text-uppercase fs-sm fw-bolder mt-4 pt-2 mb-2">
+              <span class="svg-icon text-purple me-1 relative-top--1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-h</title><path d="M256,160c16-63.16,76.43-95.41,208-96a15.94,15.94,0,0,1,16,16V368a16,16,0,0,1-16,16c-128,0-177.45,25.81-208,64-30.37-38-80-64-208-64-9.88,0-16-8.05-16-17.93V80A15.94,15.94,0,0,1,48,64C179.57,64.59,240,96.84,256,160Z" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="256" y1="160" x2="256" y2="448" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+              </span>
+              Components
+            </div>
+            <ul class="list-unstyled mt-3">
+              <li><a href="alerts.html" class="text-darkblue fs-sm d-block mb-2">Alerts</a></li>
+              <li><a href="avatars.html" class="text-darkblue fs-sm d-block mb-2">Avatars</a></li>
+              <li><a href="badges.html" class="text-darkblue fs-sm d-block mb-2">Badges</a></li>
+              <li><a href="buttons.html" class="text-darkblue fs-sm d-block mb-2">Buttons</a></li>
+              <li><a href="cards.html" class="text-darkblue fs-sm d-block mb-2">Cards</a></li>
+              <li><a href="dropdowns.html" class="text-darkblue fs-sm d-block mb-2">Dropdowns</a></li>
+              <li><a href="forms.html" class="text-darkblue fs-sm d-block mb-2">Forms</a></li>
+              <li><a href="icons.html" class="text-darkblue fs-sm d-block mb-2">Icons</a></li>
+              <li><a href="modals.html" class="text-darkblue fs-sm d-block mb-2">Modals</a></li>
+              <li><a href="navbar.html" class="text-darkblue fs-sm d-block mb-2">Navbar</a></li>
+              <li><a href="progress.html" class="text-darkblue fs-sm d-block mb-2">Progress bars</a></li>
+              <li><a href="stats-cards.html" class="text-darkblue fs-sm d-block mb-2">Stats cards</a></li>
+              <li><a href="tables.html" class="text-darkblue fs-sm d-block mb-2">Tables</a></li>
+            </ul>
+            <div class="text-darkblue text-uppercase fs-sm fw-bolder mt-4 pt-2 mb-2">
+              <span class="svg-icon text-purple me-1 relative-top--2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-m</title><polyline points="160 368 32 256 160 144" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><polyline points="352 368 480 256 352 144" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="304" y1="96" x2="208" y2="416" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+              </span>
+              Utilities
+            </div>
+            <ul class="list-unstyled mt-3">
+              <li><a href="background.html" class="text-darkblue fs-sm d-block mb-2">Background</a></li>
+              <li><a href="borders.html" class="text-darkblue fs-sm d-block mb-2">Borders</a></li>
+              <li><a href="hover.html" class="text-darkblue fs-sm d-block mb-2">Hover</a></li>
+              <li><a href="opacity.html" class="text-darkblue fs-sm d-block mb-2">Opacity</a></li>
+              <li><a href="position.html" class="text-darkblue fs-sm d-block mb-2">Position</a></li>
+              <li><a href="shadows.html" class="text-darkblue fs-sm d-block mb-2">Shadows</a></li>
+              <li><a href="sizing.html" class="text-darkblue fs-sm d-block mb-2">Sizing</a></li>
+              <li><a href="text.html" class="text-darkblue fs-sm d-block mb-2">Text</a></li>
+            </ul>
+            <div class="text-darkblue text-uppercase fs-sm fw-bolder mt-4 pt-2 mb-2">
+              <span class="svg-icon text-purple me-1 relative-top--3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-i</title><rect x="48" y="48" width="176" height="176" rx="20" ry="20" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+              </span>
+              Plugins
+            </div>
+            <ul class="list-unstyled mt-3">
+              <li><a href="listjs.html" class="text-darkblue fs-sm d-block mb-2">List.js</a></li>
+              <li><a href="daterangepicker.html" class="text-darkblue fs-sm d-block mb-2">Date range picker</a></li>
+              <li><a href="fancybox.html" class="text-darkblue fs-sm d-block mb-2">Fancybox</a></li>
+              <li><a href="swiper.html" class="text-darkblue fs-sm d-block mb-2">Swiper</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Date Range Picker
+          </h3>
+          <a href="https://www.daterangepicker.com/" class="text-purple" target="_blank">Plugin docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+          <p class="text-muted mt-3">
+            A JavaScript component for choosing date ranges, dates and times.
+          </p>
+
+          <div class="card mt-5">
+            <div class="card-body d-flex align-items-center">
+              <div class="bg-white border rounded d-flex align-items-center w-250 fs-sm fw-bold py-2 px-3" role="button" data-datepicker>
+                <div class="svg-icon me-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-e</title><rect x="48" y="80" width="416" height="384" rx="48" ry="48" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"/><path d="M397.82,80H114.18C77.69,80,48,110.15,48,147.2V208H64c0-16,16-32,32-32H416c16,0,32,16,32,32h16V147.2C464,110.15,434.31,80,397.82,80Z"/><circle cx="296" cy="232" r="24"/><circle cx="376" cy="232" r="24"/><circle cx="296" cy="312" r="24"/><circle cx="376" cy="312" r="24"/><circle cx="136" cy="312" r="24"/><circle cx="216" cy="312" r="24"/><circle cx="136" cy="392" r="24"/><circle cx="216" cy="392" r="24"/><circle cx="296" cy="392" r="24"/><line x1="128" y1="48" x2="128" y2="80" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="384" y1="48" x2="384" y2="80" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+                </div>
+                <span class="mt-1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT
+  ============================================-->
+
+  <!-- <script defer src="//unpkg.com/mathlive"></script>
+  <script src="//unpkg.com/@cortex-js/compute-engine"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/mathlive@0.89.1/dist/mathlive.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@cortex-js/compute-engine@0.12.2/dist/compute-engine.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/vanilla-caret-js@1.0.1/dist/VanillaCaret.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+  <script type="module" src="//cdn.jsdelivr.net/npm/bootstrap5-tags@1.5.4/tags.min.js"></script>
+
+  <!-- Vendor -->
+  <script src="/assets/js/vendor.min.js"></script>
+
+  <!-- Main Theme file -->
+  <script src="/assets/js/theme.min.js"></script>
+
+  <script type="module">
+    import Tags from "https://cdn.jsdelivr.net/npm/bootstrap5-tags@1.5.4/tags.min.js";
+    Tags.init();
+  </script>
+
+  <script type="text/javascript">
+    $(function () {
+      function cb(start, end) {
+        $('[data-datepicker] span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'))
+      }
+
+      var startDate = moment().subtract(17, 'days')
+      var endDate = moment()
+
+      $('[data-datepicker]').daterangepicker({
+        startDate: startDate,
+        endDate: endDate,
+        applyButtonClasses: "btn-purple",
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb)
+
+      cb(startDate, endDate)
+    })
+  </script>
+</body>
+</html>

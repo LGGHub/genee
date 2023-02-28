@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Landing contact | Foresight"
+})
+<body>
+  @@include('./partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white",
+    "boxed": 1
+  })
+
+  <div class="text-center mt-6">
+    <div class="container">
+      <div class="icon-circle icon-circle-lg bg-primary text-white">
+        @@include("assets/img/ionicons/mail-outline.svg")
+      </div>
+      <h1 class="text-dark fw-normal mt-4">
+        Happy to answer your questions.
+      </h1>
+      <p class="lead text-secondary w-lg-75 mx-auto mt-4">
+        For all inquiries including new business, employment opportunities or to learn more about our services, please get in touch.
+      </p>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div class="container pb-8">
+      <form>
+        <div class="row justify-content-center mt-6">
+          <div class="col-md-3">
+            <h5 class="mt-2 mb-4 mb-md-0">
+              <span class="svg-icon">@@include("assets/img/ionicons/remove-outline.svg")</span>
+              Your information
+            </h5>
+          </div>
+          <div class="col-md-6 offset-md-1">
+            <div class="mb-3">
+              <label class="form-label text-dark">
+                Your name:
+              </label>
+              <input type="text" class="form-control form-control-lg">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-dark">
+                Email address:
+              </label>
+              <input type="email" class="form-control form-control-lg">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-dark">
+                Phone number:
+              </label>
+              <input type="phone" class="form-control form-control-lg">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-dark">
+                Company:
+              </label>
+              <input type="text" class="form-control form-control-lg">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+          <div class="col-md-3">
+            <h5 class="mb-4 mb-md-0">
+              <span class="svg-icon">@@include("assets/img/ionicons/remove-outline.svg")</span>
+              Your message
+            </h5>
+          </div>
+          <div class="col-md-6 offset-md-1">
+            <p class="text-dark">
+              Please describe your inquiries with details, including objectives and requirements.
+            </p>
+            <div class="mb-3">
+              <textarea rows="6" class="form-control form-control-lg"></textarea>
+            </div>
+
+            <input type="submit" value="Send message" class="btn btn-lg btn-primary shadow-light-sm hover-lift mt-5">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="bg-dark py-6">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <h6 class="text-uppercase-bold-sm text-info mb-4">
+            Foresight
+          </h6>
+          <a href="#!" class="d-block text-white">
+            Dashboard template
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Landing pages
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Custom design
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4 mt-5 mt-md-0">
+          <h6 class="text-uppercase-bold-sm text-info mb-4">
+            Company
+          </h6>
+          <a href="#!" class="d-block text-white">
+            About us
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Blog
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Online store
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Partners
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4 mt-5 mt-md-0">
+          <h6 class="text-uppercase-bold-sm text-info mb-4">
+            Support
+          </h6>
+          <a href="#!" class="d-block text-white">
+            FAQ
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Contact
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Status
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-6">
+        <a href="#!" class="hover-lift-light text-decoration-none mx-2">
+          <span class="icon-circle bg-light text-darkblue">
+            <i class="fab fa-facebook-square fa-lg"></i>
+          </span>
+        </a>
+        <a href="#!" class="hover-lift-light text-decoration-none mx-2">
+          <span class="icon-circle bg-light text-darkblue">
+            <i class="fab fa-youtube fa-lg"></i>
+          </span>
+        </a>
+        <a href="#!" class="hover-lift-light text-decoration-none mx-2">
+          <span class="icon-circle bg-light text-darkblue">
+            <i class="fab fa-instagram fa-lg"></i>
+          </span>
+        </a>
+      </div>
+
+      <div class="mt-6">
+        <p class="fs-sm text-muted mb-2">
+          © 2025. Foresight.
+        </p>
+        <div class="d-flex justify-content-center">
+          <a href="#!" class="fs-sm text-muted mx-3">
+            Privacy & terms
+          </a>
+          <a href="#!" class="fs-sm text-muted mx-3">
+            Terms of service
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <p class="fs-sm text-uppercase fw-bold text-muted">
+          Made with
+          <i class="fa fa-heart text-pastel-purple mx-2"></i>
+          in Earth
+        </p>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

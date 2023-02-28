@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Progress | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Progress bars
+          </h3>
+          <a href="https://getbootstrap.com/docs/5.0/components/progress/" class="text-purple" target="_blank">See Bootstrap docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <br>
+              <div class="progress mb-2 mt-3">
+                <div class="progress-bar w-25" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-50" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar w-75" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-100" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h4 class="text-darkblue pt-7 mt-n5">
+            Bar height
+          </h4>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="progress mb-4" style="height: 1px;" >
+                <div class="progress-bar w-50" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress mb-3" style="height: 15px;">
+                <div class="progress-bar w-75" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress" style="height: 25px;">
+                <div class="progress-bar w-100" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h4 class="text-darkblue pt-7 mt-n5">
+            Backgrounds
+          </h4>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-purple w-40" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-info w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-warning w-70" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-danger w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-dark w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h4 class="text-darkblue pt-7 mt-n5">
+            Animated bars
+          </h4>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-purple w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

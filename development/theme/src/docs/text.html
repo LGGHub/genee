@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Text | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Extra text utilities
+          </h3>
+          <a href="https://getbootstrap.com/docs/5.0/utilities/text/" class="text-purple" target="_blank">See Bootstrap docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+
+          <h4 class="text-darkblue pt-7 mt-n5" id="grays">
+            Gray colors
+          </h4>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="text-gray-100 mb-1">Text gray 100</div>
+              <div class="text-gray-200 mb-1">Text gray 200</div>
+              <div class="text-gray-300 mb-1">Text gray 300</div>
+              <div class="text-gray-400 mb-1">Text gray 400</div>
+              <div class="text-gray-500 mb-1">Text gray 500</div>
+              <div class="text-gray-600 mb-1">Text gray 600</div>
+              <div class="text-gray-700 mb-1">Text gray 700</div>
+              <div class="text-gray-800 mb-1">Text gray 800</div>
+              <div class="text-gray-900">Text gray 900</div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="html hl">
+                &lt;div class="text-gray-100">Text gray 100&lt;/div><br>
+                &lt;div class="text-gray-200">Text gray 200&lt;/div><br>
+                &lt;div class="text-gray-300">Text gray 300&lt;/div><br>
+                &lt;div class="text-gray-400">Text gray 400&lt;/div><br>
+                &lt;div class="text-gray-500">Text gray 500&lt;/div><br>
+                &lt;div class="text-gray-600">Text gray 600&lt;/div><br>
+                &lt;div class="text-gray-700">Text gray 700&lt;/div><br>
+                &lt;div class="text-gray-800">Text gray 800&lt;/div><br>
+                &lt;div class="text-gray-900">Text gray 900&lt;/div>
+              </code>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h4 class="text-darkblue pt-7 mt-n5" id="helpers">
+            Sizes and helpers
+          </h4>
+          <div class="card border border-gray-100 mt-4 mb-6">
+            <div class="card-body">
+              <div class="display-1">Display 1</div>
+              <div class="display-2">Display 2</div>
+              <div class="display-3">Display 3</div>
+              <div class="display-4 mt-2">Display 4</div>
+
+              <div class="bg-gray-300 my-4" style="height: 2px; width:50px;"></div>
+
+              <div class="h1">H1 Heading</div>
+              <div class="h2">H2 Heading</div>
+              <div class="h3">H3 Heading</div>
+              <div class="h4">H4 Heading</div>
+              <div class="h5">H5 Heading</div>
+              <div class="h6">H6 Heading</div>
+
+              <div class="bg-gray-300 my-4" style="height: 2px; width:50px;"></div>
+
+              <div class="fs-lg mt-4">Font size LARGE</div>
+              <div class="fs-base mt-2">Font size NORMAL</div>
+              <div class="fs-sm mt-2">Font size SMALL</div>
+              <div class="fs-xs mt-2">Font size EXTRA SMALL</div>
+
+              <div class="bg-gray-300 my-4" style="height: 2px; width:50px;"></div>
+
+              <div class="text-decoration-line-through mt-4">Text line through</div>
+              <div class="letter-spacing-lg mt-2">Letter spacing large</div>
+              <div class="letter-spacing-xl mt-1">Letter spacing extra large</div>
+
+              <div class="bg-gray-300 my-4" style="height: 2px; width:50px;"></div>
+
+              <div class="text-uppercase-bold-sm">
+                Uppercase, bold, small with spacing
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="html hl">
+                &lt;div class="display-1">Display 1&lt;/div><br>
+                &lt;div class="display-2">Display 2&lt;/div><br>
+                &lt;div class="display-3">Display 3&lt;/div><br>
+                &lt;div class="display-4">Display 4&lt;/div><br><br>
+
+                &lt;div class="h1">H1 Heading&lt;/div><br>
+                &lt;div class="h2">H2 Heading&lt;/div><br>
+                &lt;div class="h3">H3 Heading&lt;/div><br>
+                &lt;div class="h4">H4 Heading&lt;/div><br>
+                &lt;div class="h5">H5 Heading&lt;/div><br>
+                &lt;div class="h6">H6 Heading&lt;/div><br><br>
+
+                &lt;div class="fs-lg">Font size large&lt;/div><br>
+                &lt;div class="fs-base">Font size normal&lt;/div><br>
+                &lt;div class="fs-sm">Font size small&lt;/div><br>
+                &lt;div class="fs-xs">Font size extra small&lt;/div><br><br>
+
+                &lt;div class="text-decoration-line-through">Text line through&lt;/div><br>
+                &lt;div class="letter-spacing-lg">Letter spacing large&lt;/div><br>
+                &lt;div class="letter-spacing-xl">Letter spacing extra large&lt;/div><br><br>
+
+                &lt;div class="text-uppercase-bold-sm">Uppercase, bold, small with spacing&lt;/div>
+              </code>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 d-none d-xl-block px-0 py-5 docs-sidebar docs-sidebar-right">
+          <aside class="border-start ps-5 py-3">
+            <span class="text-uppercase text-muted fs-sm d-block mb-3">
+              On this page:
+            </span>
+            <a href="#grays" class="d-block my-2" data-toggle="scroll">
+              Grays
+            </a>
+            <a href="#clip" class="d-block my-2" data-toggle="scroll">
+              Background clip
+            </a>
+            <a href="#helpers" class="d-block my-2" data-toggle="scroll">
+              Sizes and helpers
+            </a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

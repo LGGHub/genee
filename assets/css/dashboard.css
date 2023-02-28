@@ -1,0 +1,12 @@
+.noresize {
+  resize: none !important;
+}
+
+/*body {
+  min-width: 800px;
+}
+*/
+
+#cytoband-lookup button:after {
+   content: none;
+}

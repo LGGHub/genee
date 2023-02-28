@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Date range picker | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            List.js
+          </h3>
+          <a href="https://listjs.com/" class="text-purple" target="_blank">Plugin docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+          <p class="text-muted mt-3">
+            Tiny, invisible and simple, yet powerful and incredibly fast vanilla JavaScript that adds search, sort, filters and flexibility to plain HTML lists, tables, or anything.
+          </p>
+
+          <div id="users" class="card mt-5">
+            <div class="card-header">
+              <form class="w-100">
+                <div class="input-group input-group-flush pt-2">
+                  <div class="input-group-text ps-0">
+                    <i class="fas fa-search relative-top--2"></i>
+                  </div>
+                  <input type="search" class="search form-control" placeholder="Search...">
+                </div>
+              </form>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table card-table">
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="form-check m-0">
+                        <input class="form-check-input list-checkbox-all" type="checkbox">
+                      </div>
+                    </th>
+                    <th>
+                      <a class="sort text-dark" data-sort="item-name" href="#!">Name</a>
+                    </th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input class="form-check-input list-checkbox" type="checkbox">
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#!" class="item-name">John</a>
+                    </td>
+                    <td>Smith</td>
+                    <td>@johny</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-sm fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit user</a>
+                          <a class="dropdown-item text-danger" href="#">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input class="form-check-input list-checkbox" type="checkbox">
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#!" class="item-name">Ana</a>
+                    </td>
+                    <td>Garcia</td>
+                    <td>@ana</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-sm fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit user</a>
+                          <a class="dropdown-item text-danger" href="#">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input class="form-check-input list-checkbox" type="checkbox">
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#!" class="item-name">Eric</a>
+                    </td>
+                    <td>Smithers</td>
+                    <td>@eric</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-sm fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit user</a>
+                          <a class="dropdown-item text-danger" href="#">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input class="form-check-input list-checkbox" type="checkbox">
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#!" class="item-name">Jacob</a>
+                    </td>
+                    <td>Conery</td>
+                    <td>@jacob</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-sm fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit user</a>
+                          <a class="dropdown-item text-danger" href="#">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input class="form-check-input list-checkbox" type="checkbox">
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#!" class="item-name">Jim</a>
+                    </td>
+                    <td>Morrison</td>
+                    <td>@jim</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-sm fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit user</a>
+                          <a class="dropdown-item text-danger" href="#">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input class="form-check-input list-checkbox" type="checkbox">
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#!" class="item-name">Sam</a>
+                    </td>
+                    <td>Harris</td>
+                    <td>@sam</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-sm fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit user</a>
+                          <a class="dropdown-item text-danger" href="#">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <input class="form-check-input list-checkbox" type="checkbox">
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#!" class="item-name">Kate</a>
+                    </td>
+                    <td>Winslet</td>
+                    <td>@kate</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-sm fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit user</a>
+                          <a class="dropdown-item text-danger" href="#">Remove</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-footer d-flex justify-content-center p-0">
+
+              <ul class="nav-pagination">
+                <li>
+                  <a class="page" href="#" data-i="1" data-page="10">1</a>
+                </li>
+                <li>
+                  <a class="page" href="#" data-i="2" data-page="10">2</a>
+                </li>
+                <li>
+                  <a class="page" href="#" data-i="3" data-page="10">3</a>
+                </li>
+              </ul>
+
+              <div class="list-alert alert alert-dark alert-dismissible border fade" role="alert" style="position: fixed;z-index: -1;">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" id="listAlertCheckbox" type="checkbox" checked="" disabled="">
+                        <span class="list-alert-count">0</span> item(s)
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-auto me-n3">
+                    <button class="btn btn-sm btn-white">
+                      Delete items
+                    </button>
+                  </div>
+                </div>
+
+                <button type="button" class="list-alert-close btn-close" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+
+  <script type="text/javascript">
+    $(function () {
+      var options = {
+        valueNames: [ 'item-name' ],
+        page: 5,
+        pagination: {
+          paginationClass: 'nav-pagination'
+        }
+      };
+
+      var userList = new List('users', options);
+    })
+  </script>
+</body>
+</html>

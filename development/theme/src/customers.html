@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "2",
+    "link": "customers"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "2",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid mt-4 pt-2 mb-7">
+      <!-- header -->
+      <div class="d-md-flex align-items-center">
+        <h3 class="mb-3 mb-md-0">
+          Customers
+        </h3>
+        <a href="#!" class="btn btn-white hover-lift-light ms-auto me-3">
+          <span class="svg-icon svg-icon-xs text-dark me-1">
+            @@include("assets/img/ionicons/arrow-down-outline.svg")
+          </span>
+          Export
+        </a>
+        <a href="#!" class="btn btn-purple hover-lift-light shadow-light-sm">
+          <span class="svg-icon svg-icon-sm text-white me-1">
+            @@include("assets/img/ionicons/add-outline.svg")
+          </span>
+          Add customer
+        </a>
+      </div>
+
+      <!-- filters -->
+      <ul class="nav nav-tabs nav-overflow mt-3 mt-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#!">
+            All
+            <span class="badge bg-purple rounded-pill ms-1">492</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">
+            Top 100
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">
+            Recent
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">
+            Archived
+          </a>
+        </li>
+      </ul>
+
+      <!-- report -->
+      <div id="customers" class="card mt-4">
+        <div class="card-header">
+          <form class="flex-grow-1 pe-3">
+            <div class="input-group input-group-flush pt-2">
+              <div class="input-group-text ps-0">
+                <i class="fas fa-search relative-top--2"></i>
+              </div>
+              <input type="search" class="search form-control" placeholder="Search...">
+            </div>
+          </form>
+
+          <div class="ms-auto mt-2 mt-md-0">
+            <button type="button" class="btn btn-white btn-sm dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="svg-icon svg-icon-sm me-1">
+                @@include("assets/img/ionicons/funnel-outline.svg")
+              </i>
+
+              Filter
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-card shadow-light">
+              <div class="card-header">
+                <div class="card-header-title">
+                  Filters
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center justify-content-between px-4">
+                    <span>
+                      Location
+                    </span>
+                    <select class="form-select form-select-sm w-auto">
+                      <option>America</option>
+                      <option>Europe</option>
+                      <option>Asia</option>
+                      <option>Africa</option>
+                      <option>Oceania</option>
+                    </select>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center justify-content-between px-4">
+                    <span>
+                      Created at
+                    </span>
+                    <select class="form-select form-select-sm w-auto">
+                      <option>Last week</option>
+                      <option>This year</option>
+                      <option>Last year</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <a href="#!" class="card-footer-btn btn btn-purple justify-content-center">
+                Apply filter
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-sm card-table table-nowrap">
+            <thead>
+              <tr>
+                <th>
+                  <div class="form-check m-0">
+                    <input class="form-check-input list-checkbox-all" type="checkbox">
+                  </div>
+                </th>
+                <th>
+                  <a class="sort text-dark" data-sort="item-name" href="#!">Name</a>
+                </th>
+                <th>
+                  <a class="sort text-dark" data-sort="item-email" href="#!">Email</a>
+                </th>
+                <th>
+                  <a class="sort text-dark" data-sort="item-role" href="#!">Role</a>
+                </th>
+                <th>
+                  Phone
+                </th>
+                <th>
+                  Comments
+                </th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody class="list">
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    John Smith
+                  </a>
+                </td>
+                <td class="item-email">
+                  john395@email.com
+                </td>
+                <td class="item-role">
+                  Web Designer at Apple
+                </td>
+                <td>
+                  (555) - 12345
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">3</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/1.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Patrick Collison
+                  </a>
+                </td>
+                <td class="item-email">
+                  patrick_@email.com
+                </td>
+                <td class="item-role">
+                  Architect
+                </td>
+                <td>
+                  (555) - 43452
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">14</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Tim Burton
+                  </a>
+                </td>
+                <td class="item-email">
+                  timburton@email.com
+                </td>
+                <td class="item-role">
+                  Programmer at Stripe
+                </td>
+                <td>
+                  (555) - 5298
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">5</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/3.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Anna Karenina
+                  </a>
+                </td>
+                <td class="item-email">
+                  anna_karenina87@email.com
+                </td>
+                <td class="item-role">
+                  HR at Basecamp
+                </td>
+                <td>
+                  (555) - 23152
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">0</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Jessica Jones
+                  </a>
+                </td>
+                <td class="item-email">
+                  jonesjessica@email.com
+                </td>
+                <td class="item-role">
+                  Copywriter at Toyota
+                </td>
+                <td>
+                  (555) - 34129
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">2</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/5.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Jim Carrey
+                  </a>
+                </td>
+                <td class="item-email">
+                  jimy.carrey@email.com
+                </td>
+                <td class="item-role">
+                  Comedian
+                </td>
+                <td>
+                  (555) - 43298
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">8</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/6.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Patrick Collison
+                  </a>
+                </td>
+                <td class="item-email">
+                  patrick_c@email.com
+                </td>
+                <td class="item-role">
+                  CEO at Stripe
+                </td>
+                <td>
+                  (555) - 32873
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">17</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Erick J.
+                  </a>
+                </td>
+                <td class="item-email">
+                  erick_j@email.com
+                </td>
+                <td class="item-role">
+                  Illustrator at Pixar
+                </td>
+                <td>
+                  (555) - 48534
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">6</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Margaret Smith
+                  </a>
+                </td>
+                <td class="item-email">
+                  maggie@email.com
+                </td>
+                <td class="item-role">
+                  Professor at Stanford
+                </td>
+                <td>
+                  (555) - 34233
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">3</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Bob Lopez
+                  </a>
+                </td>
+                <td class="item-email">
+                  lopezbob@email.com
+                </td>
+                <td class="item-role">
+                  Software Engineer at Intel
+                </td>
+                <td>
+                  (555) - 83974
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">33</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/10.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Sophia Smith
+                  </a>
+                </td>
+                <td class="item-email">
+                  shopia90@email.com
+                </td>
+                <td class="item-role">
+                  Web Designer at Dribbble
+                </td>
+                <td>
+                  (555) - 8923
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">15</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Patrick Collison
+                  </a>
+                </td>
+                <td class="item-email">
+                  patrickson@email.com
+                </td>
+                <td class="item-role">
+                  Operations at Microsoft
+                </td>
+                <td>
+                  (555) - 23842
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">11</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Jim Suarez
+                  </a>
+                </td>
+                <td class="item-email">
+                  jim.suarez@email.com
+                </td>
+                <td class="item-role">
+                  Support at Basecamp
+                </td>
+                <td>
+                  (555) - 3892
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">8</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input list-checkbox" type="checkbox">
+                  </div>
+                </td>
+                <td>
+                  <span class="avatar avatar-sm me-3">
+                    <img src="@@webRoot/assets/img/uifaces/13.jpg" class="avatar-image rounded-circle" alt="">
+                  </span>
+                  <a href="#!" class="item-name text-dark relative-top-2">
+                    Wilfred James
+                  </a>
+                </td>
+                <td class="item-email">
+                  wilfred.james@email.com
+                </td>
+                <td class="item-role">
+                  Director at CEMEX
+                </td>
+                <td>
+                  (555) - 32423
+                </td>
+                <td>
+                  <span class="svg-icon svg-icon-sm text-muted">
+                    @@include("assets/img/ionicons/chatbox-outline.svg")
+                  </span>
+                  <span class="fs-sm text-muted relative-top-2 ms-1">0</span>
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Edit info</a>
+                      <a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-footer d-flex justify-content-center p-0">
+          <ul class="nav-pagination">
+            <li>
+              <a class="page" href="#!">1</a>
+            </li>
+            <li>
+              <a class="page" href="#!">2</a>
+            </li>
+            <li>
+              <a class="page" href="#!">3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-alert alert alert-dark w-300 w-md-400 border-0 shadow-light-lg fade fixed-bottom start-50 translate-middle-x mb-4" role="alert" style="z-index: -1;">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="form-check">
+            <input class="form-check-input" id="listAlertCheckbox" type="checkbox" checked onclick="return false;">
+            <label class="form-check-label text-white relative-top-2 ms-1" for="listAlertCheckbox">
+              <span class="list-alert-count">0</span> customers(s)
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-sm-auto ms-3 mt-3 mt-md-0">
+          <button class="btn btn-sm btn-pastel-purple">
+            Send refund
+          </button>
+          <button class="btn btn-link list-alert-close btn-sm text-white">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+
+  <script type="text/javascript">
+    $(function () {
+      var options = {
+        valueNames: [ 'item-name', 'item-email', 'item-role' ],
+        page: 10,
+        pagination: {
+          paginationClass: 'nav-pagination'
+        }
+      };
+
+      var customersList = new List('customers', options);
+    })
+  </script>
+</body>
+</html>

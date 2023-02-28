@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "3",
+    "link": "account-billing"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid mt-4 mt-md-5 mb-7">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="text-uppercase-xs text-muted mb-4">
+                Account settings
+              </h6>
+              <ul class="list text-darkblue m-0">
+                <li class="list-item">
+                  <a class="text-reset" href="account.html">
+                    General
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-notifications.html">
+                    Notifications
+                  </a>
+                </li>
+                <li class="list-item active">
+                  <a class="text-reset" href="account-billing.html">
+                    Billing & Payments
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-teammates.html">
+                    Teammates
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="card-header-title text-darkblue mb-1 mb-md-0">
+                Current plan
+              </h6>
+              <a href="#!" class="btn btn-sm btn-primary">Change plan</a>
+            </div>
+            <div class="card-body">
+              <h6>
+                Premium suscription
+              </h6>
+              <p class="lead mt-3">
+                $29.00 per month
+              </p>
+              <p class="text-uppercase-xs mt-4 mb-0">
+                <i class="fas fa-check-circle fa-lg text-success me-1"></i>
+                Your plan renews on Oct 16, 2020
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="card-header">
+              <h6 class="card-header-title text-darkblue mb-1 mb-md-0">
+                Payment methods
+              </h6>
+              <a href="#!" class="btn btn-sm btn-primary">Add new</a>
+            </div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-6 d-flex align-items-center">
+                  <div class="svg-icon svg-icon-xl me-2 relative-top--2">
+                    @@include("assets/img/svg/visa.svg")
+                  </div>
+                  <span class="ms-3">•••• 7362</span>
+                  <span class="badge bg-purple letter-spacing-lg ms-3 relative-top--3">DEFAULT</span> 
+                </div>
+                <div class="col-md-6 d-flex mt-3 mt-md-0">
+                  <span class="text-uppercase-xs">
+                    Expires 03/2026
+                  </span>
+                  
+                  <div class="dropdown d-inline-block ms-auto">
+                    <a href="#" class="text-gray-600" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Make default</a>
+                      <a class="dropdown-item text-danger" href="#!">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row align-items-center mt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                  <div class="svg-icon svg-icon-xl me-2 relative-top--1">
+                    @@include("assets/img/svg/mastercard.svg")
+                  </div>
+                  <span class="ms-3">•••• 5891</span>
+                </div>
+                <div class="col-md-6 d-flex mt-3 mt-md-0">
+                  <span class="text-uppercase-xs">
+                    Expires 06/2024
+                  </span>
+                  
+                  <div class="dropdown d-inline-block ms-auto">
+                    <a href="#" class="text-gray-600" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!">Make default</a>
+                      <a class="dropdown-item text-danger" href="#!">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="card-header">
+              <h6 class="card-header-title text-darkblue">
+                Invoice history
+              </h6>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex px-2">
+                  <a href="#!">
+                    Sep 26, 2020
+                  </a>
+                  <span class="ms-4">Premium Suscription</span>
+                  <span class="ms-auto">$29.00</span>
+                </li>
+                <li class="list-group-item d-flex px-2">
+                  <a href="#!">
+                    Aug 26, 2020
+                  </a>
+                  <span class="ms-4">Premium Suscription</span>
+                  <span class="ms-auto">$29.00</span>
+                </li>
+                <li class="list-group-item d-flex px-2">
+                  <a href="#!">
+                    Jul 26, 2020
+                  </a>
+                  <span class="ms-4">Premium Suscription</span>
+                  <span class="ms-auto">$29.00</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

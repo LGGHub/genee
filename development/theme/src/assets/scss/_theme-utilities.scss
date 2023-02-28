@@ -1,0 +1,120 @@
+// Add/remove values from sass maps
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "purple":     $purple, 
+    "sky":        $sky,
+    "pistachio":  $pistachio, 
+    "darkblue":   $darkblue
+  )
+);
+
+$spacers: map-merge(
+  $spacers,
+  (
+    6: ($spacer * 4),
+    7: ($spacer * 6),
+    8: ($spacer * 8),
+    9: ($spacer * 10),
+    10: ($spacer * 12)
+  )
+);
+
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+
+
+// Override utilities:
+$utilities: () !default;
+$utilities: map-merge(
+  (
+    "background-gray": (
+      property: background,
+      class: bg-gray,
+      values: $grays
+    ),
+    "color-gray": (
+      property: color,
+      class: text-gray,
+      values: $grays
+    ),
+    "border-gray": (
+      property: border-color,
+      class: border-gray,
+      values: $grays
+    ),
+    "width": (
+      property: width,
+      class: w,
+      responsive: true,
+      values: map-merge($sizes, (auto: auto))
+    ),
+    "height": (
+      property: height,
+      class: h,
+      responsive: true,
+      values: map-merge($sizes, (auto: auto))
+    ),
+    "opacity": (
+      property: opacity,
+      values: (0: 0, 10: .1, 20: .2, 30: .3, 40: .4, 50: .5, 60: .6, 70: .7, 80: .8, 90: .9, 100: 1)
+    ),
+    "position": (
+      property: position,
+      responsive: true,
+      values: static relative absolute fixed sticky
+    ),
+    "shadow-light": (
+      property: box-shadow,
+      class: shadow-light,
+      values: (
+        null: $box-shadow-light,
+        sm: $box-shadow-light-sm,
+        lg: $box-shadow-light-lg
+      )
+    ),
+    "font-size": (
+      property: font-size,
+      class: fs,
+      values: (
+        xs: $font-size-xs,
+        sm: $font-size-sm,
+        base: $font-size-base,
+        lg: $font-size-lg
+      )
+    ),
+    "letter-spacing": (
+      property: letter-spacing,
+      values: (
+        lg: 2px,
+        xl: 5px
+      )
+    ),
+    "z-index": (
+      property: z-index,
+      values: 2 1 0 -1 -2
+    ),
+    "fixed-widths": (
+      property: width,
+      class: w,
+      responsive: true,
+      values: (150: 150px, 200: 200px, 250: 250px, 300: 300px, 350: 350px, 400: 400px, 450: 450px, 500: 500px)
+    ),
+    "fixed-heights": (
+      property: height,
+      class: h,
+      responsive: true,
+      values: (150: 150px, 200: 200px, 250: 250px, 300: 300px, 350: 350px, 400: 400px, 450: 450px, 500: 500px)
+    ),
+    "flex": (
+      property: flex,
+      values: 1
+    ),
+    "viewport-width": (
+      property: width,
+      class: vw,
+      responsive: true,
+      values: (50: 50vw, 100: 100vw)
+    )
+  ),
+  $utilities
+);

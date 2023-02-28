@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Sign in | Foresight"
+})
+
+<body class="bg-white">
+  <div class="row g-0 min-vh-100">
+    <div class="col-lg-6 d-none d-lg-block">
+      <div class="bg-dark d-flex align-items-center vw-lg-50 h-100">
+        <div class="p-7 p-xl-8">
+          <h3 class="text-white line-height-lg">
+            “ With Foresight, my projects have been a breeze. I no longer have to worry about spending tons of hours into making my dashboard fast, beautiful and responsive.”
+          </h3>
+          <div class="text-white mt-5">
+            <p class="text-uppercase fw-bold letter-spacing-lg">David Gilmour</p>
+            <p class="text-uppercase-bold-sm text-pastel-purple">CTO, Dribbble</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+      <div class="py-5 ps-lg-8">
+        <a href="index.html">
+          <img src="assets/img/svg/logo.svg" alt="">
+        </a>
+        <h4 class="font-weight-normal text-dark mt-5">
+          Log in to your account
+        </h4>
+        <form class="w-300 w-lg-350 mt-4">
+          <div class="mb-3">
+            <input type="email" name="email" placeholder="Email" class="form-control form-control-lg bg-pastel-darkblue">
+          </div>
+
+          <div class="mb-3">
+            <input type="password" name="password" placeholder="Password" class="form-control form-control-lg bg-pastel-darkblue">
+          </div>
+
+          <input type="submit" class="btn btn-primary btn-lg shadow-light text-uppercase-bold-sm hover-lift mt-4" value="Sign in">
+
+          <a href="recover-password.html" class="d-block font-size-sm mt-5">
+            Forgot your password?
+          </a>
+
+          <div class="text-secondary font-size-sm mt-5">
+            Don't have an account?
+            <a href="sign-up.html">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

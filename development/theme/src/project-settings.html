@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "2",
+    "link": "project-settings"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid pb-7">
+      <div class="d-flex align-items-start mt-5">
+        <h2 class="mb-0">
+          Bootstrap 5 Theme
+        </h2>
+        <div class="dropdown text-end ms-auto z-index-2">
+          <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="svg-icon text-gray-500">
+              @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#!">Edit name, description, etc</a>
+            <a class="dropdown-item" href="#!">Change settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-danger" href="#!">Delete</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row align-items-start mt-4">
+        <div class="avatar-group">
+          <div class="avatar">
+            <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <div class="avatar-letters rounded-circle bg-purple text-white">EA</div>
+          </div>
+        </div>
+
+        <a href="#!" class="btn btn-primary hover-lift-light shadow-light-sm ms-md-auto mt-3 mt-md-0">
+          <span class="svg-icon svg-icon-sm text-white me-1">
+            @@include("assets/img/ionicons/add-outline.svg")
+          </span>
+          Invite someone
+        </a>
+      </div>
+
+      <ul class="nav nav-tabs nav-overflow mt-4">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="project.html">
+            Overview
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project-files.html">
+            Files
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project-activity.html">
+            Activity
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="project-settings.html">
+            Settings
+          </a>
+        </li>
+      </ul>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-xl-7">
+          <form>
+            <div class="d-flex align-items-start">
+              <div class="avatar avatar-xxl">
+                <img src="assets/img/unsplash/5.jpeg" class="avatar-image rounded-2" alt="">
+              </div>
+              <div class="flex-1 ms-4 ps-2">
+                <p class="mb-1">
+                  Project logo:
+                </p>
+                <span class="fs-sm text-muted">
+                  PNG or JPG. 10MB limit.
+                </span>
+                <div class="mt-3">
+                  <a href="#!" class="btn btn-sm btn-primary">Edit</a>
+                  <a href="#!" class="btn btn-sm btn-light ms-md-2">Remove</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="from-group mt-4 pt-3">
+              <label class="form-label">
+                Project name:
+              </label>
+              <input type="text" class="form-control" name="" value="Bootstrap 5 Theme">
+            </div>
+
+            <div class="from-group mt-4">
+              <label class="form-label">
+                Project description:
+              </label>
+              <textarea rows="4" class="form-control" name=""></textarea>
+            </div>
+
+            <div class="from-group mt-4">
+              <label class="form-label">
+                Budget:
+              </label>
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="from-group mt-4">
+              <label class="form-label mb-0">
+                Project cover:
+              </label>
+              <p class="form-text">
+                Upload a JPG or PNG. No larger than 1200px.
+              </p>
+              <input type="file" class="form-control">
+            </div>
+
+            <div class="from-group border-top mt-5 pt-5">
+              <div class="form-check">
+                <input class="form-check-input relative-top--2" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Send notification to everyone
+                </label>
+              </div>
+            </div>
+
+            <div class="d-grid gap-3 mt-5">
+              <button class="btn btn-primary btn-lg hover-lift-light" type="submit">Save changes</button>
+              <button class="btn btn-link">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

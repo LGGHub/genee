@@ -1,0 +1,22 @@
+.list {
+  @include list-unstyled();
+}
+
+.list-item {
+  margin-bottom: .75rem;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.active:after {
+    content: "";
+    position: absolute;
+    left: -$card-spacer-x;
+    top: .25rem;
+    bottom: .25rem;
+    width: 2px;
+    background: $purple;
+  }
+}

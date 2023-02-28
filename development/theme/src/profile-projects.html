@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "1",
+    "link": "profile-projects"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="w-100 h-150 h-md-250 bg-cover" style="background-image: url('assets/img/unsplash/2.png');">
+    </div>
+
+    <div class="container-fluid">
+      <div class="d-md-flex align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="avatar avatar-xxl mt-n4 relative-top--5">
+            <img src="assets/img/uifaces/13.jpg" class="avatar-image rounded-circle border border-white border-2" alt="">
+          </div>
+          <div class="flex-1 ms-4 mt-4">
+            <h3 class="mb-0">
+              Steven Gerrard
+            </h3>
+            <p class="text-gray-600">
+              @steven
+            </p>
+          </div>
+        </div>
+        <a href="#!" class="btn btn-primary hover-lift-light shadow-light-sm ms-auto">
+          <span class="svg-icon svg-icon-sm text-white me-1">
+            @@include("assets/img/ionicons/add-outline.svg")
+          </span>
+          Follow
+        </a>
+      </div>
+
+      <ul class="nav nav-tabs nav-overflow mt-3">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="profile.html">
+            Feed
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="profile-projects.html">
+            Projects <span class="badge rounded-pill bg-primary ms-1">7</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile-files.html">
+            Files
+          </a>
+        </li>
+      </ul>
+
+      <div class="row mt-5 mb-7">
+        <div class="col-12 col-md-6">
+          <div class="card hover-lift-light">
+            <div class="card-header d-flex border-0 mt-3">
+              <a href="#!" class="h5 text-darkblue stretched-link text-decoration-none m-0">
+                Bootstrap Theme
+              </a>
+              <div class="dropdown ms-auto z-index-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Edit project</a>
+                  <a class="dropdown-item" href="#!">Add members</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-xl-flex justify-content-between align-items-end mt-4 mt-md-5">
+                <div class="avatar-group">
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/10.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/13.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <div class="avatar-letters rounded-circle bg-purple text-white">+2</div>
+                  </div>
+                </div>
+                <p class="text-muted fs-sm mb-0 mt-3 mt-xl-0">
+                  Last updated 3 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-4 mt-md-0">
+          <div class="card hover-lift-light">
+            <div class="card-header d-flex border-0 mt-3">
+              <a href="#!" class="h5 text-darkblue stretched-link text-decoration-none m-0">
+                2022 Website Redesign
+              </a>
+              <div class="dropdown ms-auto z-index-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Edit project</a>
+                  <a class="dropdown-item" href="#!">Add members</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-xl-flex justify-content-between align-items-end mt-4 mt-md-5">
+                <div class="avatar-group">
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/1.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/3.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <div class="avatar-letters rounded-circle bg-purple text-white">+5</div>
+                  </div>
+                </div>
+                <p class="text-muted fs-sm mb-0 mt-3 mt-xl-0">
+                  Last updated 5 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-4">
+          <div class="card hover-lift-light">
+            <div class="card-header d-flex border-0 mt-3">
+              <a href="#!" class="h5 text-darkblue stretched-link text-decoration-none m-0">
+                Finish version 3.0
+              </a>
+              <div class="dropdown ms-auto z-index-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Edit project</a>
+                  <a class="dropdown-item" href="#!">Add members</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-xl-flex justify-content-between align-items-end mt-4 mt-md-5">
+                <div class="avatar-group">
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/6.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/5.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                </div>
+                <p class="text-muted fs-sm mb-0 mt-3 mt-xl-0">
+                  Last updated 1 week ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-4">
+          <div class="card hover-lift-light">
+            <div class="card-header d-flex border-0 mt-3">
+              <a href="#!" class="h5 text-darkblue stretched-link text-decoration-none m-0">
+                Migrate new database
+              </a>
+              <div class="dropdown ms-auto z-index-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Edit project</a>
+                  <a class="dropdown-item" href="#!">Add members</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-xl-flex justify-content-between align-items-end mt-4 mt-md-5">
+                <div class="avatar-group">
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/10.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="avatar">
+                    <img src="assets/img/uifaces/13.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                </div>
+                <p class="text-muted fs-sm mb-0 mt-3 mt-xl-0">
+                  Last updated 2 weeks ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

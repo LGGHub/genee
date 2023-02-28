@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "3",
+    "link": "account-notifications"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid mt-4 mt-md-5 mb-7">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="text-uppercase-xs text-muted mb-4">
+                Account settings
+              </h6>
+              <ul class="list text-darkblue m-0">
+                <li class="list-item">
+                  <a class="text-reset" href="account.html">
+                    General
+                  </a>
+                </li>
+                <li class="list-item active">
+                  <a class="text-reset" href="account-notifications.html">
+                    Notifications
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-billing.html">
+                    Billing & Payments
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-teammates.html">
+                    Teammates
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="card-header-title text-darkblue mb-1 mb-md-0">
+                Account notifications
+              </h6>
+              <a href="#!" class="btn btn-sm btn-white">
+                Disable all
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="row no-gutters border-bottom border-gray-200 pb-4">
+                <div class="col">
+                  Someone mentions me with a <span class="text-purple">@mention</span>
+                </div>
+                <div class="col-auto">
+                  <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="switch1">
+                    <label class="form-check-label" for="switch1"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters border-bottom border-gray-200 py-4">
+                <div class="col">
+                  Someone accepts my invitation
+                </div>
+                <div class="col-auto">
+                  <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="switch2" checked>
+                    <label class="form-check-label" for="switch2"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters border-bottom border-gray-200 py-4">
+                <div class="col">
+                  Important updates of activity you've missed
+                </div>
+                <div class="col-auto">
+                  <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="switch3" checked>
+                    <label class="form-check-label" for="switch3"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters pt-4">
+                <div class="col">
+                  Receive security alert notifications
+                </div>
+                <div class="col-auto">
+                  <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="switch4">
+                    <label class="form-check-label" for="switch4"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-header">
+              <h6 class="card-header-title text-darkblue mb-1 mb-md-0">
+                Marketing notifications
+              </h6>
+              <a href="#!" class="btn btn-sm btn-white">
+                Disable all
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="row no-gutters border-bottom border-gray-200 pb-4">
+                <div class="col">
+                  Suscribe to offers and discounts
+                </div>
+                <div class="col-auto">
+                  <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="switch5" checked="">
+                    <label class="form-check-label" for="switch5"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters align-items-center border-bottom border-gray-200 py-4">
+                <div class="col">
+                  Receive the newsletter
+                </div>
+                <div class="col-auto">
+                  <select class="form-select">
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                    <option>Unsubscribe</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row no-gutters pt-4">
+                <div class="col">
+                  Product updates
+                </div>
+                <div class="col-auto">
+                  <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="switch6">
+                    <label class="form-check-label" for="switch6"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

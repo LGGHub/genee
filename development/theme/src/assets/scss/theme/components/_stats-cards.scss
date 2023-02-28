@@ -1,0 +1,25 @@
+// 
+// Stat card component
+// 
+
+.statcard {
+  border-radius: $border-radius;
+  padding: $statcard-padding-y 1rem $statcard-padding-y $statcard-padding-x;
+}
+
+.statcard-value {
+  display: flex;
+  align-items: center;
+}
+
+.statcard-change {
+  font-size: $statcard-change-size;
+  margin-left: .75rem;
+}
+
+.statcard-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: $statcard-label-size;
+  font-weight: $statcard-label-font-weight;
+}

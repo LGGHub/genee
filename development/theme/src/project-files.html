@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "2",
+    "link": "project-files"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid pb-7">
+      <div class="d-flex align-items-start mt-5">
+        <h2 class="mb-0">
+          Bootstrap 5 Theme
+        </h2>
+        <div class="dropdown text-end ms-auto z-index-2">
+          <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="svg-icon text-gray-500">
+              @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#!">Edit name, description, etc</a>
+            <a class="dropdown-item" href="#!">Change settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-danger" href="#!">Delete</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row align-items-start mt-4">
+        <div class="avatar-group">
+          <div class="avatar">
+            <img src="assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <img src="assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+          </div>
+          <div class="avatar">
+            <div class="avatar-letters rounded-circle bg-purple text-white">EA</div>
+          </div>
+        </div>
+
+        <a href="#!" class="btn btn-primary hover-lift-light shadow-light-sm ms-md-auto mt-3 mt-md-0">
+          <span class="svg-icon svg-icon-sm text-white me-1">
+            @@include("assets/img/ionicons/add-outline.svg")
+          </span>
+          Invite someone
+        </a>
+      </div>
+
+      <ul class="nav nav-tabs nav-overflow mt-4">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="project.html">
+            Overview
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="project-files.html">
+            Files
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project-activity.html">
+            Activity
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project-settings.html">
+            Settings
+          </a>
+        </li>
+      </ul>
+
+      <div class="card mt-4">
+        <div class="card-header">
+          <form>
+            <div class="input-group input-group-flush pt-2">
+              <div class="input-group-text ps-0">
+                <i class="fas fa-search relative-top--2"></i>
+              </div>
+              <input type="search" class="search form-control" placeholder="Search...">
+            </div>
+          </form>
+
+          <button type="button" class="btn btn-white ms-auto mt-2 mt-md-0">
+            Upload file
+          </button>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-md-flex align-items-center">
+              <div class="icon-circle text-primary">
+                <i class="far fa-file-pdf h5"></i>
+              </div>
+              <div class="ms-md-3">
+                <a href="#!" class="text-dark fw-bold d-block mb-1">
+                  Marketing Planning 2021
+                </a>
+                <span class="text-muted fs-sm">
+                  267Kb <span class="mx-1">●</span> Uploaded 5h ago <span class="mx-1">●</span> pdf
+                </span>
+              </div>
+              <div class="ms-auto d-flex align-items-center mt-2 mt-md-0">
+                <a href="#!" class="btn btn-white">
+                  Download
+                  <span class="svg-icon svg-icon-xs text-dark">
+                    @@include("assets/img/ionicons/arrow-down-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown ms-3">
+                  <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="svg-icon text-gray-500">
+                      @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                    </span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#!">Upload new version</a>
+                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-md-flex align-items-center">
+              <div class="icon-circle text-primary">
+                <i class="far fa-file-word h5"></i>
+              </div>
+              <div class="ms-md-3">
+                <a href="#!" class="text-dark fw-bold d-block mb-1">
+                  Final proposal
+                </a>
+                <span class="text-muted fs-sm">
+                  1.5MB <span class="mx-1">●</span> Uploaded 7h ago <span class="mx-1">●</span> Word
+                </span>
+              </div>
+              <div class="ms-auto d-flex align-items-center mt-2 mt-md-0">
+                <a href="#!" class="btn btn-white">
+                  Download
+                  <span class="svg-icon svg-icon-xs text-dark">
+                    @@include("assets/img/ionicons/arrow-down-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown ms-3">
+                  <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="svg-icon text-gray-500">
+                      @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                    </span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#!">Upload new version</a>
+                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-md-flex align-items-center">
+              <div class="icon-circle text-primary">
+                <i class="far fa-file h5"></i>
+              </div>
+              <div class="ms-md-3">
+                <a href="#!" class="text-dark fw-bold d-block mb-1">
+                  Photo Collection
+                </a>
+                <span class="text-muted fs-sm">
+                  7.2MB <span class="mx-1">●</span> Uploaded 7h ago <span class="mx-1">●</span> File
+                </span>
+              </div>
+              <div class="ms-auto d-flex align-items-center mt-2 mt-md-0">
+                <a href="#!" class="btn btn-white">
+                  Download
+                  <span class="svg-icon svg-icon-xs text-dark">
+                    @@include("assets/img/ionicons/arrow-down-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown ms-3">
+                  <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="svg-icon text-gray-500">
+                      @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                    </span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#!">Upload new version</a>
+                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-md-flex align-items-center">
+              <div class="icon-circle text-primary">
+                <i class="far fa-file-video h5"></i>
+              </div>
+              <div class="ms-md-3">
+                <a href="#!" class="text-dark fw-bold d-block mb-1">
+                  YouTube Top 10 Video
+                </a>
+                <span class="text-muted fs-sm">
+                  87MB <span class="mx-1">●</span> Uploaded 1d ago <span class="mx-1">●</span> mp4
+                </span>
+              </div>
+              <div class="ms-auto d-flex align-items-center mt-2 mt-md-0">
+                <a href="#!" class="btn btn-white">
+                  Download
+                  <span class="svg-icon svg-icon-xs text-dark">
+                    @@include("assets/img/ionicons/arrow-down-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown ms-3">
+                  <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="svg-icon text-gray-500">
+                      @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                    </span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#!">Upload new version</a>
+                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-md-flex align-items-center">
+              <div class="icon-circle text-primary">
+                <i class="far fa-file-code h5"></i>
+              </div>
+              <div class="ms-md-3">
+                <a href="#!" class="text-dark fw-bold d-block mb-1">
+                  models/user_account.rb
+                </a>
+                <span class="text-muted fs-sm">
+                  67Kb <span class="mx-1">●</span> Uploaded 2d ago <span class="mx-1">●</span> ruby
+                </span>
+              </div>
+              <div class="ms-auto d-flex align-items-center mt-2 mt-md-0">
+                <a href="#!" class="btn btn-white">
+                  Download
+                  <span class="svg-icon svg-icon-xs text-dark">
+                    @@include("assets/img/ionicons/arrow-down-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown ms-3">
+                  <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="svg-icon text-gray-500">
+                      @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                    </span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#!">Upload new version</a>
+                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-md-flex align-items-center">
+              <div class="icon-circle text-primary">
+                <i class="far fa-folder h5"></i>
+              </div>
+              <div class="ms-md-3">
+                <a href="#!" class="text-dark fw-bold d-block mb-1">
+                  Picture ideas
+                </a>
+                <span class="text-muted fs-sm">
+                  3MB <span class="mx-1">●</span> Uploaded 5h ago <span class="mx-1">●</span> directory
+                </span>
+              </div>
+              <div class="ms-auto d-flex align-items-center mt-2 mt-md-0">
+                <a href="#!" class="btn btn-white">
+                  Download
+                  <span class="svg-icon svg-icon-xs text-dark">
+                    @@include("assets/img/ionicons/arrow-down-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown ms-3">
+                  <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="svg-icon text-gray-500">
+                      @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                    </span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#!">Edit name</a>
+                    <a class="dropdown-item text-danger" href="#!">Remove</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

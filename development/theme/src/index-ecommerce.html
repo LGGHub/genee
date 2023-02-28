@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "1",
+    "link": "ecommerce"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "1",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid mt-4 mt-md-5 mb-6">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="text-center text-md-start m-0">
+            Good morning Ana
+          </h3>
+        </div>
+
+        <div class="col-12 mt-4">
+          <div class="card">
+            <div class="card-header text-center">
+              <div class="card-header-title mb-2 mb-md-0">
+                Your earnings
+              </div>
+
+              <div class="w-100 w-md-250 bg-white border rounded d-flex align-items-center fs-sm fw-bold ms-md-auto py-1 px-3" role="button" data-datepicker>
+                <div class="svg-icon me-2">
+                  @@include("assets/img/ionicons/calendar-outline.svg")
+                </div>
+                <span class="mt-1"></span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="chart">
+                <canvas class="chart-canvas" id="ecommerceChart"></canvas>
+              </div>
+            </div>
+
+            <div class="card-footer py-3 bg-dark">
+              <div class="row row-cols-2 row-cols-md-5">
+                <div class="col text-center">
+                  <div class="text-uppercase-xs text-pastel-purple">
+                    Total sales
+                  </div>
+                  <h4 class="text-white mt-1 mt-md-3 mb-0">
+                    $362,201
+                  </h4>
+                </div>
+                <div class="col text-center">
+                  <div class="text-uppercase-xs text-pastel-purple">
+                    Visits
+                  </div>
+                  <h4 class="text-white mt-1 mt-md-3 mb-0">
+                    3,210
+                  </h4>
+                </div>
+                <div class="col text-center mt-4 mt-md-0">
+                  <div class="text-uppercase-xs text-pastel-purple">
+                    Today's orders
+                  </div>
+                  <h4 class="text-white mt-1 mt-md-3 mb-0">
+                    18
+                  </h4>
+                </div>
+                <div class="col text-center mt-4 mt-md-0">
+                  <div class="text-uppercase-xs text-pastel-purple">
+                    Today's visitors
+                  </div>
+                  <h4 class="text-white mt-1 mt-md-3 mb-0">
+                    891
+                  </h4>
+                </div>
+                <div class="col text-center mt-4 mt-md-0">
+                  <div class="text-uppercase-xs text-pastel-purple">
+                    Avg. order value
+                  </div>
+                  <h4 class="text-white mt-1 mt-md-3 mb-0">
+                    $247
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-xl-7">
+          <div class="card h-100">
+            <div class="card-header">
+              <h6 class="card-header-title mb-1 mb-md-0">
+                Recent activity
+              </h6>
+              <a class="small" href="#!">
+                View all
+                <i class="fas fa-chevron-right fa-xs ms-1"></i>
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="list-group list-group-flush list-group-activity">
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h6>
+                        Karina fulfilled <a href="#!">1 order</a>
+                      </h6>
+                      <p class="small text-gray-700 mb-1">
+                        Order #183-A shipped to Australia.
+                      </p>
+                      <small class="text-muted">
+                        2h ago
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h6>
+                        John R. commented on the <a href="#!">order #559-C</a>
+                      </h6>
+                      <p class="small text-gray-700 mb-1">
+                        Did you confirm the shipping address with the customer?
+                      </p>
+                      <small class="text-muted">
+                        1d ago
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/3.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h6>
+                        Robert T. created a new product <a href="#!">Summer shirt</a>
+                      </h6>
+                      <p class="small text-gray-700 mb-1">
+                        Added to the collection Summer Season.
+                      </p>
+                      <small class="text-muted">
+                        1d ago
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-5 mt-4 mt-xl-0">
+          <div class="card h-100">
+            <div class="card-header">
+              <h6 class="card-header-title mb-1 mb-md-0">
+                Visits by location
+              </h6>
+              <a class="small" href="#!">
+                View all
+                <i class="fas fa-chevron-right fa-xs ms-1"></i>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="list-group list-group-flush">
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-xs position-relative">
+                        <img src="assets/img/flags/usa.png" class="avatar-image" alt="">
+                      </div>
+                      <span class="ms-3 relative-top-2">USA</span>
+                    </div>
+                    <div class="col text-end">
+                      <span class="me-3 me-md-4 me-xxl-5">
+                        3,581
+                      </span>
+                      <span class="fw-bold">
+                        <span class="svg-icon text-success relative-top--2 me-1">
+                          @@include("assets/img/ionicons/trending-up-outline.svg")
+                        </span>
+
+                        7.8%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-xs position-relative">
+                        <img src="assets/img/flags/germany.png" class="avatar-image" alt="">
+                      </div>
+                      <span class="ms-3 relative-top-2">Germany</span>
+                    </div>
+                    <div class="col text-end">
+                      <span class="me-3 me-md-4 me-xxl-5">
+                        2,893
+                      </span>
+                      <span class="fw-bold">
+                        <span class="svg-icon text-danger relative-top--2 me-1">
+                          @@include("assets/img/ionicons/trending-down-outline.svg")
+                        </span>
+
+                        5.2%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-xs position-relative">
+                        <img src="assets/img/flags/japan.png" class="avatar-image" alt="">
+                      </div>
+                      <span class="ms-3 relative-top-2">Japan</span>
+                    </div>
+                    <div class="col text-end">
+                      <span class="me-3 me-md-4 me-xxl-5">
+                        1,602
+                      </span>
+                      <span class="fw-bold">
+                        <span class="svg-icon text-success relative-top--2 me-1">
+                          @@include("assets/img/ionicons/trending-up-outline.svg")
+                        </span>
+
+                        4.9%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-xs position-relative">
+                        <img src="assets/img/flags/netherlands.png" class="avatar-image" alt="">
+                      </div>
+                      <span class="ms-3 relative-top-2">Netherlands</span>
+                    </div>
+                    <div class="col text-end">
+                      <span class="me-3 me-md-4 me-xxl-5">
+                        937
+                      </span>
+                      <span class="fw-bold">
+                        <span class="svg-icon text-success relative-top--2 me-1">
+                          @@include("assets/img/ionicons/trending-up-outline.svg")
+                        </span>
+
+                        8.2%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-xs position-relative">
+                        <img src="assets/img/flags/spain.png" class="avatar-image" alt="">
+                      </div>
+                      <span class="ms-3 relative-top-2">Spain</span>
+                    </div>
+                    <div class="col text-end">
+                      <span class="me-3 me-md-4 me-xxl-5">
+                        589
+                      </span>
+                      <span class="fw-bold">
+                        <span class="svg-icon text-success relative-top--2 me-1">
+                          @@include("assets/img/ionicons/trending-up-outline.svg")
+                        </span>
+
+                        13.3%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-xl-7">
+          <div class="card h-100">
+            <div class="card-header">
+              <h6 class="card-header-title mb-1 mb-md-0">
+                Top products
+              </h6>
+              <a class="small" href="#!">
+                View all
+                <i class="fas fa-chevron-right fa-xs ms-1"></i>
+              </a>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-sm card-table table-nowrap">
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Category
+                    </th>
+                    <th>
+                      Price
+                    </th>
+                    <th>
+                      Total revenue
+                    </th>
+                    <th class="text-end">
+                      Status
+                    </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                  <tr>
+                    <td>
+                      <div class="avatar">
+                        <img src="assets/img/misc/4.jpg" class="avatar-image rounded" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      Books
+                    </td>
+                    <td>
+                      $49.99
+                    </td>
+                    <td>
+                      $13,889.50
+                    </td>
+                    <td class="text-end">
+                      <span class="badge bg-success">
+                        Available
+                      </span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit product</a>
+                          <a class="dropdown-item" href="#!">Share link</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="avatar">
+                        <img src="assets/img/misc/2.jpg" class="avatar-image rounded" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      Clothing
+                    </td>
+                    <td>
+                      $24.99
+                    </td>
+                    <td>
+                      $11,614.80
+                    </td>
+                    <td class="text-end">
+                      <span class="badge bg-dark">
+                        Out of stock
+                      </span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit product</a>
+                          <a class="dropdown-item" href="#!">Share link</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="avatar">
+                        <img src="assets/img/misc/3.jpg" class="avatar-image rounded" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      Posters
+                    </td>
+                    <td>
+                      $49.99
+                    </td>
+                    <td>
+                      $7.573.20
+                    </td>
+                    <td class="text-end">
+                      <span class="badge bg-success">
+                        Available
+                      </span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit product</a>
+                          <a class="dropdown-item" href="#!">Share link</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="avatar">
+                        <img src="assets/img/misc/1.jpg" class="avatar-image rounded" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      Clothing
+                    </td>
+                    <td>
+                      $39.99
+                    </td>
+                    <td>
+                      $6,892.10
+                    </td>
+                    <td class="text-end">
+                      <span class="badge bg-purple">
+                        Only 6 left
+                      </span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit product</a>
+                          <a class="dropdown-item" href="#!">Share link</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="avatar">
+                        <img src="assets/img/misc/5.jpeg" class="avatar-image rounded" alt="">
+                      </div>
+                    </td>
+                    <td>
+                      Decoration
+                    </td>
+                    <td>
+                      $19.99
+                    </td>
+                    <td>
+                      $4,535.50
+                    </td>
+                    <td class="text-end">
+                      <span class="badge bg-success">
+                        Available
+                      </span>
+                    </td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="svg-icon text-gray-500">
+                            @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                          </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#!">Edit product</a>
+                          <a class="dropdown-item" href="#!">Share link</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-5 mt-4 mt-xl-0">
+          <div class="card h-100">
+            <div class="card-header">
+              <h6 class="card-header-title mb-1 mb-md-0">
+                Top customers
+              </h6>
+              <a class="small" href="#!">
+                View all
+                <i class="fas fa-chevron-right fa-xs ms-1"></i>
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="list-group list-group-flush">
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h6>
+                        Karina Johnson with <a href="#!">26 orders</a>.
+                      </h6>
+                      <p class="small text-gray-700 mb-1">
+                        $6,739.35 spent
+                      </p>
+                      <small class="text-muted">
+                        Los Angeles, Ca.
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h6>
+                        John R. with <a href="#!">18 orders</a>.
+                      </h6>
+                      <p class="small text-gray-700 mb-1">
+                        $5,231.75 spent
+                      </p>
+                      <small class="text-muted">
+                        Dublin, Ireland
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/3.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h6>
+                        Robert T. with <a href="#!">14 orders</a>.
+                      </h6>
+                      <p class="small text-gray-700 mb-1">
+                        $4,613.80 spent
+                      </p>
+                      <small class="text-muted">
+                        Berlin, Germany
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar position-relative">
+                        <img src="assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h6>
+                        Ana James with <a href="#!">8 orders</a>.
+                      </h6>
+                      <p class="small text-gray-700 mb-1">
+                        $3,793.20 spent
+                      </p>
+                      <small class="text-muted">
+                        CDMX, Mexico
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+
+  <script type="text/javascript">
+    $(function () {
+      // datepicker
+      function cb(start, end) {
+        $('[data-datepicker] span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'))
+      }
+
+      var startDate = moment().subtract(17, 'days')
+      var endDate = moment()
+
+      $('[data-datepicker]').daterangepicker({
+        startDate: startDate,
+        endDate: endDate,
+        opens: 'left',
+        applyButtonClasses: "btn-purple",
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb)
+
+      cb(startDate, endDate)
+    })
+  </script>
+</body>
+</html>

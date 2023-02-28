@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Getting started | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0 mb-5">
+          <!-- Getting started -->
+          <h3 class="text-darkblue fw-normal">
+            Getting started
+          </h3>
+          <p class="text-secondary mt-3">
+            Hey! 👋,
+          </p>
+          <p class="text-secondary mt-1">
+            In this page we'll cover the folder structure, setting up your development workflow, how to compile, customize and extend the theme. I'm here to help! if you get any questions please contact me at <span class="fw-bold text-purple">e.adrian90@gmail.com</span>.
+          </p>
+
+          <hr class="mt-5 mb-0">
+
+          <!-- Folders -->
+          <h5 class="text-darkblue pt-7 mt-n5" id="folders">
+            <span class="svg-icon">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+            Folder structure
+          </h5>
+          <ul class="mt-4">
+            <li>
+              <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                @@include("../assets/img/stockholm/Files/Folder.svg")
+              </span>
+              foresight/
+              <ul>
+                <li class="my-1">
+                  <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                    @@include("../assets/img/stockholm/Files/Folder.svg")
+                  </span>
+                  dist/
+                  <span class="text-muted fs-sm ms-3">
+                    compiled theme files
+                  </span>
+                </li>
+                <li class="my-1">
+                  <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                    @@include("../assets/img/stockholm/Files/Folder.svg")
+                  </span>
+                  src/
+                  <span class="text-muted fs-sm ms-3">
+                    source files for development
+                  </span>
+                  <ul>
+                    <li class="my-1">
+                      <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                        @@include("../assets/img/stockholm/Files/Folder.svg")
+                      </span>
+                      assets/
+                      <ul>
+                        <li class="my-1">
+                          <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                            @@include("../assets/img/stockholm/Files/Folder.svg")
+                          </span>
+                          fonts/
+                        </li>
+                        <li class="my-1">
+                          <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                            @@include("../assets/img/stockholm/Files/Folder.svg")
+                          </span>
+                          img/
+                        </li>
+                        <li class="my-1">
+                          <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                            @@include("../assets/img/stockholm/Files/Folder.svg")
+                          </span>
+                          js/
+                        </li>
+                        <li class="my-1">
+                          <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                            @@include("../assets/img/stockholm/Files/Folder.svg")
+                          </span>
+                          scss/
+                        </li>
+                        <li class="my-1">
+                          <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                            @@include("../assets/img/stockholm/Files/Folder.svg")
+                          </span>
+                          vendor/
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="my-1">
+                      <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                        @@include("../assets/img/stockholm/Files/Folder.svg")
+                      </span>
+                      docs/
+                      <span class="text-muted fs-sm ms-3">
+                        documentation HTML pages
+                      </span>
+                    </li>
+                    <li class="my-1">
+                      <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                        @@include("../assets/img/stockholm/Files/Folder.svg")
+                      </span>
+                      partials/
+                      <span class="text-muted fs-sm ms-3">
+                        HTML partials
+                      </span>
+                    </li>
+                    <li class="my-1">
+                      <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                        @@include("../assets/img/stockholm/Files/File.svg")
+                      </span>
+                      index.html
+                    </li>
+                  </ul>
+                </li>
+                <li class="my-1">
+                  <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                    @@include("../assets/img/stockholm/Files/Folder.svg")
+                  </span>
+                  node_modules/
+                  <span class="text-muted fs-sm ms-3">
+                    where npm installs dependencies
+                  </span>
+                </li>
+                <li class="my-1">
+                  <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                    @@include("../assets/img/stockholm/Files/File.svg")
+                  </span>
+                  .gitignore 
+                  <span class="text-muted fs-sm ms-3">
+                    hide untracked files from git
+                  </span>
+                </li>
+                <li class="my-1">
+                  <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                    @@include("../assets/img/stockholm/Files/File.svg")
+                  </span>
+                  gulpfile.js
+                  <span class="text-muted fs-sm ms-3">
+                    build tasks for development
+                  </span>
+                </li>
+                <li class="my-1">
+                  <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                    @@include("../assets/img/stockholm/Files/File.svg")
+                  </span>
+                  package.json
+                  <span class="text-muted fs-sm ms-3">
+                    list of dependencies
+                  </span>
+                </li>
+                <li class="my-1">
+                  <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                    @@include("../assets/img/stockholm/Files/File.svg")
+                  </span>
+                  package-lock.json
+                  <span class="text-muted fs-sm ms-3">
+                    dependencies version tree 
+                  </span>
+                </li>
+                <li class="my-1">
+                  <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                    @@include("../assets/img/stockholm/Files/File.svg")
+                  </span>
+                  README.md
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr class="mt-5 mb-0">
+
+          <!-- Setup -->
+          <h5 class="text-darkblue pt-7 mt-n5" id="setup">
+            <span class="svg-icon">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+            Development setup
+          </h5>
+          <ul class="mt-4">
+            <li>
+              <a href="https://nodejs.org/en/download" target="_blank">Download and install Node.js</a> if you don't have it already installed in your computer. This theme uses npm to manage the dependencies listed in package.json.
+            </li>
+            <li class="my-2">
+              Unzip the theme and then open your terminal, navigate to the root /foresight directory.
+            </li>
+            <li class="my-2">
+              Install the Gulp Command Line Interface to be able to use Gulp:
+              <br>
+              <code class="badge bg-pastel-danger text-danger user-select-all mt-2">npm install gulp-cli -g</code>
+            </li>
+            <li class="my-2">
+              Making sure you're at the root /foresight directory, install the local dependencies:
+              <br>
+              <code class="badge bg-pastel-danger text-danger user-select-all mt-2">npm install</code>
+            </li>
+            <li class="my-2">
+              That's it!
+            </li>
+          </ul>
+
+          <div class="d-inline-block bg-pastel-success text-darkblue rounded fs-sm mt-3 py-2 px-3">
+            <span class="svg-icon text-success me-2">
+              @@include("../assets/img/stockholm/General/Thunder-move.svg")
+            </span>
+            If you're not familiar using the command line, you can <a href="https://lifehacker.com/a-command-line-primer-for-beginners-5633909" target="_blank" class="text-success ms-2">learn more here</a>.
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <!-- Gulp -->
+          <h5 class="text-darkblue pt-7 mt-n5" id="gulp">
+            <span class="svg-icon">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+            Compiling with Gulp
+          </h5>
+          <p class="mt-4">
+            This theme uses <a href="https://gulpjs.com/" target="_blank">Gulp</a> to automate the development workflow. With your command line on the root /foresight directory you can use the following commands:
+          </p>
+          <ul class="mt-4">
+            <li>
+              <code class="badge bg-pastel-danger text-danger user-select-all">gulp</code>
+              <ul class="mt-2">
+                <li class="fs-sm">
+                  This is the default task: Compiles the src files into the dist folder, opens a tab in your browser, and watches for any changes made in the src folder - SCSS, JS, HTML, images, etc. When updates are made it automatically re-compiles and reloads your browser.
+                  <p class="mt-2">
+                    To stop the server and terminate the gulp command just hit CTRL + C.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="mt-2">
+              <code class="badge bg-pastel-danger text-danger user-select-all">gulp build</code>
+              <ul class="mt-2">
+                <li class="fs-sm">
+                  Compiles the src files into the dist folder.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="mt-4">
+            Extra task:
+          </p>
+          <ul class="mt-4">
+            <li>
+              <code class="badge bg-pastel-danger text-danger user-select-all">gulp minifyVendor</code>
+              <ul class="mt-2">
+                <li class="fs-sm">
+                  Minifies all vendor CSS and JS files. If you remove an existing plugin or add a new one, remember to call this task for re-minifying.
+                </li>
+                <li class="fs-sm">
+                  If you rather reference vendor files individually, go to <code>src/partials/header.html</code> and <code>src/partials/scripts.html</code> and update the lines.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr class="mt-5 mb-0">
+
+          <!-- Partials -->
+          <h5 class="text-darkblue pt-7 mt-n5" id="partials">
+            <span class="svg-icon">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+            HTML Partials
+          </h5>
+          <p class="mt-4">
+            This theme uses the <a href="https://www.npmjs.com/package/gulp-file-include" target="_blank">Gulp file include</a> package to enable partials in HTML. This way we can re-use the most common sections that are used throughout the theme, such as: header, footer, navbar, sidebars.
+          </p>
+          <p>
+            Additionally, you can pass through some parameters when using partials:
+          </p>
+          <ul class="mt-4">
+            <li>
+              <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                @@include("../assets/img/stockholm/Files/File.svg")
+              </span>
+              header.html:
+              <ul>
+                <li>
+                  <code>title</code>: set an HTML page title.
+                </li>
+              </ul>
+            </li>
+            <li class="mt-2">
+              <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                @@include("../assets/img/stockholm/Files/File.svg")
+              </span>
+              sidebar-navbar.html:
+              <ul>
+                <li>
+                  <code>classList</code>
+                </li>
+              </ul>
+            </li>
+            <li class="mt-2">
+              <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                @@include("../assets/img/stockholm/Files/File.svg")
+              </span>
+              sidebar-navbar-sm.html:
+              <ul>
+                <li>
+                  <code>classList</code>
+                </li>
+              </ul>
+            </li>
+            <li class="mt-2">
+              <span class="svg-icon svg-icon-sm text-purple me-1 relative-top--1">
+                @@include("../assets/img/stockholm/Files/File.svg")
+              </span>
+              top-searchbar.html:
+              <ul>
+                <li>
+                  <code>classList</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr class="mt-5 mb-0">
+
+          <!-- Customizations -->
+          <h5 class="text-darkblue pt-7 mt-n5" id="customization">
+            <span class="svg-icon">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+            Customize the styles
+          </h5>
+
+          <div class="text-uppercase letter-spacing-lg fw-bold mt-4 pt-2">
+            VIA SCSS
+          </div>
+          <p class="fs-sm mt-3">
+            The files mentioned in this section are located in the <code>src/assets/scss</code> folder.
+          </p>
+
+          <ul class="mt-3">
+            <li class="mt-2">
+              <code>_user-variables.scss</code>: In this file you can make overrides to any Bootstrap core and Foresight variables.
+            </li>
+            <li class="mt-3">
+              <code>_user.scss</code>: Use this file to add your own custom SCSS.
+            </li>
+          </ul>
+
+          <div class="text-uppercase letter-spacing-lg fw-bold mt-5">
+            VIA Normal CSS
+          </div>
+          <p class="fs-sm mt-3">
+            If you prefer not to use SCSS, you can use the <code>theme.css</code> or <code>theme.min.css</code> located in the <code>dist/assets/css/</code> directory.
+          </p>
+          <p class="fs-sm">
+            Notice: keep in mind that if you work on these files and then switch to compiling with Gulp you would lose your changes as the files would be re-generated.
+          </p>
+        </div>
+
+        <div class="col-xl-2 d-none d-xl-block px-0 py-5 docs-sidebar docs-sidebar-right">
+          <aside class="border-start ps-5 py-3">
+            <span class="text-uppercase text-muted fs-sm d-block mb-3">
+              On this page:
+            </span>
+            <a href="#folders" class="d-block my-2" data-toggle="scroll">
+              Folder structure
+            </a>
+            <a href="#setup" class="d-block my-2" data-toggle="scroll">
+              Setup
+            </a>
+            <a href="#gulp" class="d-block my-2" data-toggle="scroll">
+              Compiling
+            </a>
+            <a href="#partials" class="d-block my-2" data-toggle="scroll">
+              Partials
+            </a>
+            <a href="#customization" class="d-block my-2" data-toggle="scroll">
+              Customization
+            </a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Email verification | Foresight"
+})
+
+<body>
+  <div class="row justify-content-center mt-8">
+    <div class="col-lg-5 text-center">
+      <a href="index.html">
+        <img src="assets/img/svg/logo.svg" alt="">
+      </a>
+      <div class="card mt-5">
+        <div class="card-body py-5">
+          <div class="svg-icon svg-icon-xl text-purple">
+            @@include("assets/img/ionicons/shield-checkmark-outline.svg")
+          </div>
+          <h3 class="font-weight-normal text-dark mt-4">
+            Verify your email
+          </h3>
+          <p class="mt-4 pt-3 mb-2">
+            We've sent a link to your email address:
+          </p>
+          <p class="h5 mb-3">erick@email.com</p>
+          <p>
+            Please follow the link inside to continue.
+          </p>
+
+          <a href="#!" class="btn btn-purple hover-lift-light mt-4">
+            Resend link
+          </a>
+        </div>
+      </div>
+
+      <a href="index.html" class="text-center text-muted d-inline-block text-decoration-none mt-4">
+        <span class="svg-icon svg-icon-sm text-muted relative-top--1">
+          @@include("assets/img/ionicons/chevron-back-outline.svg")
+        </span>
+        Back to home page
+      </a>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

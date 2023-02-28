@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Fancybox | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Fancybox
+          </h3>
+          <a href="https://fancyapps.com/fancybox/3/" class="text-purple" target="_blank">Plugin docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+
+          <div class="card border border-gray-100 mt-5 mb-6">
+            <div class="card-body">
+              <h5 class="text-darkblue mb-4">
+                Galleries
+              </h5>
+              <div class="row">
+                <div class="col-md-4 col-xxl-3">
+                  <a href="../assets/img/unsplash/8.jpeg" class="d-block hover-lift-light" data-fancybox="gallery1">
+                    <img src="../assets/img/unsplash/8.jpeg" class="rounded img-fluid" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4 col-xxl-3 mt-4 mt-md-0">
+                  <a href="../assets/img/unsplash/9.jpeg" class="d-block hover-lift-light" data-fancybox="gallery1">
+                    <img src="../assets/img/unsplash/9.jpeg" class="rounded img-fluid" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4 col-xxl-3 mt-4 mt-md-0">
+                  <a href="../assets/img/unsplash/10.jpeg" class="d-block hover-lift-light" data-fancybox="gallery1">
+                    <img src="../assets/img/unsplash/10.jpeg" class="rounded img-fluid" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;a data-fancybox="gallery1" href="../assets/img/unsplash/8.jpeg" class="d-block hover-lift-light"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/unsplash/8.jpeg" class="rounded img-fluid"><br>
+                &lt;/a><br><br>
+                &lt;a data-fancybox="gallery1" href="../assets/img/unsplash/9.jpeg" class="d-block hover-lift-light"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/unsplash/9.jpeg" class="rounded img-fluid"><br>
+                &lt;/a><br><br>
+                &lt;a data-fancybox="gallery1" href="../assets/img/unsplash/10.jpeg" class="d-block hover-lift-light"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/unsplash/10.jpeg" class="rounded img-fluid"><br>
+                &lt;/a><br>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

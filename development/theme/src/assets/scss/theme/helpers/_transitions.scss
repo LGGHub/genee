@@ -1,0 +1,7 @@
+.collapse-icon {
+  @include transition(transform .35s ease);
+}
+
+[aria-expanded=true] .collapse-icon {
+  transform: rotate(180deg);
+}

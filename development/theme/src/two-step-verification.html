@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "2-step verification | Foresight"
+})
+
+<body>
+  <div class="row justify-content-center mt-7">
+    <div class="col-lg-5 text-center">
+      <a href="index.html">
+        <img src="assets/img/svg/logo.svg" alt="">
+      </a>
+      <div class="card mt-5">
+        <div class="card-body py-5 px-lg-5">
+          <div class="svg-icon svg-icon-xl text-purple">
+            @@include("assets/img/ionicons/lock-closed-outline.svg")
+          </div>
+          <h3 class="font-weight-normal text-dark mt-4">
+            2-step verification
+          </h3>
+          <p class="mt-4 mb-1">
+            We sent a verification code to your email.
+          </p>
+          <p>
+            Please enter the code in the field below.
+          </p>
+            
+          <div class="row mt-4 pt-2">
+            <div class="col">
+              <input type="text" class="form-control form-control-lg text-center py-4" maxlength="1" autofocus>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control form-control-lg text-center py-4" maxlength="1">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control form-control-lg text-center py-4" maxlength="1">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control form-control-lg text-center py-4" maxlength="1">
+            </div>
+          </div>
+
+          <a href="#!" class="btn btn-purple btn-lg w-100 hover-lift-light mt-4">
+            Verify my account
+          </a>
+        </div>
+      </div>
+
+      <p class="text-center text-muted mt-4">
+        Didn't receive it?
+        <a href="#!" class="text-decoration-none ms-2">
+          Resend code
+        </a>
+      </p>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+
+  <script type="text/javascript">
+    $(function () {
+      var $inputs = $('input:text')
+
+      $inputs.keyup(function (e) {
+        if (e.currentTarget.value) {
+          var index = $inputs.index(this) + 1
+          if (index < $inputs.length) {
+            $inputs.get(index).focus()
+          }
+        }
+      })
+    })
+  </script>
+</body>
+</html>

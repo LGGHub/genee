@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Date range picker | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Date Range Picker
+          </h3>
+          <a href="https://www.daterangepicker.com/" class="text-purple" target="_blank">Plugin docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+          <p class="text-muted mt-3">
+            A JavaScript component for choosing date ranges, dates and times.
+          </p>
+
+          <div class="card mt-5">
+            <div class="card-body d-flex align-items-center">
+              <div class="bg-white border rounded d-flex align-items-center w-250 fs-sm fw-bold py-2 px-3" role="button" data-datepicker>
+                <div class="svg-icon me-2">
+                  @@include("../assets/img/ionicons/calendar-outline.svg")
+                </div>
+                <span class="mt-1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+
+  <script type="text/javascript">
+    $(function () {
+      function cb(start, end) {
+        $('[data-datepicker] span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'))
+      }
+
+      var startDate = moment().subtract(17, 'days')
+      var endDate = moment()
+
+      $('[data-datepicker]').daterangepicker({
+        startDate: startDate,
+        endDate: endDate,
+        applyButtonClasses: "btn-purple",
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb)
+
+      cb(startDate, endDate)
+    })
+  </script>
+</body>
+</html>

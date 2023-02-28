@@ -1,0 +1,31 @@
+// 
+// Docs specific styles
+// 
+
+.docs-sidebar {
+  @include media-breakpoint-up(lg) {
+    position: fixed;
+    overflow: auto;
+    height: calc(100vh - 67px);
+  }
+}
+
+.docs-content {
+  padding-top: 77px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 67px;
+  }
+}
+
+.docs-sidebar-left {
+  left: 0;
+}
+
+.docs-sidebar-right {
+  right: 0;
+}
+
+code {
+  font-size: 80%;
+}

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Avatars | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <span class="badge bg-success text-white text-uppercase">
+            Theme Exclusive
+          </span>
+          <h3 class="text-darkblue mt-3">
+            Avatars
+          </h3>
+          <p class="text-muted">
+            Individual and grouped avatars. You can change the size, shape, or to use name initials instead of images.
+          </p>
+
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="avatar avatar-xl">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+              </div>
+              <div class="avatar avatar-lg">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+              </div>
+              <div class="avatar">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+              </div>
+              <div class="avatar avatar-sm">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="avatar avatar-xl"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle"><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-lg"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle"><br>
+                &lt;/div><br>
+                &lt;div class="avatar"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle"><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-sm"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle"><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-xs"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle"><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h4 class="text-darkblue pt-7 mt-n5" id="shapes">
+            Shapes
+          </h4>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="avatar avatar-xl">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image" alt="">
+              </div>
+              <div class="avatar avatar-lg">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+              </div>
+              <div class="avatar">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded" alt="">
+              </div>
+              <div class="avatar avatar-sm">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+              </div>
+              <div class="avatar avatar-xs">
+                <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded" alt="">
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="avatar avatar-xl"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image"><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-lg"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle"><br>
+                &lt;/div><br>
+                &lt;div class="avatar"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded"><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-sm"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle"><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-xs"><br>
+                  &nbsp;&nbsp;&lt;img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded"><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h4 class="text-darkblue pt-7 mt-n5" id="letters">
+            Letters
+          </h4>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="avatar avatar-xl">
+                <div class="avatar-letters rounded-circle bg-success text-white">EA</div>
+              </div>
+              <div class="avatar avatar-lg">
+                <div class="avatar-letters rounded-circle bg-primary text-white">JF</div>
+              </div>
+              <div class="avatar">
+                <div class="avatar-letters rounded-circle bg-pastel-purple">DH</div>
+              </div>
+              <div class="avatar avatar-sm">
+                <div class="avatar-letters rounded-circle bg-info text-white">SC</div>
+              </div>
+              <div class="avatar avatar-xs">
+                <div class="avatar-letters rounded-circle bg-dark text-white">EL</div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="avatar avatar-xl"><br>
+                  &nbsp;&nbsp;&lt;div class="avatar-letters rounded-circle bg-success text-white">EA&lt;/div><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-lg"><br>
+                  &nbsp;&nbsp;&lt;div class="avatar-letters rounded-circle bg-primary text-white">JF&lt;/div><br>
+                &lt;/div><br>
+                &lt;div class="avatar"><br>
+                  &nbsp;&nbsp;&lt;div class="avatar-letters rounded-circle bg-pastel-purple">DH&lt;/div><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-sm"><br>
+                  &nbsp;&nbsp;&lt;div class="avatar-letters rounded-circle bg-info text-white">SC&lt;/div><br>
+                &lt;/div><br>
+                &lt;div class="avatar avatar-xs"><br>
+                  &nbsp;&nbsp;&lt;div class="avatar-letters rounded-circle bg-dark text-white">EL&lt;/div><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h4 class="text-darkblue pt-7 mt-n5" id="groups">
+            Avatar groups
+          </h4>
+          <div class="card border border-gray-100 mt-4 mb-6">
+            <div class="card-body">
+              <div class="avatar-group">
+                <div class="avatar avatar-xl">
+                  <img src="../assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-xl">
+                  <img src="../assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-xl">
+                  <img src="../assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-xl">
+                  <div class="avatar-letters rounded-circle bg-pastel-purple">SC</div>
+                </div>
+                <div class="avatar avatar-xl">
+                  <img src="../assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+              </div>
+              <br>
+              <div class="avatar-group mt-3">
+                <div class="avatar avatar-lg">
+                  <img src="../assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-lg">
+                  <img src="../assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-lg">
+                  <img src="../assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-lg">
+                  <div class="avatar-letters rounded-circle bg-pastel-purple">SC</div>
+                </div>
+                <div class="avatar avatar-lg">
+                  <img src="../assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+              </div>
+              <br>
+              <div class="avatar-group mt-3">
+                <div class="avatar">
+                  <img src="../assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar">
+                  <img src="../assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar">
+                  <img src="../assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar">
+                  <div class="avatar-letters rounded-circle bg-pastel-purple">SC</div>
+                </div>
+                <div class="avatar">
+                  <img src="../assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+              </div>
+              <br>
+              <div class="avatar-group mt-3">
+                <div class="avatar avatar-sm">
+                  <img src="../assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-sm">
+                  <img src="../assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-sm">
+                  <img src="../assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-sm">
+                  <div class="avatar-letters rounded-circle bg-pastel-purple">SC</div>
+                </div>
+                <div class="avatar avatar-sm">
+                  <img src="../assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+              </div>
+              <br>
+              <div class="avatar-group mt-3">
+                <div class="avatar avatar-xs">
+                  <img src="../assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img src="../assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img src="../assets/img/uifaces/11.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+                <div class="avatar avatar-xs">
+                  <div class="avatar-letters rounded-circle bg-pastel-purple">SC</div>
+                </div>
+                <div class="avatar avatar-xs">
+                  <img src="../assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="avatar-group"><br>
+                  &nbsp;&nbsp;&lt;div class="avatar"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../assets/img/uifaces/4.jpg" class="avatar-image rounded-circle"><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;div class="avatar"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../assets/img/uifaces/12.jpg" class="avatar-image rounded-circle"><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;div class="avatar"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../assets/img/uifaces/11.jpg" class="avatar-image rounded-circle"><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;div class="avatar"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="avatar-letters rounded-circle bg-pastel-purple">SC&lt;/div><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;div class="avatar"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../assets/img/uifaces/14.jpg" class="avatar-image rounded-circle"><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 d-none d-xl-block px-0 py-5 docs-sidebar docs-sidebar-right">
+          <aside class="border-start ps-5 py-3">
+            <span class="text-uppercase text-muted fs-sm d-block mb-3">
+              On this page:
+            </span>
+            <a href="#shapes" class="d-block my-2" data-toggle="scroll">
+              Shapes
+            </a>
+            <a href="#letters" class="d-block my-2" data-toggle="scroll">
+              Letters
+            </a>
+            <a href="#groups" class="d-block my-2" data-toggle="scroll">
+              Groups
+            </a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

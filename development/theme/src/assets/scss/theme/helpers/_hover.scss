@@ -1,0 +1,29 @@
+//
+// Lift with shadow
+//
+
+.hover-lift {
+  @include transition(box-shadow .25s ease, transform .25s ease, color .25s ease, background-color .15s ease-in);
+
+  i.hover-lift-icon { @include transition(all .2s ease); }
+
+  &:hover {
+    box-shadow: $box-shadow-lg !important;
+    transform: translate3d(0,-5px,0);
+
+    i.hover-lift-icon { margin-left: 15px !important; }
+  }
+}
+
+.hover-lift-light {
+  @include transition(box-shadow .25s ease, transform .25s ease, color .25s ease, background-color .15s ease-in);
+
+  i.hover-lift-icon { @include transition(all .2s ease); }
+
+  &:hover {
+    box-shadow: $box-shadow-light-lg !important;
+    transform: translate3d(0,-5px,0);
+
+    i.hover-lift-icon { margin-left: 15px !important; }
+  }
+}

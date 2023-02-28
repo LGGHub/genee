@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "link": "pricing"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid text-center mt-6">
+      <h1 class="text-darkblue">Choose your plan</h1>
+      <p class="text-darkblue mt-2">
+        Pick the plan that fits your needs. Your <strong>first 15 days</strong> are on us.
+      </p>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!-- Beginner plan -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center fw-normal">
+                Beginner
+              </h5>
+
+              <div class="d-flex justify-content-center">
+                <span class="h3 align-self-center mb-0">$</span>
+                <span class="display-4">29</span>
+                <span class="h4 align-self-end mb-3">/mo</span>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>3</strong> Collaborators
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>10</strong> Projects
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>1GB</strong> data storage
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>3%</strong> Transaction fee
+                </span>
+              </div>
+
+              <a href="#!" class="btn btn-pastel-primary btn-lg d-block hover-lift-light mt-5">
+                Choose this plan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional plan -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center fw-normal">
+                Professional
+              </h5>
+
+              <div class="d-flex justify-content-center">
+                <span class="h3 align-self-center mb-0">$</span>
+                <span class="display-4">79</span>
+                <span class="h4 align-self-end mb-3">/mo</span>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>10</strong> Collaborators
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>30</strong> Projects
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>5GB</strong> data storage
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  Exclusive Support
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>1.5%</strong> Transaction fee
+                </span>
+              </div>
+
+              <a href="#!" class="btn btn-primary btn-lg d-block hover-lift-light mt-5">
+                Choose this plan
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise plan -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center fw-normal">
+                Enterprise
+              </h5>
+
+              <div class="d-flex justify-content-center">
+                <span class="h3 align-self-center mb-0">$</span>
+                <span class="display-4">109</span>
+                <span class="h4 align-self-end mb-3">/mo</span>
+              </div>
+
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>Unlimited</strong> collaborators
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>Unlimited</strong> projects
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>50GB</strong> data storage
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  <strong>VIP</strong> Support
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  No license needed
+                </span>
+              </div>
+              <div class="d-flex align-items-center mt-3 ps-2">
+                <div class="icon-circle icon-circle-sm bg-pastel-success text-success">
+                  <i class="fas fa-check fa-sm"></i>
+                </div>
+                <span class="ms-3">
+                  No transaction fee
+                </span>
+              </div>
+
+              <a href="#!" class="btn btn-pastel-primary btn-lg d-block hover-lift-light mt-5">
+                Choose this plan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center py-7">
+      <p class="badge bg-pastel-primary text-primary rounded-pill text-uppercase letter-spacing-lg fw-bolder">
+        Have any questions?
+      </p>
+
+      <div class="row mt-4 gx-5">
+        <div class="col-md-4">
+          <div class="rounded border py-4">
+            <div class="svg-icon svg-icon-lg text-primary mb-3">
+              @@include("assets/img/stockholm/Communication/Mail-opened.svg")
+            </div>
+            <h5 class="text-dark">
+              Send us an email
+            </h5>
+            <a href="#!" class="text-primary d-block mt-3">
+              info@foresight.com
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-5 mt-md-0">
+          <div class="rounded border py-4">
+            <div class="svg-icon svg-icon-lg text-primary mb-3">
+              @@include("assets/img/stockholm/Communication/Incoming-call.svg")
+            </div>
+            <h5 class="text-dark">
+              Give us a call
+            </h5>
+            <a href="#!" class="text-primary d-block mt-3">
+              01-800-555-3421
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-5 mt-md-0">
+          <div class="rounded border py-4">
+            <div class="svg-icon svg-icon-lg text-primary mb-3">
+              @@include("assets/img/ionicons/logo-twitter.svg")
+            </div>
+            <h5 class="text-dark">
+              Reach on Twitter
+            </h5>
+            <a href="#!" class="text-primary d-block mt-3">
+              @foresightsupport
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

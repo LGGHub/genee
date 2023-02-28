@@ -1,0 +1,89 @@
+// 
+// Tabs
+// 
+
+.nav-tabs {
+  .nav-link {
+    white-space: nowrap;
+    padding-top: $nav-tabs-link-padding-y;
+    padding-bottom: $nav-tabs-link-padding-y;
+
+    &:not(.active) {
+      color: $nav-tabs-link-color;
+
+      &:hover {
+        color: $nav-tabs-link-hover-color;
+      }
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
+
+.nav-tabs-sm {
+  font-size: $font-size-sm;
+
+  .nav-link {
+    margin-bottom: -3px;
+  }
+}
+
+
+// 
+// Overflow
+// 
+
+.nav-overflow {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 1px;
+}
+
+
+// 
+// Nav small
+// 
+
+.nav-sm .nav-link {
+  font-size: .95rem;
+}
+
+
+// 
+// Nav pagination
+// 
+
+.nav-pagination {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  .page {
+    display: inline-block;
+    font-size: .9rem;
+    padding: $nav-tabs-link-padding-y 1rem;
+    margin-bottom: -$nav-tabs-border-width;
+    background: none;
+    color: $nav-tabs-link-color;
+
+    &:hover,
+    &:focus {
+      border-color: $nav-tabs-link-hover-border-color;
+      color: $nav-tabs-link-hover-color;
+      // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+      isolation: isolate;
+    }
+  }
+
+  .active {
+    .page {
+      color: $nav-tabs-link-active-color;
+      background-color: $nav-tabs-link-active-bg;
+      border-bottom: 1px solid $primary;
+    }
+  }
+}

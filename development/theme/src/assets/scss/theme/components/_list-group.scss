@@ -1,0 +1,22 @@
+// List group flush
+
+.list-group-flush > .list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+// Activity
+
+.list-group-activity .list-group-item {
+  border: 0;
+}
+
+.list-group-activity .list-group-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  height: 100%;
+  border-left: 2px solid $border-color;
+}

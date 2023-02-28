@@ -1,0 +1,11 @@
+body {
+  min-width: 600px;
+}
+
+p.sm-txt {
+  font-size: 13px;
+}
+
+.noresize {
+  resize: none !important;
+}

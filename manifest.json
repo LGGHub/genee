@@ -3,28 +3,30 @@
   "description": "Utilities to increase productivity for genetic diagnostic professionals",
   "version": "1.0",
   "manifest_version": 3,
-  "author": "genee@lgghub.com",
+  "author": "admin@lgghub.com",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "ucsc.html"
   },
+  "background": {
+    "service_worker": "background.js"
+  },
+  // "background": {
+  //   "scripts": ["background.js"]
+  // },  
   "permissions": [
     "activeTab",
     "clipboardWrite",
-    "scripting"
+    "scripting",
+    "tabs"
   ],
   "host_permissions": [
     "*://*.deciphergenomics.org/*"
+  , "*://*.ucsc.edu/*"
   ],
   "icons": {
     "16": "assets/icon16.png",
     "32": "assets/icon32.png",
     "48": "assets/icon48.png",
     "128": "assets/icon128.png"
-  }//,
-  // "applications": {
-  //   "gecko": {
-  //     "id": "genee@lgghub.com", // Add the add-on ID for Firefox
-  //     "strict_min_version": "60.0" // Set the minimum Firefox version
-  //   }
-  // }
+  }
 }

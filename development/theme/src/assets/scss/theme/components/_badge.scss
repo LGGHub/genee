@@ -1,0 +1,13 @@
+.badge {
+  padding: .4rem $badge-padding-x $badge-padding-y;
+}
+
+
+// 
+// Large badge size
+// 
+
+.badge-lg {
+  padding: $badge-padding-y-lg $badge-padding-x-lg;
+  font-size: $badge-font-size-lg;
+}

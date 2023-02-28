@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Sizing | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid container-docs">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Responsive sizing
+          </h3>
+          <a href="https://getbootstrap.com/docs/5.0/utilities/sizing/" class="text-purple" target="_blank">See Bootstrap docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+          
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <p>
+                 <code>10%, 20%, 25%, 30%, 40%, 50%, 60%, 70%, 75%, 80%, 90%, 100%, auto</code>.
+              </p>
+              <ul class="mt-4">
+                <li>
+                  <code class="me-2">.w-{breakpoint}-{size}</code>: sets the <code>width</code> in <code>%</code>.
+                </li>
+                <li>
+                  <code class="me-2">.h-{breakpoint}-{size}</code>: sets the <code>height</code> in <code>%</code>.
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="html hl">
+                &lt;div class="w-sm-30">&lt;/div><br>
+                &lt;div class="h-lg-30">&lt;/div><br><br>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

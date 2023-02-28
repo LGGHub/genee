@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Opacity | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Opacity
+            <code class="fs-sm ms-2">
+              .opacity-(0 - 100)
+            </code>
+          </h3>
+          <div class="card border border-gray-100 mt-4">
+            <div class="card-body">
+              <div class="d-flex flex-wrap">
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-10 bg-purple me-2 mb-2">10%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-20 bg-purple me-2 mb-2">20%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-30 bg-purple me-2 mb-2">30%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-40 bg-purple me-2 mb-2">40%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-50 bg-purple me-2 mb-2">50%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-60 bg-purple me-2 mb-2">60%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-70 bg-purple me-2 mb-2">70%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-80 bg-purple me-2 mb-2">80%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-90 bg-purple me-2 mb-2">90%</div>
+                <div style="height: 70px;width: 100px;" class="d-flex align-items-center justify-content-center text-white rounded opacity-100 bg-purple">100%</div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="opacity-10">&lt;/div><br>
+                &lt;div class="opacity-20">&lt;/div><br>
+                &lt;div class="opacity-30">&lt;/div><br>
+                &lt;div class="opacity-40">&lt;/div><br>
+                &lt;div class="opacity-50">&lt;/div><br>
+                &lt;div class="opacity-60">&lt;/div><br>
+                &lt;div class="opacity-70">&lt;/div><br>
+                &lt;div class="opacity-80">&lt;/div><br>
+                &lt;div class="opacity-90">&lt;/div><br>
+                &lt;div class="opacity-100">&lt;/div>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

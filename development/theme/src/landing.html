@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Landing web product | Foresight"
+})
+<body class="bg-white">
+  @@include('./partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white",
+    "boxed": 1
+  })
+
+  <!-- hero -->
+  <div class="bg-light pt-6 pt-md-7">
+    <div class="container text-center">
+      <h1 class="display-4">
+        Design, code, and launch <span class="text-primary">faster</span>.
+      </h1>
+      <p class="w-lg-80 lead mx-auto mt-4 mb-5">
+        Create your new website with a modern, functional and flexible design. Your team can stay focused doing what they do best, no matter where they live.
+      </p>
+      <a href="#!" class="btn btn-primary btn-lg w-lg-250 text-uppercase-bold-sm shadow-sm hover-lift-light">
+        Try it for free
+      </a>
+      <p class="mt-3 mb-0">
+        2,154 companies signed up in the last week alone!
+      </p>
+
+      <img src="assets/img/misc/webapp.png" class="img-fluid w-100 shadow-light rounded-3 mt-6 mb-n9" alt="" style="max-width: 1050px;">
+    </div>
+  </div>
+
+  <!-- logos -->
+  <div class="mt-10">
+    &nbsp;
+    <div class="container mt-6">
+      <h3 class="text-center text-primary text-uppercase-bold-sm line-height-lg">
+        Some of our 5,500 clients already using Foresight
+      </h3>
+      <div class="row justify-content-between align-items-center mt-5">
+        <div class="col-6 col-sm-4 col-lg-auto">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 70px;">
+            @@include("assets/img/svg/stripe.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 140px;">
+            @@include("assets/img/svg/basecamp.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto mt-4 mt-lg-0">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 110px;">
+            @@include("assets/img/svg/heroku.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto mt-4 mt-lg-0">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 55px;">
+            @@include("assets/img/svg/twitter.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto mt-4 mt-lg-0">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 140px;">
+            @@include("assets/img/svg/mailchimp.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto mt-4 mt-lg-0">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 110px;">
+            @@include("assets/img/svg/mixpanel.svg")
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- features 1 -->
+  <div class="pt-8 pt-lg-9">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <div class="bg-cover rounded-3 shadow-lg d-flex align-items-center justify-content-center h-300" style="background-image: url('assets/img/unsplash/1.jpeg');">
+            <a class="icon-circle icon-circle-lg bg-white text-darkblue hover-lift" href="https://www.youtube.com/watch?v=1R8wg6dPK-Y" data-fancybox>
+              @@include("assets/img/stockholm/Media/Play.svg")
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 ps-lg-6 mt-6 mt-lg-0">
+          <!-- Feature -->
+          <div class="d-flex">
+            <span class="svg-icon svg-icon-lg text-primary">
+              @@include("assets/img/ionicons/infinite-outline.svg")
+            </span>
+            <div class="flex-1 ms-4">
+              <h5 class="text-darkblue fw-bold">
+                Real time updates
+              </h5>
+              <p class="text-gray-600">
+                Enjoy a faster workflow with live browser reloads any time you make a new change.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature -->
+          <div class="d-flex mt-4 mt-xl-5">
+            <span class="svg-icon svg-icon-lg text-primary">
+              @@include("assets/img/ionicons/git-compare-outline.svg")
+            </span>
+            <div class="flex-1 ms-4">
+              <h5 class="text-darkblue fw-bold">
+                Free updates and support
+              </h5>
+              <p class="text-gray-600">
+                Get free lifetime updates of new components, layouts, page designs and an attentive technical support.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature -->
+          <div class="d-flex mt-4 mt-xl-5">
+            <span class="svg-icon svg-icon-lg text-primary">
+              @@include("assets/img/ionicons/color-filter-outline.svg")
+            </span>
+            <div class="flex-1 ms-4">
+              <h5 class="text-darkblue fw-bold">
+                Great variety of designs
+              </h5>
+              <p class="text-gray-600 mb-0">
+                Launch a complete dashboard with ready to use components and views. Each one with unique ideas and layouts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- features 2 -->
+  <div class="mt-8">
+    <div class="container text-center text-lg-start">
+      <h1 class="text-darkblue fw-normal">
+        A great solution for <br>your projects
+      </h1>
+
+      <div class="row mt-5">
+        <!-- Feature -->
+        <div class="col-lg-4">
+          <div class="svg-icon svg-icon-lg text-primary">
+            @@include("assets/img/ionicons/toggle-outline.svg")
+          </div>
+          <h4 class="text-darkblue fw-normal mt-4">
+            Flexible & reusable
+          </h4>
+          <p class="text-gray-600 mt-4">
+            Foresight is made to be easily adapted to different looks. It comes with styled Bootstrap components plus new ones that can be customized via SASS variables.
+          </p>
+        </div>
+
+        <!-- Feature -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="svg-icon svg-icon-lg text-primary">
+            @@include("assets/img/ionicons/easel-outline.svg")
+          </div>
+          <h4 class="text-darkblue fw-normal mt-4">
+            Modern & visual design
+          </h4>
+          <p class="text-gray-600 mt-4">
+            With a great variety of layouts and sections to build a complete website. Foresight offers a modern design that feels fresh and professional.
+          </p>
+        </div>
+
+        <!-- Feature -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="svg-icon svg-icon-lg text-primary">
+            @@include("assets/img/ionicons/code-slash-outline.svg")
+          </div>
+          <h4 class="text-darkblue fw-normal mt-4">
+            Well documented
+          </h4>
+          <p class="text-gray-600 mt-4">
+            Thorough documentation for building and customizing. Code examples for core and new components. Class utilities with new functionality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- pricing -->
+  <div class="bg-light pt-7 mt-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 text-center text-lg-start">
+          <h1 class="text-darkblue fw-normal">
+            Fair pricing <br>
+            for everyone
+          </h1>
+          <p class="w-lg-70 text-gray-600 mt-4">
+            Whether you plan on working on a single project or several, we got you covered.
+          </p>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card border-0 h-100">
+                <div class="card-body text-center d-flex flex-column">
+                  <div class="svg-icon svg-icon-lg text-primary">
+                    @@include("assets/img/ionicons/cube-outline.svg")
+                  </div>
+                  <h5 class="text-darkblue mt-4">
+                    Single License
+                  </h5>
+                  <div class="d-flex justify-content-center align-items-center text-darkblue">
+                    <span class="h3 mb-0 me-1">$</span>
+                    <span class="display-3">29</span>
+                  </div>
+                  <p class="mt-4 mb-6">
+                    Use, by you or one client, in a single end product. The item may not be redistributed or resold.
+                  </p>
+                  <a href="#!" target="_blank" class="btn btn-primary btn-lg text-uppercase-bold-sm hover-lift-light mt-auto">
+                    Buy it now
+                    <i class="fa fa-arrow-right fa-sm ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="card bg-darkblue h-100">
+                <div class="card-body text-center text-pastel-info d-flex flex-column">
+                  <div class="svg-icon svg-icon-xl text-white">
+                    @@include("assets/img/ionicons/color-filter-outline.svg")
+                  </div>
+                  <h5 class="mt-4">
+                    Multiple License
+                  </h5>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <span class="h3 mb-0 me-1">$</span>
+                    <span class="display-3">120</span>
+                  </div>
+                  <p class="mt-4 mb-6">
+                    Use, by you or several clients, for multiple end products. The item may not be redistributed or resold.
+                  </p>
+                  <a href="#!" target="_blank" class="btn btn-white btn-lg text-primary text-uppercase-bold-sm hover-lift-light mt-auto">
+                    Buy it now
+                    <i class="fa fa-arrow-right fa-sm ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- testimonials -->
+  <div class="bg-light pt-7">
+    <div class="container text-center text-lg-start">
+      <h1 class="text-darkblue fw-normal">
+        We love helping our <br> customers succeed
+      </h1>
+    </div>
+
+    <!-- Swiper slider -->
+    <div class="swiper-container mt-5" data-toggle="swiper" data-options='{ "slidesPerView": "auto", "centeredSlides": true, "grabCursor": true, "speed": 500, "navigation": { "nextEl": ".swiper-custom-button-next", "prevEl": ".swiper-custom-button-prev" } }'>
+
+      <div class="swiper-wrapper d-flex align-items-center">
+        <!-- Slide -->
+        <div class="swiper-slide container">
+          <div class="row g-0 align-items-center bg-white shadow-light-sm">
+            <div class="col-md-7 p-4 p-md-5">
+              <div class="lead">
+                “Most human beings complain about the meanness of nature, because we are born for a brief span of life, and because this spell of time that has been given to us rushes by so swiftly and rapidly that with very few exceptions life ceases for the rest of us just when we are getting ready for it.”
+              </div>
+              <span class="svg-icon svg-icon-xl text-warning ms-n2">
+                @@include("assets/img/ionicons/remove-outline.svg")
+              </span>
+              <h5 class="text-darkblue">
+                Seneca the younger
+              </h5>
+              <p class="text-muted font-size-sm">
+                Lead Philosoper
+              </p>
+              <div class="text-dark" style="width: 100px;">
+                @@include("assets/img/svg/basecamp.svg")
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="bg-cover h-350 h-md-500" style="background-image: url('assets/img/unsplash/16.jpeg');"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide -->
+        <div class="swiper-slide container">
+          <div class="row g-0 align-items-center bg-white shadow-light-sm">
+            <div class="col-md-7 p-4 p-md-5">
+              <div class="lead">
+                “If anyone tells you that a certain person speaks ill of you, do not make excuses about what is said of you but answer, "He was ignorant of my other faults, else he would not have mentioned these alone.”
+              </div>
+              <span class="svg-icon svg-icon-xl text-primary ms-n2">
+                @@include("assets/img/ionicons/remove-outline.svg")
+              </span>
+              <h5 class="text-darkblue">
+                Epictetus
+              </h5>
+              <p class="text-muted font-size-sm">
+                Head of Philosophy
+              </p>
+              <div class="text-dark" style="width: 60px;">
+                @@include("assets/img/svg/stripe.svg")
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="bg-cover h-350 h-md-500" style="background-image: url('assets/img/unsplash/17.jpeg');"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide -->
+        <div class="swiper-slide container">
+          <div class="row g-0 align-items-center bg-white shadow-light-sm">
+            <div class="col-md-7 p-4 p-md-5">
+              <div class="lead">
+                “Of all things which wisdom provides to make life entirely happy, much the greatest is the possession of friendship. It is not so much our friends' help that helps us, as the confidence of their help.”
+              </div>
+              <span class="svg-icon svg-icon-xl text-success ms-n2">
+                @@include("assets/img/ionicons/remove-outline.svg")
+              </span>
+              <h5 class="text-darkblue">
+                Socrates
+              </h5>
+              <p class="text-muted font-size-sm">
+                Senior Philosoper
+              </p>
+              <div class="text-dark" style="width: 80px;">
+                @@include("assets/img/svg/dribbble.svg")
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="bg-cover h-350 h-md-500" style="background-image: url('assets/img/unsplash/18.jpeg');"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="container mt-4 pt-2">
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+          <a href="#!" class="swiper-custom-button-prev text-darkblue">
+            <i class="fas fa-arrow-left fa-2x"></i>
+          </a>
+          <a href="#!" class="swiper-custom-button-next text-darkblue ms-4">
+            <i class="fas fa-arrow-right fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- call to action -->
+  <div class="bg-light pt-7 pt-lg-8 pb-8">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+        <h1 class="text-darkblue fw-normal text-center text-lg-left me-lg-4 mb-5 mb-lg-0">
+          Start building great products
+        </h1>
+        <a href="#!" target="_blank" class="btn btn-primary btn-lg shadow-light hover-lift ms-lg-4 me-lg-3">
+          Get it now
+        </a>
+        <a href="docs/index.html" class="btn btn-white btn-lg fw-bold shadow-light hover-lift ms-lg-3 mt-4 mt-lg-0">
+          View docs
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="bg-dark py-6">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <h6 class="text-uppercase-bold-sm text-info mb-4">
+            Foresight
+          </h6>
+          <a href="#!" class="d-block text-white">
+            Dashboard template
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Landing pages
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Custom design
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4 mt-5 mt-md-0">
+          <h6 class="text-uppercase-bold-sm text-info mb-4">
+            Company
+          </h6>
+          <a href="#!" class="d-block text-white">
+            About us
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Blog
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Online store
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Partners
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4 mt-5 mt-md-0">
+          <h6 class="text-uppercase-bold-sm text-info mb-4">
+            Support
+          </h6>
+          <a href="#!" class="d-block text-white">
+            FAQ
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Contact
+          </a>
+          <a href="#!" class="d-block text-white mt-2">
+            Status
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-6">
+        <a href="#!" class="hover-lift-light text-decoration-none mx-2">
+          <span class="icon-circle bg-light text-darkblue">
+            <i class="fab fa-facebook-square fa-lg"></i>
+          </span>
+        </a>
+        <a href="#!" class="hover-lift-light text-decoration-none mx-2">
+          <span class="icon-circle bg-light text-darkblue">
+            <i class="fab fa-youtube fa-lg"></i>
+          </span>
+        </a>
+        <a href="#!" class="hover-lift-light text-decoration-none mx-2">
+          <span class="icon-circle bg-light text-darkblue">
+            <i class="fab fa-instagram fa-lg"></i>
+          </span>
+        </a>
+      </div>
+
+      <div class="mt-6">
+        <p class="fs-sm text-muted mb-2">
+          © 2025. Foresight.
+        </p>
+        <div class="d-flex justify-content-center">
+          <a href="#!" class="fs-sm text-muted mx-3">
+            Privacy & terms
+          </a>
+          <a href="#!" class="fs-sm text-muted mx-3">
+            Terms of service
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <p class="fs-sm text-uppercase fw-bold text-muted">
+          Made with
+          <i class="fa fa-heart text-pastel-purple mx-2"></i>
+          in Earth
+        </p>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

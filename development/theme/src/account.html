@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "3",
+    "link": "account"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid mt-4 mt-md-5 mb-7">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="text-uppercase-xs text-muted mb-4">
+                Account settings
+              </h6>
+              <ul class="list text-darkblue m-0">
+                <li class="list-item active">
+                  <a class="text-reset" href="account.html">
+                    General
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-notifications.html">
+                    Notifications
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-billing.html">
+                    Billing & Payments
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-teammates.html">
+                    Teammates
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="card-header-title text-darkblue">
+                Basic information
+              </h6>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="d-flex align-items-center border-bottom border-gray-200 pb-4 mb-4">
+                  <div class="avatar avatar-xl">
+                    <img src="assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="flex-1 ms-4 ps-2">
+                    <h6 class="text-darkblue">
+                      Your avatar
+                    </h6>
+                    <span class="fs-sm text-muted">
+                      Upload a PNG or JPG, size limit is 5 MB.
+                    </span>
+                    <div class="mt-2">
+                      <a href="#!" class="btn btn-sm btn-primary">Upload</a>
+                      <a href="#!" class="btn btn-sm btn-light ms-md-2">Remove</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label class="form-label">First name</label>
+                      <input type="text" placeholder="First name" name="" class="form-control p-2">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label class="form-label">Last name</label>
+                      <input type="text" name="" placeholder="Last name" class="form-control p-2">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label class="form-label">Email address</label>
+                      <input type="text" placeholder="erick@foresight.com" name="" class="form-control p-2">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label class="form-label">Phone number</label>
+                      <input type="phone" placeholder="+31 555 3927" name="" class="form-control p-2">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label class="form-label">Your bio</label>
+                      <textarea rows="3" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-2">
+                    <input type="submit" class="btn btn-success" value="Save changes">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-header">
+              <h6 class="card-header-title text-darkblue">
+                Change your password
+              </h6>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Current password</label>
+                  <input type="password" class="form-control p-2">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">New password</label>
+                  <input type="password" class="form-control p-2">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Confirm new password</label>
+                  <input type="password" class="form-control p-2">
+                </div>
+                <input type="submit" class="btn btn-success mt-2" value="Update password">
+              </form>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-header">
+              <h6 class="card-header-title text-danger">
+                Delete your account
+              </h6>
+            </div>
+            <div class="card-body">
+              <form>
+                <p><strong>Alert</strong>: Once you delete your account, there is no going back.</p>
+                <input type="submit" class="btn btn-danger mt-2" value="Delete your account">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

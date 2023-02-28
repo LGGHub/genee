@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "3",
+    "link": "account-teammates"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="container-fluid mt-4 mt-md-5 mb-7">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="text-uppercase-xs text-muted mb-4">
+                Account settings
+              </h6>
+              <ul class="list text-darkblue m-0">
+                <li class="list-item">
+                  <a class="text-reset" href="account.html">
+                    General
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-notifications.html">
+                    Notifications
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="text-reset" href="account-billing.html">
+                    Billing & Payments
+                  </a>
+                </li>
+                <li class="list-item active">
+                  <a class="text-reset" href="account-teammates.html">
+                    Teammates
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="card-header-title text-darkblue mb-1 mb-md-0">
+                8 Members
+
+                <span class="badge bg-warning text-dark text-uppercase-xs fw-bolder ms-2 d-none d-md-inline">
+                  2 seats remaining
+                </span>
+              </h6>
+              <a href="#!" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-new-user">Invite new user</a>
+            </div>
+
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-md-flex align-items-center">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="avatar avatar-lg me-3">
+                      <img src="assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                    <div class="flex-1 mt-3 mt-md-0">
+                      <div class="fw-bold">
+                        Joan Didion
+                      </div>
+                      <span class="text-muted">
+                        joan@foresight.com
+                      </span>
+                    </div>
+                  </div>
+
+                  <select class="form-select w-150 ms-md-auto mt-3 mt-md-0">
+                    <option>Admin</option>
+                    <option>Staff</option>
+                    <option>Designer</option>
+                    <option>Developer</option>
+                  </select>
+
+                  <div class="dropdown d-inline-block ms-md-3 mt-2 mt-md-0">
+                    <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-danger" href="#!">Remove user</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-group-item d-md-flex align-items-center">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="avatar avatar-lg me-3">
+                      <img src="assets/img/uifaces/1.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                    <div class="flex-1 mt-3 mt-md-0">
+                      <div class="fw-bold">
+                        Ernest Hemingway
+                      </div>
+                      <span class="text-muted">
+                        ernest@foresight.com
+                      </span>
+                    </div>
+                  </div>
+
+                  <select class="form-select w-150 ms-md-auto mt-3 mt-md-0">
+                    <option>Admin</option>
+                    <option selected>Staff</option>
+                    <option>Designer</option>
+                    <option>Developer</option>
+                  </select>
+
+                  <div class="dropdown d-inline-block ms-md-3 mt-2 mt-md-0">
+                    <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-danger" href="#!">Remove user</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-group-item d-md-flex align-items-center">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="avatar avatar-lg me-3">
+                      <img src="assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                    <div class="flex-1 mt-3 mt-md-0">
+                      <div class="fw-bold">
+                        William Shakespeare
+                      </div>
+                      <span class="text-muted">
+                        william@foresight.com
+                      </span>
+                    </div>
+                  </div>
+
+                  <select class="form-select w-150 ms-md-auto mt-3 mt-md-0">
+                    <option>Admin</option>
+                    <option>Staff</option>
+                    <option selected>Designer</option>
+                    <option>Developer</option>
+                  </select>
+
+                  <div class="dropdown d-inline-block ms-md-3 mt-2 mt-md-0">
+                    <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-danger" href="#!">Remove user</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-group-item d-md-flex align-items-center">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="avatar avatar-lg me-3">
+                      <img src="assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                    <div class="flex-1 mt-3 mt-md-0">
+                      <div class="fw-bold">
+                        Virginia Woolf
+                      </div>
+                      <span class="text-muted">
+                        virginia@foresight.com
+                      </span>
+                    </div>
+                  </div>
+
+                  <select class="form-select w-150 ms-md-auto mt-3 mt-md-0">
+                    <option>Admin</option>
+                    <option>Staff</option>
+                    <option>Designer</option>
+                    <option selected>Developer</option>
+                  </select>
+
+                  <div class="dropdown d-inline-block ms-md-3 mt-2 mt-md-0">
+                    <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-danger" href="#!">Remove user</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-group-item d-md-flex align-items-center">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="avatar avatar-lg me-3">
+                      <img src="assets/img/uifaces/6.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                    <div class="flex-1 mt-3 mt-md-0">
+                      <div class="fw-bold">
+                        Marcel Proust
+                      </div>
+                      <span class="text-muted">
+                        marcel@foresight.com
+                      </span>
+                    </div>
+                  </div>
+
+                  <select class="form-select w-150 ms-md-auto mt-3 mt-md-0">
+                    <option>Admin</option>
+                    <option>Staff</option>
+                    <option>Designer</option>
+                    <option>Developer</option>
+                  </select>
+
+                  <div class="dropdown d-inline-block ms-md-3 mt-2 mt-md-0">
+                    <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-danger" href="#!">Remove user</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-group-item d-md-flex align-items-center">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="avatar avatar-lg me-3">
+                      <img src="assets/img/uifaces/10.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                    <div class="flex-1 mt-3 mt-md-0">
+                      <div class="fw-bold">
+                        Mark Twain
+                      </div>
+                      <span class="text-muted">
+                        mark@foresight.com
+                      </span>
+                    </div>
+                  </div>
+
+                  <select class="form-select w-150 ms-md-auto mt-3 mt-md-0">
+                    <option>Admin</option>
+                    <option selected>Staff</option>
+                    <option>Designer</option>
+                    <option>Developer</option>
+                  </select>
+
+                  <div class="dropdown d-inline-block ms-md-3 mt-2 mt-md-0">
+                    <a href="#" class="text-gray-500" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon text-gray-500">
+                        @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                      </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-danger" href="#!">Remove user</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-new-user" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header pt-4">
+          <h5 class="text-center">Invite new teammate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="mt-3 mb-3">
+              <label for="recipient-name" class="form-label">Full name:</label>
+              <input type="text" class="form-control form-control-lg" id="recipient-name" placeholder="Jane Smith">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-email" class="form-label">Email:</label>
+              <input type="email" class="form-control form-control-lg" id="recipient-email" placeholder="jane@mail.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Role:</label>
+              <select class="form-select">
+                <option>Choose Role</option>
+                <option>Admin</option>
+                <option>Staff</option>
+                <option>Designer</option>
+                <option>Developer</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer bg-light">
+            <button type="button" class="btn btn-link" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Send invitation</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

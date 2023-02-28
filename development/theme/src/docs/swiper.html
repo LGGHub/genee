@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Swiper | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid container-docs">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Swiper
+          </h3>
+          <a href="http://swiperjs.com" class="text-purple" target="_blank">Plugin docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+          <p class="mt-3 text-muted">
+            Initialize a swiper slider via <code>data-toggle="swiper"</code> and pass through the options object via <code>data-options</code> attribute.
+          </p>
+
+          <div class="card mt-5">
+            <div class="card-body bg-light">
+              <div class="swiper-container" data-toggle="swiper" data-options='{"breakpoints": { "768": { "slidesPerView": 2 }, "1200": { "slidesPerView": 3 }, "2000": { "slidesPerView": 4 } }, "freeMode": true, "grabCursor": true, "speed": 500, "navigation": { "nextEl": ".swiper-custom-button-next", "prevEl": ".swiper-custom-button-prev" } }'>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card shadow-light p-4 mx-2 mx-xxl-4">
+                      <div class="text-dark">
+                        “Most human beings complain about the meanness of nature, because we are born for a brief span of life, and because this spell of time that has been given to us rushes by so swiftly and rapidly that with very few exceptions life ceases for the rest of us just when we are getting ready for it.”
+                      </div>
+                      <div class="text-warning fa-sm my-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="avatar">
+                          <img src="../assets/img/uifaces/1.jpg" class="avatar-image rounded-circle" alt="">
+                        </div>
+                        <div class="ms-3">
+                          <div class="text-dark fw-bolder">John Petrucci</div>
+                          <div class="text-info text-uppercase fs-xs letter-spacing-lg fw-bold mt-1">
+                            Basecamp
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card shadow-light p-4 mx-2 mx-xxl-4">
+                      <div class="text-dark">
+                        “If anyone tells you that a certain person speaks ill of you, do not make excuses about what is said of you but answer, "He was ignorant of my other faults, else he would not have mentioned these alone.”
+                      </div>
+                      <div class="text-warning fa-sm my-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="avatar">
+                          <img src="../assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                        </div>
+                        <div class="ms-3">
+                          <div class="text-dark fw-bolder">Janis Joplin</div>
+                          <div class="text-info text-uppercase fs-xs letter-spacing-lg fw-bold mt-1">
+                            Heroku
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card shadow-light p-4 mx-2 mx-xxl-4">
+                      <div class="text-dark">
+                        “Don't just say you have read books. Show that through them you have learned to think better, to be a more discriminating and reflective person. Books are the training weights of the mind. They are very helpful, but it would be a bad mistake to suppose that one has made progress simply by having internalized their contents.”
+                      </div>
+                      <div class="text-warning fa-sm my-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="avatar">
+                          <img src="../assets/img/uifaces/3.jpg" class="avatar-image rounded-circle" alt="">
+                        </div>
+                        <div class="ms-3">
+                          <div class="text-dark fw-bolder">David Gilmour</div>
+                          <div class="text-info text-uppercase fs-xs letter-spacing-lg fw-bold mt-1">
+                            Stripe
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card shadow-light p-4 mx-2 mx-xxl-4">
+                      <div class="text-dark">
+                        “One who is injured ought not to return the injury, for on no account can it be right to do an injustice; and it is not right to return an injury, or to do evil to any man, however much we have suffered from him.”
+                      </div>
+                      <div class="text-warning fa-sm my-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="avatar">
+                          <img src="../assets/img/uifaces/4.jpg" class="avatar-image rounded-circle" alt="">
+                        </div>
+                        <div class="ms-3">
+                          <div class="text-dark fw-bolder">Bob Dylan</div>
+                          <div class="text-info text-uppercase fs-xs letter-spacing-lg fw-bold mt-1">
+                            Mailchimp
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card shadow-light p-4 mx-2 mx-xxl-4">
+                      <div class="text-dark">
+                        “How long are you going to wait before you demand the best for yourself and in no instance bypass the discriminations of reason? You have been given the principles that you ought to endorse, and you have endorsed them.”
+                      </div>
+                      <div class="text-warning fa-sm my-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="avatar">
+                          <img src="../assets/img/uifaces/6.jpg" class="avatar-image rounded-circle" alt="">
+                        </div>
+                        <div class="ms-3">
+                          <div class="text-dark fw-bolder">Neil Young</div>
+                          <div class="text-info text-uppercase fs-xs letter-spacing-lg fw-bold mt-1">
+                            Digital Ocean
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container mt-4 pt-4">
+                  <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                    <a href="#" class="swiper-custom-button-prev text-dark">
+                      <i class="fas fa-arrow-left fa-lg"></i>
+                    </a>
+                    <a href="#" class="swiper-custom-button-next ms-4 text-dark">
+                      <i class="fas fa-arrow-right fa-lg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="swiper-container" data-toggle="swiper" data-options='{"breakpoints": { "768": { "slidesPerView": 2 }, "1200": { "slidesPerView": 3 }, "2000": { "slidesPerView": 4 } }, "freeMode": true, "grabCursor": true, "speed": 500, "navigation": { "nextEl": ".swiper-custom-button-next", "prevEl": ".swiper-custom-button-prev" } }'><br>
+                  &nbsp;&nbsp;&lt;div class="swiper-wrapper"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-slide"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-slide"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-slide"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                  <br>
+                  &nbsp;&nbsp;&lt;!-- Pagination  --><br>
+                  &nbsp;&nbsp;&lt;div class="container"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center justify-content-center justify-content-md-end"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="swiper-custom-button-prev text-dark"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fas fa-arrow-left fa-lg">&lt;/i><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="swiper-custom-button-next ms-4 text-dark"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fas fa-arrow-right fa-lg">&lt;/i><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+
+          <div class="card mt-6">
+            <div class="card-body bg-light">
+              <div class="swiper-container" data-toggle="swiper" data-options='{ "slidesPerView": "auto", "centeredSlides": true, "grabCursor": true, "speed": 500, "navigation": { "nextEl": ".swiper-custom-button-next", "prevEl": ".swiper-custom-button-prev" } }'>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide container">
+                    <div class="row no-gutters bg-white shadow-light-sm">
+                      <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                        <div class="lead">
+                          “Most human beings complain about the meanness of nature, because we are born for a brief span of life, and because this spell of time that has been given to us rushes by so swiftly and rapidly that with very few exceptions life ceases for the rest of us just when we are getting ready for it.”
+                        </div>
+                        <span class="svg-icon svg-icon-xl text-warning ms-n2">
+                          @@include("../assets/img/ionicons/remove-outline.svg")
+                        </span>
+                        <h5 class="text-darkblue">
+                          Seneca the younger
+                        </h5>
+                        <p class="text-muted fs-sm">
+                          Lead Philosoper
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="bg-cover h-350 h-md-500" style="background-image: url('../assets/img/unsplash/16.jpeg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide container">
+                    <div class="row no-gutters bg-white shadow-light-sm">
+                      <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                        <div class="lead">
+                          “If anyone tells you that a certain person speaks ill of you, do not make excuses about what is said of you but answer, "He was ignorant of my other faults, else he would not have mentioned these alone.”
+                        </div>
+                        <span class="svg-icon svg-icon-xl text-info ms-n2">
+                          @@include("../assets/img/ionicons/remove-outline.svg")
+                        </span>
+                        <h5 class="text-darkblue">
+                          Epictetus
+                        </h5>
+                        <p class="text-muted fs-sm">
+                          Head of Philosophy
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="bg-cover h-350 h-md-500" style="background-image: url('../assets/img/unsplash/17.jpeg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide container">
+                    <div class="row no-gutters bg-white shadow-light-sm">
+                      <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                        <div class="lead">
+                          “One who is injured ought not to return the injury, for on no account can it be right to do an injustice; and it is not right to return an injury, or to do evil to any man, however much we have suffered from him.”
+                        </div>
+                        <span class="svg-icon svg-icon-xl text-success ms-n2">
+                          @@include("../assets/img/ionicons/remove-outline.svg")
+                        </span>
+                        <h5 class="text-darkblue">
+                          Socrates
+                        </h5>
+                        <p class="text-muted fs-sm">
+                          Senior Philosoper
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="bg-cover h-350 h-md-500" style="background-image: url('../assets/img/unsplash/18.jpeg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container mt-4 pt-2">
+                  <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                    <a href="#" class="swiper-custom-button-prev text-darkblue">
+                      <i class="fas fa-arrow-left fa-2x"></i>
+                    </a>
+                    <a href="#" class="swiper-custom-button-next ms-4 text-darkblue">
+                      <i class="fas fa-arrow-right fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="swiper-container" data-toggle="swiper" data-options='{ "slidesPerView": "auto", "centeredSlides": true, "grabCursor": true, "speed": 500, "navigation": { "nextEl": ".swiper-custom-button-next", "prevEl": ".swiper-custom-button-prev" } }'><br>
+                  &nbsp;&nbsp;&lt;div class="swiper-wrapper align-items-center"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-slide container"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-slide container"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-slide container"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                  <br>
+                  &nbsp;&nbsp;&lt;!-- Pagination  --><br>
+                  &nbsp;&nbsp;&lt;div class="container"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center justify-content-center justify-content-md-end"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="swiper-custom-button-prev text-dark"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fas fa-arrow-left fa-lg">&lt;/i><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="swiper-custom-button-next ms-4 text-dark"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fas fa-arrow-right fa-lg">&lt;/i><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

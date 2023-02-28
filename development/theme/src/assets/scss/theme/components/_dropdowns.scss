@@ -1,0 +1,48 @@
+// 
+// Card inside dropdown
+//
+
+.dropdown-menu-card {
+  min-width: 350px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff;
+  border-color: $card-border-color;
+
+  .card-body {
+    max-height: 350px;
+    overflow-y: auto;
+
+    hr {
+      margin-left: -$card-spacer-x;
+      margin-right: -$card-spacer-x;
+    }
+  }
+}
+
+// Submenus
+.dropdown-item.dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Replace original carets
+.dropdown-toggle::after {
+  font-family: 'Font Awesome 5 Free';
+  width: auto;
+  height: auto;
+  border: none !important;
+  font-weight: 900;
+  vertical-align: middle;
+  font-size: 10px;
+  content: "\f078";
+}
+
+.dropend {
+  .dropdown-toggle {
+    &:after {
+      content: "\f054";
+    }
+  }
+}

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Foresight Admin Theme"
+})
+<body>
+  @@include('./partials/sidebar-navbar.html', {
+    "classList": "navbar navbar-vertical navbar-expand-lg navbar-light bg-white",
+    "section": "3",
+    "subsection": "1",
+    "link": "profile-files"
+  })
+
+  @@include('./partials/sidebar-navbar-sm.html', {
+    "classList": "navbar navbar-vertical navbar-vertical-sm fixed-left navbar-expand-lg navbar-light bg-white",
+    "styleList": "display: none",
+    "section": "3",
+  })
+
+  <div class="main-content">
+    @@include("./partials/top-searchbar.html", {
+      "classList": "navbar navbar-expand-lg navbar-light bg-white d-none d-lg-flex"
+    })
+
+    <div class="w-100 h-150 h-md-250 bg-cover" style="background-image: url('assets/img/unsplash/2.png');">
+    </div>
+
+    <div class="container-fluid">
+      <div class="d-md-flex align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="avatar avatar-xxl mt-n4 relative-top--5">
+            <img src="assets/img/uifaces/13.jpg" class="avatar-image rounded-circle border border-white border-2" alt="">
+          </div>
+          <div class="flex-1 ms-4 mt-4">
+            <h3 class="mb-0">
+              Steven Gerrard
+            </h3>
+            <p class="text-gray-600">
+              @steven
+            </p>
+          </div>
+        </div>
+        <a href="#!" class="btn btn-primary hover-lift-light shadow-light-sm ms-auto">
+          <span class="svg-icon svg-icon-sm text-white me-1">
+            @@include("assets/img/ionicons/add-outline.svg")
+          </span>
+          Follow
+        </a>
+      </div>
+
+      <ul class="nav nav-tabs nav-overflow mt-3">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="profile.html">
+            Feed
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile-projects.html">
+            Projects <span class="badge rounded-pill bg-primary ms-1">7</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="profile-files.html">
+            Files
+          </a>
+        </li>
+      </ul>
+
+      <div class="mt-4 pt-2 mb-7">
+        <!-- dropdown filters -->
+        <div class="d-flex align-items-center">
+          <div class="dropdown">
+            <a href="#" class="text-primary text-decoration-none" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Photos
+              <span class="svg-icon svg-icon-sm text-primary">
+                @@include("assets/img/ionicons/chevron-down-outline.svg")
+              </span>
+            </a>
+            <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#!">Photos</a>
+              <a class="dropdown-item" href="#!">Documents</a>
+              <a class="dropdown-item" href="#!">PDF</a>
+              <a class="dropdown-item" href="#!">Videos</a>
+              <a class="dropdown-item" href="#!">Audio</a>
+            </div>
+          </div>
+          <div class="dropdown ms-auto">
+            <a href="#" class="text-primary text-decoration-none" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Uploaded
+              <span class="svg-icon svg-icon-sm text-primary">
+                @@include("assets/img/ionicons/chevron-down-outline.svg")
+              </span>
+            </a>
+            <div class="dropdown-menu shadow-light-sm" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#!">Uploaded</a>
+              <a class="dropdown-item" href="#!">Saved</a>
+              <a class="dropdown-item" href="#!">Archived</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- files -->
+        <div class="row mt-4">
+          <div class="col-md-4 col-xl-3 mb-md-4">
+            <a data-fancybox="gallery1" href="assets/img/unsplash/10.jpeg" class="d-block hover-lift-light">
+              <span class="d-block bg-cover h-250 rounded" style="background-image: url('assets/img/unsplash/10.jpeg');"></span>
+            </a>
+            <div class="d-flex align-items-center">
+              <p class="fw-bold mt-3 mb-1">
+                Paragliding2021.jpg
+              </p>
+              <div class="dropdown ms-auto mt-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Download</a>
+                  <a class="dropdown-item" href="#!">Edit photo</a>
+                  <a class="dropdown-item text-danger" href="#!">Delete</a>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted fs-sm">
+              3MB <span class="mx-1">●</span> 2h ago
+            </p>
+          </div>
+          <div class="col-md-4 col-xl-3 mb-md-4">
+            <a data-fancybox="gallery1" href="assets/img/unsplash/11.jpeg" class="d-block hover-lift-light">
+              <span class="d-block bg-cover h-250 rounded" style="background-image: url('assets/img/unsplash/11.jpeg');"></span>
+            </a>
+            <div class="d-flex align-items-center">
+              <p class="fw-bold mt-3 mb-1">
+                Surfing.jpg
+              </p>
+              <div class="dropdown ms-auto mt-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Download</a>
+                  <a class="dropdown-item" href="#!">Edit photo</a>
+                  <a class="dropdown-item text-danger" href="#!">Delete</a>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted fs-sm">
+              5.2MB <span class="mx-1">●</span> 5h ago
+            </p>
+          </div>
+          <div class="col-md-4 col-xl-3 mb-md-4">
+            <a data-fancybox="gallery1" href="assets/img/unsplash/6.jpeg" class="d-block hover-lift-light">
+              <span class="d-block bg-cover h-250 rounded" style="background-image: url('assets/img/unsplash/6.jpeg');"></span>
+            </a>
+            <div class="d-flex align-items-center">
+              <p class="fw-bold mt-3 mb-1">
+                Conference.jpg
+              </p>
+              <div class="dropdown ms-auto mt-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Download</a>
+                  <a class="dropdown-item" href="#!">Edit photo</a>
+                  <a class="dropdown-item text-danger" href="#!">Delete</a>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted fs-sm">
+              2MB <span class="mx-1">●</span> 1w ago
+            </p>
+          </div>
+          <div class="col-md-4 col-xl-3 mb-md-4">
+            <a data-fancybox="gallery1" href="assets/img/unsplash/15.jpeg" class="d-block hover-lift-light">
+              <span class="d-block bg-cover h-250 rounded" style="background-image: url('assets/img/unsplash/15.jpeg');"></span>
+            </a>
+            <div class="d-flex align-items-center">
+              <p class="fw-bold mt-3 mb-1">
+                Alaska.jpg
+              </p>
+              <div class="dropdown ms-auto mt-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Download</a>
+                  <a class="dropdown-item" href="#!">Edit photo</a>
+                  <a class="dropdown-item text-danger" href="#!">Delete</a>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted fs-sm">
+              267Kb <span class="mx-1">●</span> 5h ago
+            </p>
+          </div>
+
+          <div class="col-md-4 col-xl-3">
+            <a data-fancybox="gallery1" href="assets/img/unsplash/13.jpeg" class="d-block hover-lift-light">
+              <span class="d-block bg-cover h-250 rounded" style="background-image: url('assets/img/unsplash/13.jpeg');"></span>
+            </a>
+            <div class="d-flex align-items-center">
+              <p class="fw-bold mt-3 mb-1">
+                himalayas.jpg
+              </p>
+              <div class="dropdown ms-auto mt-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Download</a>
+                  <a class="dropdown-item" href="#!">Edit photo</a>
+                  <a class="dropdown-item text-danger" href="#!">Delete</a>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted fs-sm">
+              4MB <span class="mx-1">●</span> 1w ago
+            </p>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <a data-fancybox="gallery1" href="assets/img/unsplash/1.jpeg" class="d-block hover-lift-light">
+              <span class="d-block bg-cover h-250 rounded" style="background-image: url('assets/img/unsplash/1.jpeg');"></span>
+            </a>
+            <div class="d-flex align-items-center">
+              <p class="fw-bold mt-3 mb-1">
+                Sunset.jpg
+              </p>
+              <div class="dropdown ms-auto mt-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Download</a>
+                  <a class="dropdown-item" href="#!">Edit photo</a>
+                  <a class="dropdown-item text-danger" href="#!">Delete</a>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted fs-sm">
+              8MB <span class="mx-1">●</span> 2d ago
+            </p>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <a data-fancybox="gallery1" href="assets/img/unsplash/4.jpeg" class="d-block hover-lift-light">
+              <span class="d-block bg-cover h-250 rounded" style="background-image: url('assets/img/unsplash/4.jpeg');"></span>
+            </a>
+            <div class="d-flex align-items-center">
+              <p class="fw-bold mt-3 mb-1">
+                Landscape.jpg
+              </p>
+              <div class="dropdown ms-auto mt-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Download</a>
+                  <a class="dropdown-item" href="#!">Edit photo</a>
+                  <a class="dropdown-item text-danger" href="#!">Delete</a>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted fs-sm">
+              1MB <span class="mx-1">●</span> 12h ago
+            </p>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <a data-fancybox="gallery1" href="assets/img/unsplash/5.jpeg" class="d-block hover-lift-light">
+              <span class="d-block bg-cover h-250 rounded" style="background-image: url('assets/img/unsplash/5.jpeg');"></span>
+            </a>
+            <div class="d-flex align-items-center">
+              <p class="fw-bold mt-3 mb-1">
+                Germany.jpg
+              </p>
+              <div class="dropdown ms-auto mt-2">
+                <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="svg-icon text-gray-500">
+                    @@include("assets/img/ionicons/ellipsis-horizontal-outline.svg")
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-light-sm" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#!">Download</a>
+                  <a class="dropdown-item" href="#!">Edit photo</a>
+                  <a class="dropdown-item text-danger" href="#!">Delete</a>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted fs-sm">
+              256Kb <span class="mx-1">●</span> 2h ago
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('./partials/scripts.html')
+</body>
+</html>

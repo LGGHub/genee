@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Stats cards | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid container-docs">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <span class="badge bg-success text-white text-uppercase">New</span>
+          <h3 class="text-darkblue mt-3">
+            Stats cards
+          </h3>
+          <p class="text-muted mb-1">
+            Stat cards are a new component for showing values and their relative change. Useful for reports or dashboards.
+          </p>
+          <p class="text-muted">
+            They are full width by default. You can use the <a href="sizing.html">sizing</a> properties or the grid system to set their dimensions.
+          </p>
+
+          <h5 class="text-darkblue pt-7 mt-n5" id="color">
+            Examples
+          </h5>
+          <div class="card border-0 mt-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="statcard bg-light mb-3">
+                    <h2 class="statcard-value">
+                      2,562
+                      <span class="statcard-change text-success">
+                        -17%
+                        <span class="svg-icon svg-icon-sm text-success relative-top--2">
+                          @@include("../assets/img/ionicons/trending-up-outline.svg")
+                        </span>
+                      </span>
+                    </h2>
+                    <span class="statcard-label">Sign-ups</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="statcard bg-pastel-info mb-3">
+                    <h2 class="statcard-value">
+                      7,910
+                      <span class="statcard-change text-danger">
+                        -6.5%
+                        <span class="svg-icon svg-icon-sm text-danger relative-top--2">
+                          @@include("../assets/img/ionicons/trending-down-outline.svg")
+                        </span>
+                      </span>
+                    </h2>
+                    <span class="statcard-label">Total orders</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="statcard bg-dark mb-3">
+                    <h2 class="statcard-value text-white">
+                      $132,938
+                      <span class="statcard-change text-white">
+                        32%
+                        <span class="svg-icon svg-icon-sm text-white relative-top--2">
+                          @@include("../assets/img/ionicons/trending-up-outline.svg")
+                        </span>
+                      </span>
+                    </h2>
+                    <span class="statcard-label text-white">Total earnings</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="statcard bg-warning mb-3">
+                    <h2 class="statcard-value">
+                      1,608
+                      <span class="statcard-change text-dark">
+                        7.2%
+                        <span class="svg-icon svg-icon-sm text-dark relative-top--2">
+                          @@include("../assets/img/ionicons/trending-up-outline.svg")
+                        </span>
+                      </span>
+                    </h2>
+                    <span class="statcard-label">New visits</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="statcard bg-sky mb-3">
+                    <h2 class="statcard-value">
+                      $129.00
+                      <span class="statcard-change text-danger">
+                        -3.2%
+                        <span class="svg-icon svg-icon-sm text-danger relative-top--2">
+                          @@include("../assets/img/ionicons/trending-down-outline.svg")
+                        </span>
+                      </span>
+                    </h2>
+                    <span class="statcard-label">Average order value</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                  <div class="statcard bg-pistachio mb-3">
+                    <h2 class="statcard-value">
+                      64%
+                      <span class="statcard-change text-success">
+                        2.2%
+                        <span class="svg-icon svg-icon-sm text-success relative-top--2">
+                          @@include("../assets/img/ionicons/trending-up-outline.svg")
+                        </span>
+                      </span>
+                    </h2>
+                    <span class="statcard-label">Return customer rate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="statcard statcard-light"><br>
+                  &nbsp;&nbsp;&lt;h2 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;2,562<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-danger">-17%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h2><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">Sign-ups&lt;/span><br>
+                &lt;/div><br><br>
+                &lt;div class="statcard statcard-info"><br>
+                  &nbsp;&nbsp;&lt;h2 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;7,910<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-success">6.5%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h2><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">Total orders&lt;/span><br>
+                &lt;/div><br><br>
+                &lt;div class="statcard statcard-secondary"><br>
+                  &nbsp;&nbsp;&lt;h2 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$122,938<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-success">32%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h2><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">Total earnings&lt;/span><br>
+                &lt;/div><br><br>
+                &lt;div class="statcard statcard-warning"><br>
+                  &nbsp;&nbsp;&lt;h2 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;1,608<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-success">7.2%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h2><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">New visits&lt;/span><br>
+                &lt;/div><br><br>
+                &lt;div class="statcard statcard-sky"><br>
+                  &nbsp;&nbsp;&lt;h2 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$129.00<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-danger">-3.2%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h2><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">Average order value&lt;/span><br>
+                &lt;/div><br><br>
+                &lt;div class="statcard statcard-pistachio"><br>
+                  &nbsp;&nbsp;&lt;h2 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;64%<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-success">2.2%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h2><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">Return customer rate&lt;/span><br>
+                &lt;/div><br>
+              </code>
+            </div>
+          </div>
+
+          <hr class="mt-5 mb-0">
+
+          <h5 class="text-darkblue pt-7 mt-n5" id="clear">
+            Examples without context backgrounds
+          </h5>
+          <div class="card border-0 mt-4">
+            <div class="card-body d-flex flex-column flex-md-row justify-content-lg-between">
+              <div class="statcard">
+                <h3 class="statcard-value">
+                  $12,938
+                  <span class="statcard-change text-success">3.5%</span>
+                </h3>
+                <span class="statcard-label">Total earnings</span>
+              </div>
+              <div class="statcard">
+                <h3 class="statcard-value">
+                  1,256
+                  <span class="statcard-change text-danger">-17%</span>
+                </h3>
+                <span class="statcard-label">Sign-ups</span>
+              </div>
+              <div class="statcard">
+                <h3 class="statcard-value">
+                  3,201
+                  <span class="statcard-change text-success">7.2%</span>
+                </h3>
+                <span class="statcard-label">New orders</span>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="statcard pe-5 me-5"><br>
+                  &nbsp;&nbsp;&lt;h3 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$12,938<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-success">3.5%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h3><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">Total earnings&lt;/span><br>
+                &lt;/div><br><br>
+                &lt;div class="statcard pe-5 me-5"><br>
+                  &nbsp;&nbsp;&lt;h3 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;1,256<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-danger">-17%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h3><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">Sign-ups&lt;/span><br>
+                &lt;/div><br><br>
+                &lt;div class="statcard"><br>
+                  &nbsp;&nbsp;&lt;h3 class="statcard-value"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;3,201<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="statcard-change text-success">7.2%&lt;/span><br>
+                  &nbsp;&nbsp;&lt;/h3><br>
+                  &nbsp;&nbsp;&lt;span class="statcard-label">New orders&lt;/span><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 d-none d-xl-block px-0 py-5 docs-sidebar docs-sidebar-right">
+          <aside class="border-start ps-5 py-3">
+            <span class="text-uppercase text-muted fs-sm d-block mb-3">
+              On this page:
+            </span>
+            <a href="#color" class="d-block my-2" data-toggle="scroll">
+              Context colors
+            </a>
+            <a href="#clear" class="d-block my-2" data-toggle="scroll">
+              White background
+            </a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Cards | Foresight Docs"
+})
+<body>
+  @@include('../partials/top-navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white fixed-top",
+    "docs": 1
+  })
+
+  <div class="docs-content">
+    <div class="container-fluid">
+      <div class="row">
+        @@include('../partials/docs-sidebar.html')
+
+        <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6 mt-4 mt-lg-0">
+          <h3 class="text-darkblue">
+            Cards
+          </h3>
+          <a href="https://getbootstrap.com/docs/5.0/components/card/" class="text-purple" target="_blank">See Bootstrap docs <i class="fas fa-external-link-alt fs-xs ms-1"></i></a>
+
+          <h5 class="text-darkblue pt-7 mt-n5" id="basic">
+            Basic card
+          </h5>
+          <div class="card mt-4">
+            <div class="card-body bg-light">
+              <div class="card">
+                <div class="card-header text-uppercase-bold-sm">
+                  Card Header
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special card title</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-purple shadow-light-sm mt-2">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="card shadow-light"><br>
+                  &nbsp;&nbsp;&lt;div class="card-header"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Card Header<br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;div class="card-body"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="card-title">Special card title&lt;/h5><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text">With supporting text below as a natural lead-in to additional content.&lt;/p><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-purple shadow-light-sm mt-2">Go somewhere&lt;/a><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+
+          <hr class="bg-gray-200 mt-5 mb-0">
+
+          <h5 class="text-darkblue pt-7 mt-n5" id="pricing">
+            Pricing charts
+          </h5>
+          <div class="card mt-4">
+            <div class="card-body bg-light">
+              <div class="row">
+                <div class="col-xl-4">
+                  <div class="card shadow-light-sm">
+                    <div class="card-body">
+                      <h5 class="text-center fw-normal">
+                        Beginner
+                      </h5>
+                      <div class="d-flex justify-content-center">
+                        <span class="h3 align-self-center mb-0">$</span>
+                        <span class="display-3">29</span>
+                        <span class="h4 align-self-end mb-3">/mo</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">3 Collaborators</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">10 Projects</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">1GB data storage</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">3% Transaction fee</span>
+                      </div>
+                      <a href="#" class="btn btn-pastel-primary d-block btn-lg hover-lift-light mt-5">
+                        Start your trial
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 mt-4 mt-xl-0">
+                  <div class="card shadow-light-sm">
+                    <div class="card-body">
+                      <h5 class="text-center fw-normal">
+                        Professional
+                      </h5>
+                      <div class="d-flex justify-content-center">
+                        <span class="h3 align-self-center mb-0">$</span>
+                        <span class="display-3">79</span>
+                        <span class="h4 align-self-end mb-3">/mo</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">10 Collaborators</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">30 Projects</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">5GB data storage</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">Exclusive Support</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">1.5% Transaction fee</span>
+                      </div>
+                      <a href="#" class="btn btn-primary d-block btn-lg hover-lift-light mt-5">
+                        Choose this plan
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 mt-4 mt-xl-0">
+                  <div class="card shadow-light-sm">
+                    <div class="card-body">
+                      <h5 class="text-center fw-normal">
+                        Enterprise
+                      </h5>
+                      <div class="d-flex justify-content-center">
+                        <span class="h3 align-self-center mb-0">$</span>
+                        <span class="display-3">109</span>
+                        <span class="h4 align-self-end mb-3">/mo</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">Unlimited collaborators</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">Unlimited projects</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">50GB data storage</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">VIP Support</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">No license needed</span>
+                      </div>
+                      <div class="d-flex align-items-center mt-3 ps-2">
+                        <i class="far fa-check-circle text-success"></i>
+                        <span class="ms-2">No transaction fee</span>
+                      </div>
+                      <a href="#" class="btn btn-pastel-primary d-block btn-lg hover-lift-light mt-5">
+                        Contact sales
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-dark">
+              <code class="hl html">
+                &lt;div class="row"><br>
+                  &nbsp;&nbsp;&lt;div class="col-xl-4"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card shadow-light-sm"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="text-center"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginner<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h5><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex justify-content-center"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h3 align-self-center mb-0">$&lt;/span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="display-3">29&lt;/span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h4 align-self-end mb-3">/mo&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">3 Collaborators&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">10 Projects&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">1GB data storage&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">3% Transaction fee&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-pastel-primary d-block btn-lg hover-lift-light mt-5"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start your trial<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;/div><br><br>
+                  &nbsp;&nbsp;&lt;div class="col-xl-4 mt-4 mt-xl-0"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card shadow-light-sm"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="text-center"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Professional<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h5><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex justify-content-center"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h3 align-self-center mb-0">$&lt;/span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="display-3">79&lt;/span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h4 align-self-end mb-3">/mo&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">10 Collaborators&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">30 Projects&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">5GB data storage&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">Exclusive Support&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">1.5% Transaction fee&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-primary d-block btn-lg hover-lift-light mt-5"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose this plan<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;/div><br><br>
+                  &nbsp;&nbsp;&lt;div class="col-xl-4 mt-4 mt-xl-0"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card shadow-light-sm"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="text-center"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enterprise<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h5><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex justify-content-center"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h3 align-self-center mb-0">$&lt;/span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="display-3">109&lt;/span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h4 align-self-end mb-3">/mo&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">Unlimited collaborators&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">Unlimited projects&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">50GB data storage&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">VIP Support&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">No license needed&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ms-2">No transaction fee&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-pastel-primary d-block btn-lg hover-lift-light mt-5"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact sales<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&lt;/div><br>
+                &lt;/div>
+              </code>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-2 d-none d-xl-block px-0 py-5 docs-sidebar docs-sidebar-right">
+          <aside class="border-start ps-5 py-3">
+            <span class="text-uppercase text-muted fs-sm d-block mb-3">
+              On this page:
+            </span>
+            <a href="#basic" class="d-block my-2" data-toggle="scroll">
+              Basic
+            </a>
+            <a href="#blog" class="d-block my-2" data-toggle="scroll">
+              Blog posts
+            </a>
+            <a href="#pricing" class="d-block my-2" data-toggle="scroll">
+              Pricing charts
+            </a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

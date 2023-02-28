@@ -1,0 +1,46 @@
+// 
+// Pastel text and link colors
+// 
+
+@each $color, $value in $theme-colors {
+  $pastel: tint-color($value, 60%);
+
+  .text-pastel-#{$color} {
+    color: $pastel !important;
+  }
+
+  .link-pastel-#{$color} {
+    color: $pastel;
+
+    @if $link-shade-percentage != 0 {
+      &:hover,
+      &:focus {
+        color: if(color-contrast($value) == $color-contrast-light, shade-color($value, $link-shade-percentage), tint-color($value, $link-shade-percentage));
+      }
+    }
+  }
+}
+
+
+.font-georgia {
+  font-family: Georgia, sans-serif;
+}
+
+
+// 
+// Shortcut for a combination of styles that are commonly used throughout the theme
+// in buttons, subtitles, etc to prevent repetition.
+// 
+
+.text-uppercase-bold-sm {
+  text-transform: uppercase !important;
+  font-weight: $font-weight-bold !important;
+  letter-spacing: 2px !important;
+  font-size: $font-size-sm !important;
+}
+
+.text-uppercase-xs {
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: $font-size-xs !important;
+}

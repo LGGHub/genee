@@ -1,0 +1,271 @@
+<nav class="@@classList" role="navigation">
+  @@if(context.boxed) {
+  <div class="container">
+  }
+  @@if(!context.boxed) {
+  <div class="container-fluid">
+  }
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="@@webRoot/index.html">
+      @@if(context.docs) {
+        @@include("../assets/img/svg/logo-docs.svg")
+      }
+      @@if(!context.docs) {
+        @@include("../assets/img/svg/logo.svg")
+      }
+    </a>
+
+    <div class="dropdown d-flex d-lg-none">
+      <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="avatar">
+          <img src="@@webRoot/assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+        </span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end">
+        <a class="dropdown-item" href="@@webRoot/profile.html">My profile</a>
+        <a class="dropdown-item" href="@@webRoot/account.html">Account settings</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="@@webRoot/sign-in.html">Log out</a>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="navbar-collapse">
+      <ul class="navbar-nav align-items-lg-center justify-content-end w-100">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dashboard
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="@@webRoot/index.html" class="dropdown-item">
+                Default
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/index-ecommerce.html" class="dropdown-item">
+                Ecommerce
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Reports
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="@@webRoot/companies.html" class="dropdown-item">
+                Companies
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/customers.html" class="dropdown-item">
+                Customers
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/projects.html" class="dropdown-item">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/payments.html" class="dropdown-item">
+                Payments
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown dropend">
+              <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/profile.html">Feed</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/profile-projects.html">Projects</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/profile-files.html">Files</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown dropend">
+              <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Project
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/project.html">Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/project-files.html">Files</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/project-activity.html">Activity</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/project-settings.html">Settings</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown dropend">
+              <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/account.html">General</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/account-notifications.html">Notifications</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/account-billing.html">Billing & Payments</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/account-teammates.html">Teammates</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="@@webRoot/pricing.html" class="dropdown-item">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/invoice.html" class="dropdown-item">
+                Invoice
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+            Authentication
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown dropend">
+              <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sign up
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/sign-up.html">Basic</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/sign-up-quote.html">Side quote</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/sign-up-cover.html">Side cover</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown dropend">
+              <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sign in
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/sign-in.html">Basic</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/sign-in-quote.html">Side quote</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/sign-in-cover.html">Side cover</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown dropend">
+              <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recover password
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/recover-password.html">Basic</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="@@webRoot/recover-password-cover.html">Side cover</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="@@webRoot/email-verification.html" class="dropdown-item">
+                Email verification
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/two-step-verification.html" class="dropdown-item">
+                2-step verification
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+            Landing
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="@@webRoot/landing.html" class="dropdown-item">
+                Home page
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/landing-about.html" class="dropdown-item">
+                About us
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/landing-contact.html" class="dropdown-item">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/landing-pricing.html" class="dropdown-item">
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Theme docs
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="@@webRoot/docs/index.html" class="dropdown-item">
+                Documentation
+              </a>
+            </li>
+            <li>
+              <a href="@@webRoot/docs/changelog.html" class="dropdown-item">
+                Changelog
+              </a>
+            </li>
+            <li>
+              <a href="mailto:e.adrian90@gmail.com" class="dropdown-item">
+                Support
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item ms-lg-4">
+          <a href="#!" class="btn btn-primary btn-sm">
+            Buy now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

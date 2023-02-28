@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source /home/ben/.bashrc
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+nvm use 13
+
+cd $DIR/../theme
+
+gulp build
+
+rm -rf $DIR/../../assets/theme/*; cp -Rf $DIR/../theme/dist/assets/* $DIR/../../assets/theme
