@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Genee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src * data:; font-src * data:; connect-src 'self' https://api.genome.ucsc.edu;">
+
+    <link rel="stylesheet" type="text/css" href="/assets/theme/css/theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/theme/css/vendor.min.css">
+    <link rel="stylesheet" href="/assets/css/dashboard.css">
+  </head>
+  <body>
+
+    <div class="container mt-5">
+      <div class="row mb-2">
+        <div class="col-md-12">
+          <h4 class="text-left mb-1">Genome Coordinate Search</h4>
+          <p class="fs-sm">This tool makes it faster to look up the genes and cytobands for a chromosomal range. Enter your coordinates below. You can then view matching genes on UCSC, or lookup cytobands.</p>        
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mb-3 mb-md-0">
+          <div class="d-flex align-items-center">
+            <label for="chromosome-input" class="form-label mb-0 me-3">Coordinates</label>
+            <input type="text" class="form-control" id="coordinates" placeholder="i.e. Chr5:105813149-123789155">
+          </div>
+        </div>
+      </div>    
+      <div class="row mt-3">
+        <div class="col-md-2">
+          <div class="d-flex align-items-center">
+            <label for="chromosome-input" class="form-label mb-0 me-3">Chromosome</label>
+            <input type="text" class="form-control" id="chromosome">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="d-flex align-items-center">
+            <label for="start-coord-input" class="form-label mb-0 me-3">Start</label>
+            <input type="text" class="form-control" id="start-coord">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="d-flex align-items-center">
+            <label for="end-coord-input" class="form-label mb-0 me-3">End</label>
+            <input type="text" class="form-control" id="end-coord">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="d-flex align-items-center">
+            <label for="genome-build-select" class="form-label mb-0 me-3">Build</label>
+            <select class="form-select w-auto" id="genome-build">
+              <option value="hg18">hg18</option>
+              <option value="hg19" selected>hg19</option>
+              <option value="hg38">hg38</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div id="cytoband-lookup" class="dropdown d-none">
+            <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cytoband Lookup
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" name="cytoband-single">Individual</a>
+              <a class="dropdown-item" href="#" name="cytoband-pairs">Pairs</a>
+              <a class="dropdown-item" href="#" name="cytoband-all">Individual + Pairs</a>
+            </div>
+          </div>
+        </div>       
+        <div class="col-md-2">
+          <a class="btn btn-warning d-none" id="ucsc-browser" target="_blank">UCSC Browser</a>
+        </div> 
+      </div>
+      <hr class="my-4">
+      <div class="row mb-2">
+        <div class="col-md-12">
+          <h4 class="text-left mb-1">Google Scholar Search</h4>
+          <p class="fs-sm">This tool makes it faster to search Google Scholar for terms. It automatically generates search links for a group of terms, and combines qualifying terms to perform more precise searches.</p>
+          <p class="fs-md"><strong class="text-primary">Paste terms to search in the box on the left, or do a cytoband or gene lookup using UCSC to automatically pull in genes of interest.</strong></p>   
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="terms" class="form-label">Terms</label>
+            <textarea class="form-control noresize" id="terms" rows="5"></textarea>
+          </div>
+          <div class="mb-3 d-flex align-items-center">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="terms-format" id="terms-one-per-line" value="one-per-line" checked>
+              <label class="form-check-label" for="terms-one-per-line">One per line</label>
+            </div>
+            <div class="form-check form-check-inline ms-3">
+              <input class="form-check-input" type="radio" name="terms-format" id="terms-comma-separated" value="comma-separated">
+              <label class="form-check-label" for="terms-comma-separated">Comma separated</label>
+            </div>
+            <div class="ms-auto">
+              <button class="btn btn-primary" id="terms-copy">Copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="form-group d-inline-block mb-3 mb-md-0 w-100">
+            <label for="additional-terms" class="form-label">Qualifying Terms</label>
+            <textarea class="form-control w-100 noresize" id="additional-terms" rows="5"></textarea>
+            <div class="row mt-2">
+              <div class="col-md-6">
+                <div class="form-text text-muted my-2">Optional phrases to append to each of your terms to create more comprehensive searches.</div>  
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center justify-content-end">
+                  <label for="term-sets" class="form-label mb-0 me-3">Prebuilt Term Sets</label>
+                  <select class="form-select w-auto" id="term-sets">
+                    <option value=""></option>            
+                    <option value="loss">Loss</option>
+                    <option value="gain">Gain</option>
+                    <option value="loss-full">Loss (comprehensive)</option>
+                    <option value="gain-full">Gain (comprehensive)</option>              
+                  </select>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+
+        <div class="form-text text-primary">You can edit, add, and delete terms (and optional qualifying terms).</div> 
+      </div>
+
+
+      <div id="links" class="row mt-2 d-none">
+        <hr>
+        <div class="text-muted fs-sm mb-2">Google limits the length of search queries. If you have a lot of search terms, we've divided them into multiple searches.</div>
+        <table class="table">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/assets/js/lodash.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>    
+    <script src="/assets/js/bootstrap.min.js"></script>    
+    <script src="/scripts/utils.js"></script>    
+    <script src="/scripts/dashboard.js"></script>    
+  </body>
+</html>

@@ -10,9 +10,6 @@
   "background": {
     "service_worker": "/scripts/background.js"
   },
-  // "background": {
-  //   "scripts": ["/scripts/background.js"]
-  // },  
   "permissions": [
     "activeTab",
     "clipboardWrite",
