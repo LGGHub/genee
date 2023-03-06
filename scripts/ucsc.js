@@ -39,8 +39,6 @@ async function renderTrackSelect() {
     return;
   }
 
-  //console.log(TRACKS);
-
   let tracks = [];
 
   if (TRACKS.omimGene2) {
@@ -48,8 +46,6 @@ async function renderTrackSelect() {
       , track_name = 'OMIM Morbid Genes'
       , track = []
       , pattern = /Gene:\s+(\w+),?/i;
-
-    //console.log(cur_track);
 
     _.each(cur_track, c => {
       if (!c.match(/Phenotype/i)) return;
@@ -63,8 +59,6 @@ async function renderTrackSelect() {
         , has_ad = _.find(phenotypes, p => p.match(/\b(AD|XL|XLR|XLD)\b/) && !p.match(/\{|\?|\}/));
 
       if (!has_ad) return;
-
-      console.log(gene, phenotypes)
 
       track.push(gene);
     });
@@ -161,6 +155,23 @@ function selectTrack(track) {
   track = track || $('#tracks').val();
   if (!TRACKS[track]) return;
 
+  switch (track) {
+    case "OMIM Morbid Genes":
+      help_text = "Genes with an AD disease association, excluding candidate or susceptibility associations";
+      break;
+    case "Clingen Haplo Genes":
+      help_text = "Genes with a ClinGen Haploinsufficiency score of 1, 2, or 3";
+      break;
+    case "Clingen Triplo Genes":
+      help_text = "Genes with a ClinGen Triplosensitivity score of 1, 2, or 3";
+      break;
+    default:
+      help_text = "";
+      break;
+  }
+
+  $('#track-help').removeClass('d-none').html(help_text);
+
   fillTextArea('terms', TRACKS[track]);
 }
 
@@ -207,17 +218,3 @@ $('#google-scholar-search').on('click', async e => {
 });
 
 renderTrackSelect();
-
-// fetch('assets/data/genes.json')
-//   .then(response => response.json())
-//   .then(data => {
-//     GENES = data.map(m => m.toLowerCase());
-//     const escapedSubstrings = GENES.map(sub => sub.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-//     GENES_REGEX = new RegExp(`\\b(${escapedSubstrings.join('|')})\\b`, 'gi');
-
-//     renderTrackSelect();
-//     // runFunctionContinuously(renderTrackSelect, 2000);
-//   })
-//   .catch(error => {
-//     console.error(error);
-//   });

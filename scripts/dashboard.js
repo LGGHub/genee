@@ -36,6 +36,9 @@ const TERMS = {
   , "copy gain"
   , "microduplication"
   , "microdup"
+  , "partial trisomy"
+  , "trisomy"
+  , "triplosensitivity"
   ]
 }
 
