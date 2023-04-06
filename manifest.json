@@ -1,7 +1,7 @@
 {
   "name": "Genee",
   "description": "Utilities for genetic diagnostic professionals",
-  "version": "2.0",
+  "version": "2.1",
   "manifest_version": 3,
   "author": "admin@lgghub.com",
   "action": {
