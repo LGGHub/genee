@@ -403,7 +403,7 @@ $('#cytoband-lookup a').on('click', e => {
   cytobandLookup(val);
 });
 
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.action === 'paste-terms') {
     $('#coordinates').val(request.coordinates);
     coordinatesUpdate();

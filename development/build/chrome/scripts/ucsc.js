@@ -28,7 +28,7 @@ function getTrackData() {
 
 async function renderTrackSelect() {
   let tab = await getCurrentTab()
-    , res = await chrome.scripting.executeScript({
+    , res = await browser.scripting.executeScript({
         target: {tabId: tab.id},
         func: getTrackData
       });
@@ -177,7 +177,7 @@ function selectTrack(track) {
 
 async function getCoordinates() {
   let tab = await getCurrentTab()
-    , res = await chrome.scripting.executeScript({
+    , res = await browser.scripting.executeScript({
         target: {tabId: tab.id},
         func: () => document.getElementById('position').value
       });
@@ -210,7 +210,7 @@ $('#google-scholar-search').on('click', async e => {
   let terms = $("#terms").val()
     , coordinates = await getCoordinates();
 
-  chrome.runtime.sendMessage({
+  browser.runtime.sendMessage({
     action: 'open-dashboard'
   , terms
   , coordinates

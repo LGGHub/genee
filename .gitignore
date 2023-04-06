@@ -1,2 +1,5 @@
 .env
 node_modules/
+@eaDir/
+.DS_Store
+development/build/

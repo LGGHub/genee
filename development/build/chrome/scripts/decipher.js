@@ -5,7 +5,7 @@ function getDecipherPhenotypes() {
 
 $(document).ready(async () => {
   let tab = await getCurrentTab()
-    , res = await chrome.scripting.executeScript({
+    , res = await browser.scripting.executeScript({
         target: {tabId: tab.id},
         func: getDecipherPhenotypes
       });

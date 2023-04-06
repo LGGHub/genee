@@ -1,3 +1,5 @@
+import '/assets/js/browser-polyfill.min.js';
+
 async function getTabUrl(tabId) {
   return (await browser.tabs.get(tabId)).url;
 }

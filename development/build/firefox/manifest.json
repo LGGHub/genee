@@ -8,7 +8,10 @@
     "default_popup": ""
   },
   "background": {
-    "scripts": ["/scripts/background.js"]
+    "scripts": [
+      "/assets/js/browser-polyfill.min.js"
+    , "/scripts/background.js"
+    ]
   },  
   "permissions": [
     "activeTab",
